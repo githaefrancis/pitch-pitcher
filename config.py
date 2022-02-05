@@ -24,6 +24,7 @@ class DevConfig(Config):
   Args:
       Config: The configutation for dev environment
   '''
+  SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://moringa:1234@localhost/pitch_pitcher'
   DEBUG=True
 
 class TestConfig(Config):
