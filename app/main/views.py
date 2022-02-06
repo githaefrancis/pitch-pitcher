@@ -2,8 +2,8 @@
 from flask import redirect, render_template, url_for
 from flask_login import current_user, login_required
 from . import main
-from .forms import PitchForm
-from ..models import Category, Pitch
+from .forms import PitchForm,CommentForm
+from ..models import Category, Comment, Pitch
 
 @main.route('/',methods=['GET'])
 def index():
@@ -30,5 +30,15 @@ def post():
 
 @main.route('/pitch/<pitch_id>',methods=['GET'])
 def single_pitch(pitch_id):
+  comment_form=CommentForm()
   pitch=Pitch.query.filter_by(id=pitch_id).first()
-  return render_template('pitch.html',pitch=pitch)
+  return render_template('pitch.html',pitch=pitch,comment_form=comment_form)
+
+@main.route('/pitch/<pitch_id>',methods=['POST'])
+def comment(pitch_id):
+  comment_form=CommentForm()
+  pitch=Pitch.query.filter_by(id=pitch_id).first()
+  if comment_form.validate_on_submit():
+    comment=Comment(user=current_user,pitch=pitch,content=comment_form.comment.data)
+    comment.save_comment()
+    return redirect(url_for('main.single_pitch',pitch_id=pitch_id))

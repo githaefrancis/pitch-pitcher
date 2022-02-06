@@ -9,6 +9,6 @@ class PitchForm(FlaskForm):
   category=SelectField('Category',choices=[('pickup_lines','Pickup Line'),('product_pitch','Product Pitch'),('promotional_pitch','Promotional Pitch'),('interview','Interview')],validators=[InputRequired()])
   submit=SubmitField('Submit')
 
-class Comment(FlaskForm):
+class CommentForm(FlaskForm):
   comment=TextAreaField('',validators=[],render_kw={"placeholder": "Write a comment"})
   submit=SubmitField('Submit')

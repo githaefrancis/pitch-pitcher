@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-
+{% import 'bootstrap/wtf.html' as wtf %}
 {%block content%} 
 
 <div class="container">
@@ -7,12 +7,7 @@
   <div class="row mt-3">
 
     <div class="col-md-8 col-lg-8 px-lg-5">
-      {% if pitch_form %}
-      <div class="m-lg-3">
-      {{ wtf.quick_form(pitch_form) }}
-      {{simplemde.load}}
-    </div>
-      {% endif %}
+    
       {% if pitch %}
       <div class="card p-3 my-5 shadow rounded-1 border-0">
         <p class="d-flex justify-content-between">
@@ -39,9 +34,14 @@
         </div>
       </div>
 
-
+      {% if comment_form %}
+      <div class="m-lg-3">
+      {{ wtf.quick_form(comment_form) }}
+      {{simplemde.load}}
+    </div>
+      {% endif %}
       {% else %}
-      <p>No Pitches</p>
+      <p>No Pitch Found</p>
       {% endif %}
     </div>
 
