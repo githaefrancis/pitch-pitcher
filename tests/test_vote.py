@@ -16,3 +16,7 @@ class VoteModelTest(unittest.TestCase):
     self.assertEquals(self.new_vote.user,self.new_user)
     self.assertEquals(self.new_vote.pitch,self.new_pitch)
     self.assertEquals(self.new_vote.upvote,True)
+
+  def test_save_vote(self):
+    self.new_vote.save_vote()
+    self.assertTrue(len(Vote.query.all())==1)
