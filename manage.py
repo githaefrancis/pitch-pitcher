@@ -6,7 +6,7 @@ from flask_migrate import Migrate
 
 
 
-app=create_app('test')
+app=create_app('development')
 migrate=Migrate()
 migrate.init_app(app,db)
 
