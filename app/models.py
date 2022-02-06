@@ -66,6 +66,10 @@ class Comment(db.Model):
   time_posted=db.Column(db.DateTime,default=datetime.utcnow)
   content=db.Column(db.String(255))
   user_id=db.Column(db.Integer,db.ForeignKey("users.id"))
+
+  def save_comment(self):
+    db.session.add(self)
+    db.session.commit()
 class Category(db.Model):
   __tablename__='categories'
   id=db.Column(db.Integer,primary_key=True)

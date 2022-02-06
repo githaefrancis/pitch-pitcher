@@ -17,3 +17,8 @@ class CommentModelTest(unittest.TestCase):
     self.assertEquals(self.new_comment.user,self.new_user)
     self.assertEquals(self.new_comment.pitch,self.new_pitch)
     self.assertEquals(self.new_comment.content,'Good stuff')
+
+  def test_save_comment(self):
+    self.new_comment.save_comment()
+    self.assertTrue(len(Comment.query.all())==1)
+
