@@ -1,11 +1,26 @@
-{% macro displayPitchList(pitches_list) %}
-{% for pitch in pitches_list  %}
+{% macro displayPitchList(pitches_list) %} {% for pitch in pitches_list %}
 <div class="card p-3 mb-5 shadow rounded-1 border-0">
-
-  <p class="d-flex justify-content-between"><span><img src="" alt="By" class="img-fluid rounded-circle bg-dark" height="48px"> <span>{{pitch.user.username}}</span></span> <span>2 mins ago</span> <span class="badge bg-secondary">{{pitch.category.name.replace('_',' ',1)}}</span></p>
+  <p class="d-flex justify-content-between">
+    <span
+      ><img
+        src=""
+        alt="By"
+        class="img-fluid rounded-circle bg-dark"
+        height="48px"
+      />
+      <span>{{pitch.user.username}}</span></span
+    >
+    <span>2 mins ago</span>
+    <span class="badge bg-secondary"
+      >{{pitch.category.name.replace('_',' ',1)}}</span
+    >
+  </p>
   <!-- <p>I am very passionate about technology, I see everything techwise. I continue to work on projects so that when I get an opportunity to make a  difference, I will be ready.</p> -->
   <p>{{pitch.content}}</p>
-  <div class="activity d-flex justify-content-around"><span><span class="badge bg-primary">0</span> Upvote</span><span><span class="badge bg-danger">0</span>Downvote</span> <span><span class="badge bg-secondary">0</span>Comment</span></div>
+  <div class="activity d-flex justify-content-around">
+    <span><span class="badge bg-primary">0</span> Upvote</span
+    ><span><span class="badge bg-danger">0</span>Downvote</span>
+    <a href="{{url_for('main.single_pitch',pitch_id=pitch.id)}}"> <span><span class="badge bg-secondary">0</span>Comment</span></a>
+  </div>
 </div>
-{% endfor %}
-{% endmacro %}
+{% endfor %} {% endmacro %}

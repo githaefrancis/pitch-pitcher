@@ -27,3 +27,8 @@ def post():
     new_pitch=Pitch(category=Category.query.filter_by(name=pitch_form.category.data).first(),content=pitch_form.content.data,user=current_user)
     new_pitch.save_pitch()
     return redirect(url_for('main.index'))
+
+@main.route('/pitch/<pitch_id>',methods=['GET'])
+def single_pitch(pitch_id):
+  pitch=Pitch.query.filter_by(id=pitch_id).first()
+  return render_template('pitch.html',pitch=pitch)

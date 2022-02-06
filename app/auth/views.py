@@ -31,3 +31,4 @@ def register():
 def logout():
   logout_user()
   return redirect(url_for("main.index"))
+
