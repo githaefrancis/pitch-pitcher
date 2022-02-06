@@ -34,7 +34,8 @@ class TestConfig(Config):
   Args:
       Config: The configutation for test environment
   '''
-  pass
+  SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://moringa:1234@localhost/pitch_pitcher_test'
+  
 
 config_options={
   'development':DevConfig,
