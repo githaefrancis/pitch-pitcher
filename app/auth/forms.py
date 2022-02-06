@@ -11,8 +11,9 @@ from ..models import User
 
 
 class RegistrationForm(FlaskForm):
-  email=StringField('Your Email Address',validators=[InputRequired(),Email()])
+  
   name=StringField('Your Name',validators=[InputRequired()])
+  email=StringField('Your Email Address',validators=[InputRequired(),Email()])
   username=StringField('Your username',validators=[InputRequired()])
   password=PasswordField('Password',validators=[InputRequired(),EqualTo('password_confirm',message='Password must match')])
   password_confirm=PasswordField('Confirm Password',validators=[InputRequired()])

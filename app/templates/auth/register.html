@@ -1,12 +1,13 @@
 {% extends 'base.html' %}
 {% import 'bootstrap/wtf.html' as wtf%}
 {% block content %}
-{{register_form.email}}
 
 <div class="container d-flex justify-content-center">
-  <div class="card col-lg-6 p-3">
+  <div class="card col-lg-6 col-12 p-lg-3 p-2 mt-4">
+    <h3 class="center">Register</h3>
     {{wtf.quick_form(register_form)}}
-</div>
+    <p>Already have an account?   <a href="{{url_for('auth.login')}}">Sign in</a></p>
+  </div>
 </div>
 
 
