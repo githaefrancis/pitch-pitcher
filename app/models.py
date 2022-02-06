@@ -17,7 +17,8 @@ class User(UserMixin,db.Model):
   password_secure=db.Column(db.String(255))
   role_id=db.Column(db.Integer,db.ForeignKey("roles.id"))
   Pitches=db.relationship('Pitch',backref='user', lazy='dynamic')
-  Votes=db.relationship('Vote',backref='user',lazy='dynamic')  
+  Votes=db.relationship('Vote',backref='user',lazy='dynamic') 
+  Comments=db.relationship('Comment',backref='user',lazy='dynamic') 
   @property
   def password(self):
     raise AttributeError('You cannot read the password attribute')
@@ -59,6 +60,7 @@ class Comment(db.Model):
   pitch_id=db.Column(db.Integer,db.ForeignKey("pitches.id"))
   time_posted=db.Column(db.DateTime,default=datetime.utcnow)
   content=db.Column(db.String(255))
+  user_id=db.Column(db.Integer,db.ForeignKey("users.id"))
 class Category(db.Model):
   __tablename__='categories'
   id=db.Column(db.Integer,primary_key=True)
