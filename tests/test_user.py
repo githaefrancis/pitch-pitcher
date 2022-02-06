@@ -8,6 +8,7 @@ class UserModelTest(unittest.TestCase):
 
   def tearDown(self):
     User.query.delete()
+    
 
   def test_password_setter(self):
     self.assertTrue(self.new_user.password_secure is not None)
