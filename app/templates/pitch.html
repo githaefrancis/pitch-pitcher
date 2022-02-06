@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% import 'bootstrap/wtf.html' as wtf %}
+{% import 'macros.html' as macro %}
 {%block content%} 
 
 <div class="container">
@@ -39,7 +40,10 @@
       {{ wtf.quick_form(comment_form) }}
       {{simplemde.load}}
     </div>
+
+      {{macro.displayCommentList(comments)}}
       {% endif %}
+
       {% else %}
       <p>No Pitch Found</p>
       {% endif %}

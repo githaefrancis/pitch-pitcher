@@ -32,7 +32,8 @@ def post():
 def single_pitch(pitch_id):
   comment_form=CommentForm()
   pitch=Pitch.query.filter_by(id=pitch_id).first()
-  return render_template('pitch.html',pitch=pitch,comment_form=comment_form)
+  comments_list=Comment.query.filter_by(pitch=pitch).all()
+  return render_template('pitch.html',pitch=pitch,comment_form=comment_form,comments=comments_list)
 
 @main.route('/pitch/<pitch_id>',methods=['POST'])
 def comment(pitch_id):
@@ -41,4 +42,5 @@ def comment(pitch_id):
   if comment_form.validate_on_submit():
     comment=Comment(user=current_user,pitch=pitch,content=comment_form.comment.data)
     comment.save_comment()
+    
     return redirect(url_for('main.single_pitch',pitch_id=pitch_id))
