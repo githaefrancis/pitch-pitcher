@@ -17,6 +17,7 @@ class User(UserMixin,db.Model):
   password_secure=db.Column(db.String(255))
   role_id=db.Column(db.Integer,db.ForeignKey("roles.id"))
   Pitches=db.relationship('Pitch',backref='user', lazy='dynamic')
+  Votes=db.relationship('Vote',backref='user',lazy='dynamic')  
   @property
   def password(self):
     raise AttributeError('You cannot read the password attribute')
@@ -49,20 +50,26 @@ class Pitch(db.Model):
   id=db.Column(db.Integer,primary_key=True)
   user_id=db.Column(db.Integer,db.ForeignKey("users.id"))
   Comments=db.relationship('Comment',backref='pitch', lazy='dynamic')
-
+  category_id=db.Column(db.Integer,db.ForeignKey("categories.id"))
+  Votes=db.relationship('Vote',backref='pitch',lazy='dynamic')
 class Comment(db.Model):
   __tablename__='comments'
   id=db.Column(db.Integer,primary_key=True)
   pitch_id=db.Column(db.Integer,db.ForeignKey("pitches.id"))
-  category_id=db.Column(db.Integer,db.ForeignKey("categories.id"))
   time_posted=db.Column(db.DateTime,default=datetime.utcnow)
   content=db.Column(db.String(255))
 class Category(db.Model):
   __tablename__='categories'
   id=db.Column(db.Integer,primary_key=True)
   name=db.Column(db.String(255))
-  Comments=db.relationship('Comment',backref='category',lazy='dynamic')
+  Pitches=db.relationship('Pitch',backref='category',lazy='dynamic')
 
   
-
-  
+class Vote(db.Model):
+  __tablename__='votes'
+  id=db.Column(db.Integer,primary_key=True)
+  voted_on=db.Column(db.DateTime,default=datetime.utcnow)
+  downvote=db.Column(db.Boolean,default=False)
+  upvote=db.Column(db.Boolean,defualt=False)
+  user_id=db.Column(db.Integer,db.ForeignKey("users.id"))
+  pitch_id=db.Column(db.Integer,db.ForeignKey("pitches.id"))  
