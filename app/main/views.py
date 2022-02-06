@@ -9,7 +9,7 @@ from ..models import Category, Pitch
 def index():
   pitch_form=PitchForm()
 
-  pitches=Pitch.query.all()
+  pitches=Pitch.query.order_by(Pitch.id.desc()).all()
 
   return render_template('index.html',pitch_form=pitch_form,pitches=pitches)
 
