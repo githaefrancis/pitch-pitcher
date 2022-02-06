@@ -9,9 +9,9 @@ from ..models import Category, Pitch
 def index():
   pitch_form=PitchForm()
 
+  pitches=Pitch.query.all()
 
-
-  return render_template('index.html',pitch_form=pitch_form)
+  return render_template('index.html',pitch_form=pitch_form,pitches=pitches)
 
 @main.route('/user/<user_name>')
 def profile(user_name):

@@ -14,12 +14,16 @@
       {{simplemde.load}}
     </div>
       {% endif %}
-      {{macro.displayPitchList()}}
+      {% if pitches %}
+      {{macro.displayPitchList(pitches)}}
+      {% else %}
+      <p>No Pitches</p>
+      {% endif %}
     </div>
 
     <div class="col-md-4 col-lg-4">
 
-      <div class="card px-lg-5">
+      <div class="card px-lg-5 my-lg-5">
 
         <h5>Category</h5>
         <ul class="list-unstyled">
