@@ -11,7 +11,8 @@
       {% if pitch_form %}
       <div class="m-lg-3">
       {{ wtf.quick_form(pitch_form) }}
-      </div>
+      {{simplemde.load}}
+    </div>
       {% endif %}
       {{macro.displayPitchList()}}
     </div>
