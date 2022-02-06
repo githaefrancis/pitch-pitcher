@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% import 'bootstrap/wtf.html' as wtf%}
+{% block content %}
+{{register_form.email}}
+
+<div class="container d-flex justify-content-center">
+  <div class="card col-lg-6 p-3">
+    {{wtf.quick_form(register_form)}}
+</div>
+</div>
+
+
+{% endblock %}

@@ -8,3 +8,12 @@ a:hover{
   font-weight: bold;
 }
 
+/* .register-form{
+  width:50rem;
+} */
+
+.btn{
+  background-color: blue;
+  color:white;
+  margin-top: 2rem;
+}
