@@ -6,4 +6,6 @@ from . import main
 def index():
   return render_template('index.html')
 
-  
+@main.route('/user/<user_name>')
+def profile(user_name):
+  return '<h1> Hello</h1>'

@@ -24,3 +24,10 @@ def register():
     user.save_user()
     return redirect(url_for('auth.login'))
   return render_template('auth/register.html',register_form=register_form)
+
+
+@auth.route('/logout')
+@login_required
+def logout():
+  logout_user()
+  return redirect(url_for("main.index"))
