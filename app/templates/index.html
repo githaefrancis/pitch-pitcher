@@ -1,5 +1,6 @@
 {% extends 'base.html'%}
 {% import 'macros.html' as macro %}
+{% import 'bootstrap/wtf.html' as wtf%}
 {%block content%} 
 
 <div class="container">
@@ -7,7 +8,11 @@
   <div class="row mt-3">
 
     <div class="col-md-8 col-lg-8 px-lg-5">
-
+      {% if pitch_form %}
+      <div class="m-lg-3">
+      {{ wtf.quick_form(pitch_form) }}
+      </div>
+      {% endif %}
       {{macro.displayPitchList()}}
     </div>
 

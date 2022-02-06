@@ -16,4 +16,6 @@ a:hover{
   background-color: blue;
   color:white;
   margin-top: 2rem;
+  align-self: center;
+  margin-left:50%;
 }
