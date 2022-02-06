@@ -54,6 +54,11 @@ class Pitch(db.Model):
   category_id=db.Column(db.Integer,db.ForeignKey("categories.id"))
   Votes=db.relationship('Vote',backref='pitch',lazy='dynamic')
   pitch_date=db.Column(db.DateTime,default=datetime.utcnow)
+
+  def save_pitch(self):
+    db.session.add(self)
+    db.session.commit()
+
 class Comment(db.Model):
   __tablename__='comments'
   id=db.Column(db.Integer,primary_key=True)

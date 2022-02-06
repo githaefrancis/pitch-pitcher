@@ -16,3 +16,8 @@ class PitchModelTest(unittest.TestCase):
 
     self.assertEquals(self.new_pitch.user,self.new_user)
     self.assertEquals(self.new_pitch.category,Category.query.filter_by(name='interview').first())
+
+  def test_save_pitch(self):
+    self.new_user.save_user()
+    self.new_pitch.save_pitch()
+    self.assertTrue(len(Pitch.query.all())==1)
