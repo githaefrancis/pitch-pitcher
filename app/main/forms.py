@@ -1,6 +1,6 @@
 
 from flask_wtf import FlaskForm
-from wtforms import TextAreaField,SelectField,SubmitField
+from wtforms import TextAreaField,SelectField,SubmitField,BooleanField
 
 from wtforms.validators import InputRequired,DataRequired
 
@@ -12,3 +12,6 @@ class PitchForm(FlaskForm):
 class CommentForm(FlaskForm):
   comment=TextAreaField('',validators=[],render_kw={"placeholder": "Write a comment"})
   submit=SubmitField('Submit')
+
+class DownVoteForm(FlaskForm):
+  downvote=BooleanField()

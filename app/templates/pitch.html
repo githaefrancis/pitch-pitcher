@@ -21,7 +21,7 @@
             >{{pitch.category.name.replace('_',' ',1)}}</span
           >
         </p>
-        <!-- <p>I am very passionate about technology, I see everything techwise. I continue to work on projects so that when I get an opportunity to make a  difference, I will be ready.</p> -->
+        
         <p>{{pitch.content}}</p>
         <div class="activity d-flex justify-content-around">
           <span
@@ -49,6 +49,7 @@
       </div>
 
       {% if comment_form %}
+    
       <div class="m-lg-3">
         {{ wtf.quick_form(comment_form) }} {{simplemde.load}}
       </div>

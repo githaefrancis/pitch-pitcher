@@ -10,7 +10,10 @@
     <div class="col-md-8 col-lg-8 px-lg-5">
       
       {% if pitch_form %}
-      <div class="m-lg-3">
+      <button class="btn btn-primary mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePitchForm" aria-expanded="false" aria-controls="collapseExample">
+        New Pitch
+      </button>
+      <div class="m-lg-3 collapse" id="collapsePitchForm">
       {{ wtf.quick_form(pitch_form) }}
       {{simplemde.load}}
     </div>
@@ -21,7 +24,7 @@
       <h5 class="text-center">Pitches</h5>
       {% endif %}
       {% if pitches %}
-      {{macro.displayPitchList(pitches,comments,upvotes,downvotes)}}
+      {{macro.displayPitchList(pitches,comments,upvotes,downvotes,downvote_form)}}
       {% else %}
       <p>No Pitches</p>
       {% endif %}

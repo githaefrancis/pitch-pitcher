@@ -4,7 +4,7 @@ from unicodedata import name
 from flask import redirect, render_template, url_for
 from flask_login import current_user, login_required
 from . import main
-from .forms import PitchForm,CommentForm
+from .forms import PitchForm,CommentForm,DownVoteForm
 from ..models import Category, Comment, Pitch
 
 from .request import get_all_comments, get_all_downvotes, get_all_upvotes
@@ -12,12 +12,12 @@ from .request import get_all_comments, get_all_downvotes, get_all_upvotes
 @main.route('/',methods=['GET'])
 def index():
   pitch_form=PitchForm()
-
+  downvote_form=DownVoteForm()
   pitches=Pitch.query.order_by(Pitch.id.desc()).all()
   comments=get_all_comments(pitches)
   upvotes=get_all_upvotes(pitches)
   downvotes=get_all_downvotes(pitches)
-  return render_template('index.html',pitch_form=pitch_form,pitches=pitches,comments=comments,upvotes=upvotes,downvotes=downvotes)
+  return render_template('index.html',pitch_form=pitch_form,pitches=pitches,comments=comments,upvotes=upvotes,downvotes=downvotes,downvote_form=downvote_form)
 
 # @main.route('/user/<user_name>')
 # def profile(user_name):
