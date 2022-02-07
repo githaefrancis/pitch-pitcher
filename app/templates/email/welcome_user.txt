@@ -1,0 +1,8 @@
+Hello {{user.username}}
+
+Welcome to Pitchpitcher.
+
+Thank you for signing Up and joining our community of perfect pitches. Enjoy and contribute your favorite pitches.
+
+Regards,
+Pitch Pitcher Team

@@ -4,6 +4,8 @@ from .forms import RegistrationForm,LoginForm
 from .. import db
 from flask_login import login_user,logout_user,login_required
 from ..models import User,Role
+from ..email import mail_message
+
 @auth.route('/login',methods=['GET','POST'])
 def login():
   login_form=LoginForm()
@@ -22,6 +24,8 @@ def register():
   if register_form.validate_on_submit():
     user=User(name=register_form.name.data,email=register_form.email.data,username=register_form.username.data,password=register_form.password.data,role=Role.query.filter_by(name='User').first())
     user.save_user()
+
+    mail_message("Welcome to Pitch Pitcher","email/welcome_user",user.email,user=user)
     return redirect(url_for('auth.login'))
   return render_template('auth/register.html',register_form=register_form)
 
