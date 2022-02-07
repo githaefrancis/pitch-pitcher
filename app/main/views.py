@@ -55,4 +55,8 @@ def comment(pitch_id):
 @login_required
 def profile():
   my_pitches=Pitch.query.filter_by(user=current_user).order_by(Pitch.id.desc()).all()
-  return render_template('profile/profile.html',user=current_user,pitches=my_pitches)
+  comments=get_all_comments(my_pitches)
+  upvotes=get_all_upvotes(my_pitches)
+  downvotes=get_all_downvotes(my_pitches)
+  return render_template('index.html',pitches=my_pitches,user=current_user,comments=comments,upvotes=upvotes,downvotes=downvotes)
+  # return render_template('profile/profile.html',user=current_user,pitches=my_pitches)
