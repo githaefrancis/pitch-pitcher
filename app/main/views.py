@@ -1,4 +1,6 @@
 
+from nis import cat
+from unicodedata import name
 from flask import redirect, render_template, url_for
 from flask_login import current_user, login_required
 from . import main
@@ -60,3 +62,12 @@ def profile():
   downvotes=get_all_downvotes(my_pitches)
   return render_template('index.html',pitches=my_pitches,user=current_user,comments=comments,upvotes=upvotes,downvotes=downvotes)
   # return render_template('profile/profile.html',user=current_user,pitches=my_pitches)
+
+
+@main.route('/category/<category_name>')
+def category(category_name):
+  category_pitches=Pitch.query.filter_by(category=Category.query.filter_by(name=category_name).first()).order_by(Pitch.id.desc()).all()
+  comments=get_all_comments(category_pitches)
+  upvotes=get_all_upvotes(category_pitches)
+  downvotes=get_all_downvotes(category_pitches)
+  return render_template('index.html',pitches=category_pitches,comments=comments,upvotes=upvotes,downvotes=downvotes,category=category_name)

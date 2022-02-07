@@ -8,11 +8,17 @@
   <div class="row mt-3">
 
     <div class="col-md-8 col-lg-8 px-lg-5">
+      
       {% if pitch_form %}
       <div class="m-lg-3">
       {{ wtf.quick_form(pitch_form) }}
       {{simplemde.load}}
     </div>
+      {% endif %}
+      {% if category %}
+      <h5 class="text-center">{{category.replace('_',' ',1)}} Pitches</h5>
+      {% else %}
+      <h5 class="text-center">Pitches</h5>
       {% endif %}
       {% if pitches %}
       {{macro.displayPitchList(pitches,comments,upvotes,downvotes)}}
@@ -27,10 +33,10 @@
 
         <h5>Category</h5>
         <ul class="list-unstyled">
-          <li class="m-2"><a href=""> Interview Pitches</a></li>
-          <li class="m-2"><a href=""> Pickup Lines</a></li>
-          <li class="m-2"><a href=""> Product Pitches </a></li>
-          <li class="m-2"><a href=""> Promotional Pitches</a></li>
+          <li class="m-2"><a href="{{url_for('main.category',category_name='interview')}}"> Interview Pitches</a></li>
+          <li class="m-2"><a href="{{url_for('main.category',category_name='pickup_lines')}}"> Pickup Lines</a></li>
+          <li class="m-2"><a href="{{url_for('main.category',category_name='product_pitch')}}"> Product Pitches </a></li>
+          <li class="m-2"><a href="{{url_for('main.category',category_name='promotional_pitch')}}"> Promotional Pitches</a></li>
 
         </ul>
       </div>
