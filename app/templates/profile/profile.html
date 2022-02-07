@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+
+  <div class="row mt-3">
+
+    <div class="col-md-8 col-lg-8 px-lg-5">
+      {% if pitch_form %}
+      <div class="m-lg-3">
+      {{ wtf.quick_form(pitch_form) }}
+      {{simplemde.load}}
+    </div>
+      {% endif %}
+      {% if pitches %}
+      {{macro.displayPitchList(pitches)}}
+      {% else %}
+      <p>No Pitches</p>
+      {% endif %}
+    </div>
+
+    <div class="col-md-4 col-lg-4">
+
+      <div class="card px-lg-5 my-lg-5">
+
+        <h5>Profile</h5>
+       {% if user%}
+       <p>Username: {{user.username}}</p>
+       <p>Name: {{user.name}}</p>
+       <p>Email: {{user.email}}</p>
+       
+
+
+       {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

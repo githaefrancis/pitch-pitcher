@@ -13,9 +13,9 @@ def index():
 
   return render_template('index.html',pitch_form=pitch_form,pitches=pitches)
 
-@main.route('/user/<user_name>')
-def profile(user_name):
-  return '<h1> Hello</h1>'
+# @main.route('/user/<user_name>')
+# def profile(user_name):
+#   return '<h1> Hello</h1>'
 
 
 @main.route('/',methods=['POST'])
@@ -44,3 +44,9 @@ def comment(pitch_id):
     comment.save_comment()
     
     return redirect(url_for('main.single_pitch',pitch_id=pitch_id))
+
+
+@main.route('/user/profile')
+@login_required
+def profile():
+  return render_template('profile/profile.html',user=current_user)
