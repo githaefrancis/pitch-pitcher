@@ -5,13 +5,17 @@ from . import main
 from .forms import PitchForm,CommentForm
 from ..models import Category, Comment, Pitch
 
+from .request import get_all_comments, get_all_downvotes, get_all_upvotes
+
 @main.route('/',methods=['GET'])
 def index():
   pitch_form=PitchForm()
 
   pitches=Pitch.query.order_by(Pitch.id.desc()).all()
-
-  return render_template('index.html',pitch_form=pitch_form,pitches=pitches)
+  comments=get_all_comments(pitches)
+  upvotes=get_all_upvotes(pitches)
+  downvotes=get_all_downvotes(pitches)
+  return render_template('index.html',pitch_form=pitch_form,pitches=pitches,comments=comments,upvotes=upvotes,downvotes=downvotes)
 
 # @main.route('/user/<user_name>')
 # def profile(user_name):
