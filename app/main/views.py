@@ -49,4 +49,5 @@ def comment(pitch_id):
 @main.route('/user/profile')
 @login_required
 def profile():
-  return render_template('profile/profile.html',user=current_user)
+  my_pitches=Pitch.query.filter_by(user=current_user).order_by(Pitch.id.desc()).all()
+  return render_template('profile/profile.html',user=current_user,pitches=my_pitches)

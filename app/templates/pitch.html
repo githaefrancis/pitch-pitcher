@@ -44,7 +44,7 @@
                   class="fa fa-comment px-3 fs-5 text-secondary rounded border-0"
                 ></i></a></span
             >
-            <span class="badge bg-secondary">0</span>Comment</span>
+            <span class="badge bg-secondary">{{comments | length}}</span>Comment</span>
         </div>
       </div>
 
@@ -53,7 +53,14 @@
         {{ wtf.quick_form(comment_form) }} {{simplemde.load}}
       </div>
 
-      {{macro.displayCommentList(comments)}} {% endif %} {% else %}
+      {% if comments%}
+      {{macro.displayCommentList(comments)}} 
+      {% else%}
+      <p>No comments yet</p>
+      {%endif%}
+      {% endif %} 
+      
+      {% else %}
       <p>No Pitch Found</p>
       {% endif %}
     </div>
