@@ -16,7 +16,7 @@
         <div class="navbar-nav">
 
           {% if current_user.is_authenticated %}
-          <a class="nav-link mx-lg-5" aria-current="page" href="{{url_for('main.profile',user_name=current_user.username)}}">Hi <strong> {{current_user.username}} </strong> </a>
+          <a class="nav-link mx-lg-5" aria-current="page" href="{{url_for('main.profile',user_name=current_user.username)}}">Hi <strong> {{current_user.username}} </strong><span class="mx-lg-5"> Profile</span> </a>
           <a class="nav-link" aria-current="page" href="{{url_for('auth.logout')}}">Logout</a>
 
           {%else%}

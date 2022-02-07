@@ -32,7 +32,7 @@ def post():
 def single_pitch(pitch_id):
   comment_form=CommentForm()
   pitch=Pitch.query.filter_by(id=pitch_id).first()
-  comments_list=Comment.query.filter_by(pitch=pitch).all()
+  comments_list=Comment.query.filter_by(pitch=pitch).order_by(Comment.id.desc()).all()
   return render_template('pitch.html',pitch=pitch,comment_form=comment_form,comments=comments_list)
 
 @main.route('/pitch/<pitch_id>',methods=['POST'])
