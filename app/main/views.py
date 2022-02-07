@@ -36,6 +36,7 @@ def single_pitch(pitch_id):
   return render_template('pitch.html',pitch=pitch,comment_form=comment_form,comments=comments_list)
 
 @main.route('/pitch/<pitch_id>',methods=['POST'])
+@login_required
 def comment(pitch_id):
   comment_form=CommentForm()
   pitch=Pitch.query.filter_by(id=pitch_id).first()
