@@ -17,6 +17,17 @@ a:hover{
   color:white;
   margin-top: 2rem;
   align-self: center;
-  margin-left:50%;
-  transform: translate(-50%,0);
+  margin-left:80%;
+  /* transform: translate(-50%,0); */
+}
+
+
+.downvote.active{
+  background-color: red;
+  color:white!important;
+}
+
+.upvote.active{
+  background-color: blue; 
+  color: white !important;;
 }

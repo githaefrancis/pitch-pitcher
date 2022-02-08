@@ -5,7 +5,7 @@ from flask import redirect, render_template, url_for
 from flask_login import current_user, login_required
 from . import main
 from .forms import PitchForm,CommentForm,DownVoteForm
-from ..models import Category, Comment, Pitch
+from ..models import Category, Comment, Pitch,Vote
 
 from .request import get_all_comments, get_all_downvotes, get_all_upvotes
 
@@ -71,3 +71,30 @@ def category(category_name):
   upvotes=get_all_upvotes(category_pitches)
   downvotes=get_all_downvotes(category_pitches)
   return render_template('index.html',pitches=category_pitches,comments=comments,upvotes=upvotes,downvotes=downvotes,category=category_name)
+
+
+@main.route('/pitch/<pitch_id>/<action>')
+def vote(pitch_id,action):
+  #check for existing vote
+  target_pitch=Pitch.query.filter_by(id=pitch_id).first()
+  existing_vote=Vote.query.filter_by(user=current_user,pitch=target_pitch).first()
+
+  if existing_vote:
+    if action=='upvote':
+      existing_vote.upvote=True
+      existing_vote.downvote=False
+      existing_vote.save_vote()
+    elif action=='downvote':
+      existing_vote.downvote=True
+      existing_vote.upvote=False
+      existing_vote.save_vote()
+  else:
+    if action=='upvote':
+      new_vote=Vote(upvote=True,user=current_user,pitch=target_pitch)
+      new_vote.save_vote()
+
+    elif action=='downvote':
+      new_vote=Vote(downvote=True,user=current_user,pitch=target_pitch)
+      new_vote.save_vote()
+
+  return redirect(url_for('main.index'))
