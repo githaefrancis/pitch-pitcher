@@ -83,11 +83,11 @@ def vote(pitch_id,action):
 
   if existing_vote:
     if action=='upvote':
-      existing_vote.upvote=True
+      existing_vote.upvote=not existing_vote.upvote
       existing_vote.downvote=False
       existing_vote.save_vote()
     elif action=='downvote':
-      existing_vote.downvote=True
+      existing_vote.downvote=not existing_vote.downvote
       existing_vote.upvote=False
       existing_vote.save_vote()
   else:
