@@ -49,8 +49,10 @@
       </div>
 
       {% if comment_form %}
-    
-      <div class="m-lg-3">
+      <button class="btn btn-primary mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleCommentForm" aria-expanded="false" aria-controls="collapseExample">
+        Write Comment
+      </button>
+      <div class="m-lg-3 collapse" id="collapsibleCommentForm">
         {{ wtf.quick_form(comment_form) }} {{simplemde.load}}
       </div>
 
