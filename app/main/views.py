@@ -40,7 +40,14 @@ def single_pitch(pitch_id):
   comment_form=CommentForm()
   pitch=Pitch.query.filter_by(id=pitch_id).first()
   comments_list=Comment.query.filter_by(pitch=pitch).order_by(Comment.id.desc()).all()
-  return render_template('pitch.html',pitch=pitch,comment_form=comment_form,comments=comments_list)
+  comments_count=get_all_comments([pitch])
+  upvotes=get_all_upvotes([pitch])
+  downvotes=get_all_downvotes([pitch])
+  if current_user.is_authenticated:
+    user_votes=get_user_votes([pitch])
+  else:
+    user_votes=None
+  return render_template('pitch.html',pitch=pitch,comment_form=comment_form,comments=comments_list,comments_count=comments_count,downvotes=downvotes,upvotes=upvotes,user_votes=user_votes)
 
 @main.route('/pitch/<pitch_id>',methods=['POST'])
 @login_required
