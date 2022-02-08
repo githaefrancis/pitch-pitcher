@@ -14,12 +14,19 @@ document.addEventListener('click',(e)=>{
   console.log(buttonCLickedName)
   if (buttonVote.classList.contains('active') && nameOfNode=='I'){
 
-    buttonVote.classList.remove('active')
+    // buttonVote.classList.remove('active')
+    if(buttonCLickedName=='upvote'){
+      location.href=`/pitch/${pitch_id}/upvote`
+  }
+  else if(buttonCLickedName=='downvote'){
+    location.href=`/pitch/${pitch_id}/downvote`
+     console.log('I am a downvote')
+  }
 
     
   }
   else if(!buttonVote.classList.contains('active') && nameOfNode=='I'){
-    buttonVote.classList.add('active')
+    // buttonVote.classList.add('active')
     if(buttonCLickedName=='upvote'){
         location.href=`/pitch/${pitch_id}/upvote`
     }
@@ -27,8 +34,8 @@ document.addEventListener('click',(e)=>{
       location.href=`/pitch/${pitch_id}/downvote`
        console.log('I am a downvote')
     }
-    closestdiv=buttonVote.closest('div').getAttribute('id')
-    console.log(closestdiv)
+    // closestdiv=buttonVote.closest('div').getAttribute('id')
+    // console.log(closestdiv)
     // location.href='/gooo'
     // console.log(buttonVote.closest('[name=downvote]'))
     // if (buttonCLickedName=='upvote' && buttonVote.closest('i').classList.contains('active')){

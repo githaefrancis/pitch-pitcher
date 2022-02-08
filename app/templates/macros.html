@@ -1,5 +1,5 @@
 {% import 'bootstrap/wtf.html' as wtf %}
-{% macro displayPitchList(pitches_list,comments,upvotes,downvotes,downvote_form) %} {% for pitch in pitches_list %}
+{% macro displayPitchList(pitches_list,comments,upvotes,downvotes,downvote_form,user_votes) %} {% for pitch in pitches_list %}
 <div class="card p-3 mb-5 shadow rounded-1 border-0">
   <p class="d-flex justify-content-between">
     <span
@@ -22,12 +22,12 @@
     <span
       ><span class="badge  mx-1"
         ><button class="rounded-pill border-0 px-0 " ><i
-            class="fa fa-thumbs-up px-3 rounded-pill fs-5 text-secondary rounded border-0 upvote {%if downvotes[pitch.id]%}{{pitch.id}}{%endif%}" name="upvote" value="like"
+            class="fa fa-thumbs-up px-3 rounded-pill fs-5 text-secondary rounded border-0 upvote {{'active' if user_votes[pitch.id]=='upvote'}}" name="upvote" value="like"
           ></i></button></span
       ><span class="badge bg-primary" >{{upvotes[pitch.id] or 0}}</span> Upvote</span
     ><span><span class="badge  mx-1"
       ><button class="rounded-pill border-0  px-0" ><i
-          class="fa fa-thumbs-down px-3 rounded-pill fs-5 text-secondary border-0 downvote" name="downvote" value="dislike"
+          class="fa fa-thumbs-down px-3 rounded-pill fs-5 text-secondary border-0 downvote {{'active' if user_votes[pitch.id]=='downvote'}}" name="downvote" value="dislike"
         ></i></button></span
     ><span class="badge bg-danger">{{downvotes[pitch.id] or 0}}</span>Downvote</span>
     <span>

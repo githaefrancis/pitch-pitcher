@@ -7,7 +7,7 @@ from . import main
 from .forms import PitchForm,CommentForm,DownVoteForm
 from ..models import Category, Comment, Pitch,Vote
 
-from .request import get_all_comments, get_all_downvotes, get_all_upvotes
+from .request import get_all_comments, get_all_downvotes, get_all_upvotes, get_user_votes
 
 @main.route('/',methods=['GET'])
 def index():
@@ -17,7 +17,8 @@ def index():
   comments=get_all_comments(pitches)
   upvotes=get_all_upvotes(pitches)
   downvotes=get_all_downvotes(pitches)
-  return render_template('index.html',pitch_form=pitch_form,pitches=pitches,comments=comments,upvotes=upvotes,downvotes=downvotes,downvote_form=downvote_form)
+  user_votes=get_user_votes(pitches)
+  return render_template('index.html',pitch_form=pitch_form,pitches=pitches,comments=comments,upvotes=upvotes,downvotes=downvotes,downvote_form=downvote_form,user_votes=user_votes)
 
 # @main.route('/user/<user_name>')
 # def profile(user_name):
@@ -60,7 +61,8 @@ def profile():
   comments=get_all_comments(my_pitches)
   upvotes=get_all_upvotes(my_pitches)
   downvotes=get_all_downvotes(my_pitches)
-  return render_template('index.html',pitches=my_pitches,user=current_user,comments=comments,upvotes=upvotes,downvotes=downvotes)
+  user_votes=get_user_votes(my_pitches)
+  return render_template('index.html',pitches=my_pitches,user=current_user,comments=comments,upvotes=upvotes,downvotes=downvotes,user_votes=user_votes)
   # return render_template('profile/profile.html',user=current_user,pitches=my_pitches)
 
 
