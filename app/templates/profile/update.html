@@ -1,0 +1,40 @@
+{%extends 'base.html'%}
+
+{% block content %}
+
+<div class="container">
+<div class="row">
+  <div class="col-lg-8 col-md-8">
+    <h1 class="my-5 px-5">Edit profile</h1>
+    <div class="card shadow-sm">
+
+      <form action="{{url_for('main.update_profile',username=current_user.username)}}" method="POST" enctype="multipart/form-data" class="m-lg-5 p-lg-5 m-2 p-2">
+
+        <label for="bio" class="form-label">Bio</label>
+        <input type="text" name="bio" id="bio" class="form-control my-3">
+        
+        <input type="file" name="photo" class="form-control" required>
+        <input type="submit" class="my-3">
+
+      </form>
+
+    </div>
+  </div>
+
+  <div class="col-lg-4 col-md-4">
+    <div class="my-5 px-3">
+    {% if user %}
+    <img src="{{url_for('static',filename=user.profile_pic_path)}}" alt="" class="rounded-3 img-fluid">
+    <p class="mt-5">Username: {{user.username}}</p>
+    <p>Name: {{user.name}}</p>
+    <p>Email: {{user.email}}</p>
+    <p>Bio: {{user.bio}}</p>
+    {% endif %}
+  </div>
+  </div>
+
+</div>
+</div>
+
+
+{% endblock %}
