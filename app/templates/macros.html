@@ -3,12 +3,17 @@
 <div class="card p-3 mb-5 shadow rounded-1 border-0">
   <p class="d-flex justify-content-between">
     <span
-      ><img
-        src=""
-        alt="By"
-        class="img-fluid rounded-circle bg-dark"
-        height="48px"
+      >
+      {% if pitch.user.profile_pic_path%}
+    <img src="{{url_for('static',filename=pitch.user.profile_pic_path)}}" alt="" class="rounded-circle img-fluid avatar">
+    {%else %}
+      <img
+        src="{{url_for('static',filename='photos/avatar.png')}}"
+        alt=""
+        class="img-fluid rounded-circle bg-dark avatar"
+        
       />
+      {% endif %}
       <span>{{pitch.user.username}}</span></span
     >
     <span>Posted: {{pitch.pitch_date.strftime('%Y-%m-%d %H:%M')}}</span>

@@ -42,3 +42,7 @@ margin-bottom: 0px!important;
 .sign-in{
   min-height: 100vh;
 }
+
+.avatar{
+  height:36px;
+}

@@ -24,7 +24,11 @@
   <div class="col-lg-4 col-md-4">
     <div class="my-5 px-3">
     {% if user %}
+    {% if user.profile_pic_path%}
     <img src="{{url_for('static',filename=user.profile_pic_path)}}" alt="" class="rounded-3 img-fluid">
+    {%else %}
+    <img src="{{url_for('static',filename='photos/avatar.png')}}" alt="" class="rounded-3 img-fluid">
+    {% endif %}
     <p class="mt-5">Username: {{user.username}}</p>
     <p>Name: {{user.name}}</p>
     <p>Email: {{user.email}}</p>
