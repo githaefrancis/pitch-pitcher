@@ -15,15 +15,20 @@
   {{simplemde.js}}
 </head>
 <body>
+  
   {% block navbar %}
   {% include 'navbar.html'%}
   {% endblock %}
+  <div class="main">
   {%block content%}
 
 
   {% endblock %}
+</div>
+<footer>
 
-
+  <div class="bg-dark text-center text-white mb-0 mt-5 py-5">&copy;2022 Francis Githae <i class="fa fa-envelope mx-2"></i> mureithigithae@gmail.com</div>
+</footer>
 
 </body>
 </html>

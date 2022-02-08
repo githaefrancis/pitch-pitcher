@@ -31,3 +31,14 @@ a:hover{
   background-color: blue; 
   color: white !important;;
 }
+.main{
+
+  min-height:calc(80vh);
+}
+
+footer{
+margin-bottom: 0px!important;
+}
+.sign-in{
+  min-height: 100vh;
+}

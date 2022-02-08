@@ -11,7 +11,7 @@
       />
       <span>{{pitch.user.username}}</span></span
     >
-    <span>2 mins ago</span>
+    <span>Posted: {{pitch.pitch_date.strftime('%Y-%m-%d %H:%M')}}</span>
     <span class="badge bg-secondary"
       >{{pitch.category.name.replace('_',' ',1)}}</span
     >
@@ -48,7 +48,7 @@
 {% for comment in comments_list%}
 <div class="card my-3 p-2 border-0 shadow-sm">
 
-  <p >Comment by {{comment.user.username}} on {{comment.time_posted}}</p>
+  <p >Comment by <strong>{{comment.user.username}}</strong> on {{comment.time_posted.strftime('%Y-%m-%d %H:%M')}}</p>
   <p>{{comment.content}}</p>
   <hr>
 </div>
