@@ -1,7 +1,7 @@
 
 from nis import cat
 from unicodedata import name
-from flask import redirect, render_template, url_for
+from flask import redirect, render_template, url_for,request
 from flask_login import current_user, login_required
 from . import main
 from .forms import PitchForm,CommentForm,DownVoteForm
@@ -12,17 +12,17 @@ from .request import get_all_comments, get_all_downvotes, get_all_upvotes, get_u
 @main.route('/',methods=['GET'])
 def index():
   pitch_form=PitchForm()
-  downvote_form=DownVoteForm()
+  # downvote_form=DownVoteForm()
   pitches=Pitch.query.order_by(Pitch.id.desc()).all()
   comments=get_all_comments(pitches)
   upvotes=get_all_upvotes(pitches)
   downvotes=get_all_downvotes(pitches)
-  user_votes=get_user_votes(pitches)
-  return render_template('index.html',pitch_form=pitch_form,pitches=pitches,comments=comments,upvotes=upvotes,downvotes=downvotes,downvote_form=downvote_form,user_votes=user_votes)
+  if current_user.is_authenticated:
+    user_votes=get_user_votes(pitches)
+  else:
+    user_votes=None
+  return render_template('index.html',pitch_form=pitch_form,pitches=pitches,comments=comments,upvotes=upvotes,downvotes=downvotes,user_votes=user_votes)
 
-# @main.route('/user/<user_name>')
-# def profile(user_name):
-#   return '<h1> Hello</h1>'
 
 
 @main.route('/',methods=['POST'])
@@ -62,7 +62,7 @@ def profile():
   upvotes=get_all_upvotes(my_pitches)
   downvotes=get_all_downvotes(my_pitches)
   user_votes=get_user_votes(my_pitches)
-  return render_template('index.html',pitches=my_pitches,user=current_user,comments=comments,upvotes=upvotes,downvotes=downvotes,user_votes=user_votes)
+  return render_template('profile/profile.html',pitches=my_pitches,user=current_user,comments=comments,upvotes=upvotes,downvotes=downvotes,user_votes=user_votes)
   # return render_template('profile/profile.html',user=current_user,pitches=my_pitches)
 
 
@@ -72,13 +72,19 @@ def category(category_name):
   comments=get_all_comments(category_pitches)
   upvotes=get_all_upvotes(category_pitches)
   downvotes=get_all_downvotes(category_pitches)
-  return render_template('index.html',pitches=category_pitches,comments=comments,upvotes=upvotes,downvotes=downvotes,category=category_name)
+  if(current_user.is_authenticated):
+    user_votes=get_user_votes(category_pitches)
+  else:
+    user_votes=None
+  return render_template('index.html',pitches=category_pitches,comments=comments,upvotes=upvotes,downvotes=downvotes,category=category_name,user_votes=user_votes)
 
 
 @main.route('/pitch/<pitch_id>/<action>')
+@login_required
 def vote(pitch_id,action):
   #check for existing vote
   target_pitch=Pitch.query.filter_by(id=pitch_id).first()
+  # existing_vote=None
   existing_vote=Vote.query.filter_by(user=current_user,pitch=target_pitch).first()
 
   if existing_vote:
@@ -99,4 +105,4 @@ def vote(pitch_id,action):
       new_vote=Vote(downvote=True,user=current_user,pitch=target_pitch)
       new_vote.save_vote()
 
-  return redirect(url_for('main.index'))
+  return redirect(request.referrer)

@@ -1,13 +1,16 @@
 from flask import render_template,redirect,url_for,flash,request
 from . import auth
+from .. import main
 from .forms import RegistrationForm,LoginForm
 from .. import db
-from flask_login import login_user,logout_user,login_required
+from flask_login import current_user, login_user,logout_user,login_required
 from ..models import User,Role
 from ..email import mail_message
 
 @auth.route('/login',methods=['GET','POST'])
 def login():
+  if current_user.is_authenticated:
+    return redirect(url_for('main.index'))
   login_form=LoginForm()
   if login_form.validate_on_submit():
     user=User.query.filter_by(email=login_form.email.data).first()
@@ -20,6 +23,8 @@ def login():
 
 @auth.route('/register',methods=["GET","POST"])
 def register():
+  if current_user.is_authenticated:
+    return redirect(url_for('main.index'))
   register_form=RegistrationForm()
   if register_form.validate_on_submit():
     user=User(name=register_form.name.data,email=register_form.email.data,username=register_form.username.data,password=register_form.password.data,role=Role.query.filter_by(name='User').first())
