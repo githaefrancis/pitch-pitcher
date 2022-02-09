@@ -1,5 +1,7 @@
 from ast import Pass
 import email
+
+from flask import flash
 from . import views,forms
 
 from flask_wtf import FlaskForm
@@ -21,10 +23,12 @@ class RegistrationForm(FlaskForm):
 
   def validate_email(self,data_field):
     if User.query.filter_by(email=data_field.data).first():
+      flash('There is an account with that email','error')
       raise ValidationError('There is an account with that email')
 
   def validate_username(self,data_field):
     if User.query.filter_by(email=data_field.data).first():
+      flash('That username is taken','error')
       raise ValidationError('That username is taken')
 
 class LoginForm(FlaskForm):

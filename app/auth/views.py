@@ -16,8 +16,9 @@ def login():
     user=User.query.filter_by(email=login_form.email.data).first()
     if user is not None and user.verify_password(login_form.password.data):
       login_user(user,login_form.remember)
+      flash('Login Successful,Welcome','success')
       return redirect(request.args.get('next') or url_for('main.index'))
-    flash('Invalid username or password')
+    flash('Invalid username or password','error')
   title="Pitch Pitcher Login"
   return render_template('auth/login.html',login_form=login_form)
 
@@ -31,6 +32,7 @@ def register():
     user.save_user()
 
     mail_message("Welcome to Pitch Pitcher","email/welcome_user",user.email,user=user)
+    flash('Registration Successful,Welcome','success')
     return redirect(url_for('auth.login'))
   return render_template('auth/register.html',register_form=register_form)
 

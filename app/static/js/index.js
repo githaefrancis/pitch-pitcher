@@ -1,6 +1,6 @@
 
-document.addEventListener("DOMContentLoaded", (event) => {
-  
+// document.addEventListener("DOMContentLoaded", (event) => {
+  $(()=>{
 
   document.addEventListener("click", (e) => {
     buttonVote = e.target;
@@ -22,4 +22,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
       }
     }
   });
-});
+
+setTimeout(function() {
+    $('.flashes').fadeOut('fast');
+}, 10000);
+
+})
+// });

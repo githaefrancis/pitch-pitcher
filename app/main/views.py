@@ -1,6 +1,4 @@
 
-from nis import cat
-from unicodedata import name
 from flask import redirect, render_template, url_for,request,flash
 from flask_login import current_user, login_required
 from . import main
@@ -116,7 +114,7 @@ def vote(pitch_id,action):
     elif action=='downvote':
       new_vote=Vote(downvote=True,user=current_user,pitch=target_pitch)
       new_vote.save_vote()
-
+  flash('Vote updated','success')
   return redirect(request.referrer)
 
 def allowed_file(filename):
@@ -129,7 +127,7 @@ def allowed_file(filename):
 def update_profile(username):
   user=User.query.filter_by(username=current_user.username).first()
   if request.method=='POST':
-    flash('Please provide a valid file')
+    
     photo=request.files['photo']
     if photo and allowed_file(photo.filename):
       bio=request.form.get('bio')
@@ -140,6 +138,8 @@ def update_profile(username):
         user.bio=bio
         user.save_user()
       user.save_user()
+      flash('Update Successful','success')
     else:
-      flash('Please provide a valid file')
+      flash('Please provide a valid file','error')
+
   return render_template('profile/update.html',user=current_user)
