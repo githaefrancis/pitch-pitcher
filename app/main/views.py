@@ -1,7 +1,7 @@
 
 from nis import cat
 from unicodedata import name
-from flask import redirect, render_template, url_for,request
+from flask import redirect, render_template, url_for,request,flash
 from flask_login import current_user, login_required
 from . import main
 from .forms import PitchForm,CommentForm,DownVoteForm
@@ -10,6 +10,9 @@ from ..models import Category, Comment, Pitch,Vote,User
 from .request import get_all_comments, get_all_downvotes, get_all_upvotes, get_user_votes
 from werkzeug.utils import secure_filename
 import os
+
+ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}
+
 
 @main.route('/',methods=['GET'])
 def index():
@@ -116,17 +119,27 @@ def vote(pitch_id,action):
 
   return redirect(request.referrer)
 
+def allowed_file(filename):
+    return '.' in filename and \
+           filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
+
+
 @main.route('/user/<username>/profile/update',methods=['GET','POST'])
 @login_required
 def update_profile(username):
   user=User.query.filter_by(username=current_user.username).first()
-  if 'photo' in request.files:
+  if request.method=='POST':
+    flash('Please provide a valid file')
     photo=request.files['photo']
-    bio=request.form.get('bio')
-    filename=secure_filename(photo.filename)
-    photo.save(os.path.join('app/static/photos',filename))
-    user.profile_pic_path=f'photos/{filename}'
-    if bio:
-      user.bio=bio
+    if photo and allowed_file(photo.filename):
+      bio=request.form.get('bio')
+      filename=secure_filename(photo.filename)
+      photo.save(os.path.join('app/static/photos',filename))
+      user.profile_pic_path=f'photos/{filename}'
+      if bio:
+        user.bio=bio
+        user.save_user()
       user.save_user()
+    else:
+      flash('Please provide a valid file')
   return render_template('profile/update.html',user=current_user)

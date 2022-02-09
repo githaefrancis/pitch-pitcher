@@ -1,0 +1,2305 @@
+<!DOCTYPE html>
+<!-- saved from url=(0087)https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353 -->
+<html class="" dir="ltr" lang="en-GB"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="sentry-trace" content="826c2cc39b2d4a8c8eb9795b8d097b5f-e9195e4b07ab7c59-0">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/dist/fonts/lato/extended/Lato-Regular-bd03a2cc27.woff2" as="font" type="font/woff2" crossorigin="anonmyous">
+    <link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/dist/fonts/lato/extended/Lato-Bold-cccb897485.woff2" as="font" type="font/woff2" crossorigin="anonmyous">
+    <link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/dist/fonts/lato/extended/Lato-Italic-4eb103b4d1.woff2" as="font" type="font/woff2" crossorigin="anonmyous">
+    <link rel="stylesheet" media="screen" href="./python_flask week 3 IP_files/lato_extended-f5a83bde37.css">
+    <script async="" src="./python_flask week 3 IP_files/analytics.js"></script><script async="" src="./python_flask week 3 IP_files/analytics.js"></script><script>if (navigator.userAgent.match(/(MSIE|Trident\/)/)) location.replace('/ie-is-not-supported.html')</script>
+  
+  <link rel="shortcut icon" type="image/x-icon" href="https://instructure-uploads-eu.s3-eu-west-1.amazonaws.com/account_118060000000000001/attachments/23/Moringa%20Logo-02.png">
+  <link rel="apple-touch-icon" href="https://instructure-uploads-eu.s3-eu-west-1.amazonaws.com/account_118060000000000001/attachments/16/MORINGA%20TREE%20WHITE.png">
+  <link rel="stylesheet" media="all" href="./python_flask week 3 IP_files/variables-7dd4b80918af0e0218ec0229e4bd5873.css">
+  <link rel="stylesheet" media="all" href="./python_flask week 3 IP_files/common-4d7fe2c46c.css">
+  <meta name="apple-itunes-app" content="app-id=480883488">
+<link rel="manifest" href="https://moringaschool.instructure.com/web-app-manifest/manifest.json">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#000000">
+  <link rel="stylesheet" media="all" href="./python_flask week 3 IP_files/assignments-f9562f4855.css">
+<link rel="stylesheet" media="all" href="./python_flask week 3 IP_files/tinymce-59c32fac15.css">
+<link rel="stylesheet" media="all" href="./python_flask week 3 IP_files/learning_outcomes-a9a9fe5d8b.css">
+<link rel="stylesheet" media="all" href="./python_flask week 3 IP_files/new_user_tutorials-2950c871dd.css">
+  <link rel="stylesheet" media="all" href="./python_flask week 3 IP_files/canvas.css">
+  <script>
+    function _earlyClick(e){
+      var c = e.target
+      while (c && c.ownerDocument) {
+        if (c.getAttribute('href') == '#' || c.getAttribute('data-method')) {
+          if (!e.defaultPrevented) {
+            e.preventDefault()
+          }
+          (_earlyClick.clicks = _earlyClick.clicks || []).push(c)
+          break
+        }
+        c = c.parentNode
+      }
+    }
+    document.addEventListener('click', _earlyClick)
+  </script>
+
+
+  <script>
+    INST = {"environment":"production","allowMediaComments":true,"kalturaSettings":{"domain":"eu.nv.instructuremedia.com","resource_domain":"eu.nv.instructuremedia.com","rtmp_domain":"dub.rtmp.instructuremedia.com","partner_id":"5","subpartner_id":"0","player_ui_conf":"0","kcw_ui_conf":"0","upload_ui_conf":"0","max_file_size_bytes":534773760,"do_analytics":false,"hide_rte_button":false,"js_uploader":true},"logPageViews":true,"editorButtons":[{"name":"Commons Favourites","id":1,"favorite":false,"url":"https://lor.instructure.com/api/lti/favorite-resources","icon_url":"https://lor.instructure.com/img/icon_commons.png","canvas_icon_class":null,"width":800,"height":400,"use_tray":true,"description":"\u003cp\u003eFind and share course content\u003c/p\u003e\n"},{"name":"Google Drive (LTI 1.3)","id":148,"favorite":false,"url":"https://assignments.google.com/lti/e","icon_url":"https://www.gstatic.com/images/branding/product/1x/drive_16dp.png","canvas_icon_class":null,"width":690,"height":530,"use_tray":false,"description":"\u003cp\u003eCollect, analyze, and grade student work with Google Assignments\u003c/p\u003e\n"},{"name":"YouTube","id":158,"favorite":true,"url":"https://www.edu-apps.org/lti_public_resources/?tool_id=youtube","icon_url":"https://www.edu-apps.org/assets/lti_public_resources/youtube_icon.png","canvas_icon_class":null,"width":560,"height":600,"use_tray":false,"description":"\u003cp\u003eSearch publicly available YouTube videos. A new icon will show up in your course rich editor letting you search YouTube and click to embed videos in your course material.\u003c/p\u003e\n"},{"name":"Google Apps","id":162,"favorite":false,"url":"https://google-drive-lti-iad-prod.instructure.com/lti/rce-content-selection","icon_url":"https://google-drive-lti-iad-prod.instructure.com/icon.png","canvas_icon_class":null,"width":700,"height":600,"use_tray":false,"description":"\u003cp\u003eAllows you to pull in documents from Google Drive to Canvas\u003c/p\u003e\n"}]};
+    ENV = {"ASSET_HOST":"https://du11hjcvx0uqb.cloudfront.net","active_brand_config_json_url":"https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/559100d725fe95557fad258c66225c2e/variables-7dd4b80918af0e0218ec0229e4bd5873.json","url_to_what_gets_loaded_inside_the_tinymce_editor_css":["https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/559100d725fe95557fad258c66225c2e/variables-7dd4b80918af0e0218ec0229e4bd5873.css","https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/responsive_layout_normal_contrast/bundles/what_gets_loaded_inside_the_tinymce_editor-f45e0c161f.css","https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/no_variables/bundles/lato_extended-f5a83bde37.css"],"url_for_high_contrast_tinymce_editor_css":["https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/default/variables-high_contrast-7dd4b80918af0e0218ec0229e4bd5873.css","https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/responsive_layout_high_contrast/bundles/what_gets_loaded_inside_the_tinymce_editor-3d8180250f.css","https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/no_variables/bundles/lato_extended-f5a83bde37.css"],"current_user_id":"5112","current_user_roles":["user","student"],"current_user_is_student":true,"current_user_types":[],"current_user_disabled_inbox":false,"discussions_reporting":true,"files_domain":"cluster295.canvas-user-content.com","DOMAIN_ROOT_ACCOUNT_ID":"118060000000000001","k12":false,"use_responsive_layout":true,"use_rce_a11y_checker_notifications":true,"help_link_name":"Help Desk","help_link_icon":"cog","use_high_contrast":false,"auto_show_cc":false,"disable_celebrations":false,"disable_keyboard_shortcuts":false,"LTI_LAUNCH_FRAME_ALLOWANCES":["geolocation *","microphone *","camera *","midi *","encrypted-media *","autoplay *","clipboard-write *","display-capture *"],"DEEP_LINKING_POST_MESSAGE_ORIGIN":"https://moringaschool.instructure.com","DEEP_LINKING_LOGGING":null,"comment_library_suggestions_enabled":false,"SETTINGS":{"open_registration":false,"collapse_global_nav":false,"release_notes_badge_disabled":false,"filter_speed_grader_by_student_group":false},"API_GATEWAY_URI":"https://api.eu-west-1.instructure.com/graphql/future","DIRECT_SHARE_ENABLED":false,"FEATURES":{"featured_help_links":true,"rce_buttons_and_icons":false,"important_dates":true,"feature_flag_filters":true,"k5_parent_support":true,"conferencing_in_planner":true,"remember_settings_tab":true,"word_count_in_speed_grader":true,"observer_picker":false,"lti_platform_storage":false,"scale_equation_images":true,"new_equation_editor":false,"responsive_awareness":true,"responsive_misc":true,"product_tours":false,"files_dnd":true,"usage_rights_discussion_topics":true,"granular_permissions_manage_users":true,"create_course_subaccount_picker":true,"lti_deep_linking_module_index_menu_modal":false,"lti_multiple_assignment_deep_linking":false,"embedded_release_notes":true,"canvas_k6_theme":false,"new_math_equation_handling":true},"current_user":{"id":"5112","anonymous_id":"3y0","display_name":"francis.githae@student.moringaschool.com","avatar_image_url":"https://moringaschool.instructure.com/images/messages/avatar-50.png","html_url":"https://moringaschool.instructure.com/about/5112","pronouns":null,"avatar_is_fallback":true},"page_view_update_url":"/page_views/66a47235-12c1-4391-9ea1-34dd5d6fd11c?page_view_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpIjoiNjZhNDcyMzUtMTJjMS00MzkxLTllYTEtMzRkZDVkNmZkMTFjIiwidSI6MTE4MDYwMDAwMDAwMDA1MTEyLCJjIjoiMjAyMi0wMi0wN1QwNzoxMjo0Ni4xM1oifQ.dZGUn2u8badR0irp8WH9KR41xiUw8z7OcAppa2iPtes","context_asset_string":"course_558","ping_url":"https://moringaschool.instructure.com/api/v1/courses/558/ping","TIMEZONE":"Africa/Nairobi","CONTEXT_TIMEZONE":"Africa/Nairobi","LOCALE":"en-GB","BIGEASY_LOCALE":"en_GB","FULLCALENDAR_LOCALE":"en-gb","MOMENT_LOCALE":"en-gb","rce_auto_save_max_age_ms":86400000,"K5_USER":false,"K5_HOMEROOM_COURSE":false,"K5_SUBJECT_COURSE":false,"media_comment_asset_string":"user_5112","COURSE_ID":"558","SUBMISSION_ID":"440199","FIRST_ANNOTATION_SUBMISSION":false,"RICH_CONTENT_APP_HOST":"rich-content-dub.inscloudgate.net","RICH_CONTENT_SKIP_SIDEBAR":null,"JWT":"ZXlKaGJHY2lPaUprYVhJaUxDSmxibU1pT2lKQk1qVTJSME5OSWl3aWNtVm5hVzl1SWpvaVpYVXRkMlZ6ZEMweElpd2laVzUyYVhKdmJtMWxiblFpT2lKUWNtOWtkV04wYVc5dUluMC4uSnNCTGdneDdac1YxVENjaS5lUEZWZ2JScllxRWN1YnZqZW93c2dYWHNmYmVXbUpCS3RxdXBoTzcwUUNWREQtLXJqR2lXMDJGdTVuUHlYNGZadVRWRi1hWjhCX0NVQTJFelNRMmk2NXpIMUFEemkwTWs5RFNIU0xYRDFWQ082WVFIWlZoSGhKU1BBd1dfaUd3N2I5R0ROcXgtMGRfMnJwV2YxNHJaOF9qU0xySVloQm5WbVJ4ZGpVNjI0QXEwV0E5dTVKbU9BMXhhaWFOQzYtX1NyZ2FQUGNPdE9DcEMyWF84M1NENVBkOUpCM2RCRVNiSFlLMmpMQ2FqUkdaQTV4TW1pcDNzbElXUC05S3ctei1LZVBQanh1Zm1kWmE5STlqN2RRZ19aREVDQkw2c29hRV9fMm1sZGV5M1JlSmE3Z3N4eFNwSEhfZjYyMDQySnJIUVIxQUFJd1p2LWZRdldUeDV5MTBfRGYwM0dDcWpJVUY5MjlHc19hdXl0OWZaVEJva3dGbDNFN2pnSjBGSWlVUUg3WEwwSjczei1sSFpQU3dPOE1xWlFxTGczMEhaWXFIZms0RHZtcFpSZzZybGtubC1EUDB3N3p5M2V6R0hyakhmc0ktZkR6RDc2YnpELXd0SDVaRTY1RXFhYW5XQ25GNFZHRWoycUlUX0E4azV2aW1KQjRoSFlHSnl0VG5JYXlrWnNXVmtZLTRkaXFaSUtwTzdEZldfd1A3TGpGZWRDZG5vWXkzV2R1d0lSZjBKMVpiWVBIcS1TcjFmQWZEYXhtS29vQVNva0VNYWhZVmsxRjVFaVFXbElNd0ZqWnYzYW5mZUQ2OWpwSWNuX1VtMFEyUHFWcXJkQ1Q2cU5nRFdJck5yNHR4UmZOS3R1bjhYZWc5MVphVzNueEtZMXJsWjF6ODFPYnIxY08zMDVta20wdERuWFJjUFFWc2dtNF9Zak0xbFU2bUVYYUxFYjhXTXFnVHFTLWdtREFNSTBWX096VzhLMWtmX3BpYjZPVzJVNGlDcmlKVjJVbVVmUVdsSFNlUndjZkZoQTIyb2JFZkdseHU3bWNuektibUhHOEg1UEh5MHNVbXY1UGpnSGJuMzB0eGJ0eDNnOWxnLkhJVHF1dTdsZ1ZvMkotdVI5ZDhNOWc=","RICH_CONTENT_CAN_UPLOAD_FILES":false,"RICH_CONTENT_FILES_TAB_DISABLED":false,"RICH_CONTENT_INST_RECORD_TAB_DISABLED":false,"ASSIGNMENT_ID":"8093","PREREQS":{},"EULA_URL":null,"EXTERNAL_TOOLS":[{"id":"162","domain":"google-drive-lti-iad-prod.instructure.com","url":"https://google-drive-lti-iad-prod.instructure.com/lti/course-navigation","consumer_key":"0a553ee2-c2a0-4e16-b789-21ce6f239685","name":"Google Apps","description":"Allows you to pull in documents from Google Drive to Canvas","created_at":"2021-06-20T13:34:41+03:00","updated_at":"2021-06-20T13:34:41+03:00","privacy_level":"name_only","custom_fields":{"account_id":"$Canvas.account.id","assignment_title":"$Canvas.assignment.title","base_url":"$Canvas.api.baseUrl","collaboration_members_url":"$Canvas.api.collaborationMembers.url","domain":"$Canvas.api.domain","group_context_ids":"$Canvas.group.contextIds","masquerading_user_id":"$Canvas.masqueradingUser.userId","membership_service_url":"$ToolProxyBinding.memberships.url","previous_context_ids":"$Canvas.course.previousContextIds","previous_context_ids_recursive":"$Canvas.course.previousContextIds.recursive","time_zone":"$Person.address.timezone","user_id":"$Canvas.user.id"},"workflow_state":"name_only","vendor_help_link":null,"account_navigation":null,"similarity_detection":null,"assignment_edit":null,"assignment_menu":null,"assignment_index_menu":null,"assignment_group_menu":null,"assignment_selection":{"enabled":true,"message_type":"ContentItemSelectionRequest","text":"Google Drive Cloud Assignment","url":"https://google-drive-lti-iad-prod.instructure.com/lti/cloud-template-selection","label":"Google Drive Cloud Assignment","selection_width":800,"selection_height":400,"icon_url":"https://google-drive-lti-iad-prod.instructure.com/icon.png"},"assignment_view":null,"collaboration":{"enabled":true,"canvas_icon_class":"icon-lti","icon_url":"https://google-drive-lti-iad-prod.instructure.com/icon.png","message_type":"ContentItemSelectionRequest","text":"Google Drive","url":"https://google-drive-lti-iad-prod.instructure.com/lti/collaboration-content-selection","label":"Google Drive","selection_width":800,"selection_height":400},"course_assignments_menu":null,"course_home_sub_navigation":null,"course_navigation":{"enabled":true,"text":"Google Drive","url":"https://google-drive-lti-iad-prod.instructure.com/lti/course-navigation","label":"Google Drive","selection_width":800,"selection_height":400,"icon_url":"https://google-drive-lti-iad-prod.instructure.com/icon.png"},"course_settings_sub_navigation":null,"discussion_topic_menu":null,"discussion_topic_index_menu":null,"editor_button":{"enabled":true,"icon_url":"https://google-drive-lti-iad-prod.instructure.com/icon.png","message_type":"ContentItemSelectionRequest","selection_height":600,"selection_width":700,"url":"https://google-drive-lti-iad-prod.instructure.com/lti/rce-content-selection","label":"Google Apps"},"file_menu":null,"file_index_menu":null,"global_navigation":null,"homework_submission":{"enabled":true,"canvas_icon_class":"icon-lti","icon_url":"https://google-drive-lti-iad-prod.instructure.com/icon.png","message_type":"ContentItemSelectionRequest","text":"Google Drive","url":"https://google-drive-lti-iad-prod.instructure.com/lti/homework-content-selection","label":"Google Drive","selection_width":800,"selection_height":400},"link_selection":{"enabled":"true","message_type":"ContentItemSelectionRequest","selection_height":600,"selection_width":700,"text":"Google Drive","url":"https://google-drive-lti-iad-prod.instructure.com/lti/module-content-selection","label":"Google Drive","icon_url":"https://google-drive-lti-iad-prod.instructure.com/icon.png"},"migration_selection":null,"module_menu":null,"module_group_menu":null,"module_index_menu":null,"module_index_menu_modal":null,"post_grades":null,"quiz_menu":null,"quiz_index_menu":null,"resource_selection":null,"submission_type_selection":null,"student_context_card":null,"tool_configuration":null,"user_navigation":null,"wiki_index_menu":null,"wiki_page_menu":null,"is_rce_favorite":false,"icon_url":"https://google-drive-lti-iad-prod.instructure.com/icon.png","not_selectable":false,"version":"1.1"},{"id":"148","domain":null,"url":"https://assignments.google.com/lti/e","consumer_key":"fake","name":"Google Assignments (LTI 1.3)","description":"Collect, analyze, and grade student work with Google Assignments","created_at":"2021-02-19T15:06:33+03:00","updated_at":"2021-02-19T15:06:33+03:00","privacy_level":"anonymous","custom_fields":{"assignment_id":"$com.instructure.Assignment.lti.id","assignment_due_at":"$Canvas.assignment.dueAt.iso8601","context_id_history":"$Canvas.course.previousContextIds","assignment_points_possible":"$Canvas.assignment.pointsPossible"},"workflow_state":"anonymous","vendor_help_link":null,"account_navigation":null,"similarity_detection":null,"assignment_edit":null,"assignment_menu":null,"assignment_index_menu":null,"assignment_group_menu":null,"assignment_selection":{"enabled":true,"text":"Google Assignments (LTI 1.3)","icon_url":"https://www.gstatic.com/prof/logo_assignments_16dp.png","placement":"assignment_selection","message_type":"LtiDeepLinkingRequest","selection_width":690,"target_link_uri":"https://assignments.google.com/lti/a","selection_height":530,"label":"Google Assignments (LTI 1.3)"},"assignment_view":null,"collaboration":null,"course_assignments_menu":null,"course_home_sub_navigation":null,"course_navigation":null,"course_settings_sub_navigation":null,"discussion_topic_menu":null,"discussion_topic_index_menu":null,"editor_button":{"enabled":true,"text":"Google Drive (LTI 1.3)","icon_url":"https://www.gstatic.com/images/branding/product/1x/drive_16dp.png","placement":"editor_button","message_type":"LtiDeepLinkingRequest","selection_width":690,"target_link_uri":"https://assignments.google.com/lti/e","selection_height":530,"label":"Google Drive (LTI 1.3)"},"file_menu":null,"file_index_menu":null,"global_navigation":null,"homework_submission":{"enabled":true,"text":"Google Drive (LTI 1.3)","icon_url":"https://www.gstatic.com/images/branding/product/1x/drive_16dp.png","placement":"homework_submission","message_type":"LtiDeepLinkingRequest","custom_fields":{"preferred_accept_type":"file"},"selection_width":820,"target_link_uri":"https://assignments.google.com/lti/e","selection_height":450,"label":"Google Drive (LTI 1.3)"},"link_selection":{"enabled":true,"text":"Google Drive (LTI 1.3)","icon_url":"https://www.gstatic.com/images/branding/product/1x/drive_16dp.png","placement":"link_selection","message_type":"LtiDeepLinkingRequest","selection_width":690,"target_link_uri":"https://assignments.google.com/lti/e","selection_height":530,"label":"Google Drive (LTI 1.3)"},"migration_selection":null,"module_menu":null,"module_group_menu":null,"module_index_menu":null,"module_index_menu_modal":null,"post_grades":null,"quiz_menu":null,"quiz_index_menu":null,"resource_selection":null,"submission_type_selection":null,"student_context_card":null,"tool_configuration":null,"user_navigation":null,"wiki_index_menu":null,"wiki_page_menu":null,"is_rce_favorite":false,"icon_url":"https://www.gstatic.com/images/branding/product/1x/drive_16dp.png","not_selectable":false,"version":"1.3","developer_key_id":"170000000000573"}],"PERMISSIONS":{"context":{"read_as_admin":false,"manage_assignments":false,"manage_assignments_edit":false},"assignment":{"update":false,"submit":true},"can_manage_groups":true},"ROOT_OUTCOME_GROUP":{"id":"424","title":"SD Core 51 Flask Remote","vendor_guid":null,"url":"/api/v1/courses/558/outcome_groups/424","subgroups_url":"/api/v1/courses/558/outcome_groups/424/subgroups","outcomes_url":"/api/v1/courses/558/outcome_groups/424/outcomes","can_edit":false,"import_url":"/api/v1/courses/558/outcome_groups/424/import","context_id":"558","context_type":"Course","description":null},"SIMILARITY_PLEDGE":null,"CONFETTI_ENABLED":true,"USER_ASSET_STRING":"user_5112","CONDITIONAL_RELEASE_SERVICE_ENABLED":true,"CONDITIONAL_RELEASE_ENV":{"assignment":{"id":"8093","title":"python/flask week 3 IP","description":"\u003ch3\u003eGoal\u003c/h3\u003e\n\u003cp\u003eThe purpose of this independent project is to demonstrate your understanding of the content you\u0026nbsp;covered throughout the week.\u0026nbsp;\u003c/p\u003e\n\u003ch3\u003eOverall Project Description\u003c/h3\u003e\n\u003cp\u003eIn life, you only have 60 seconds to impress someone. 1 minute can make or break you. How do we make sure that you use your 1 minute to actually say something meaningful?\u003c/p\u003e\n\u003cp\u003eYour task this week is to create an application that allows users to use that one minute wisely. The users will submit their one minute pitches and other users will vote on them and leave comments to give their feedback on them.\u003c/p\u003e\n\u003cp\u003eThe pitches are organized by category. You can have different categories like pickup lines, interview pitch, product pitch, promotion pitch.(You don't\u0026nbsp;have to use these categories, you can come up with your own creative categories)\u0026nbsp;\u003c/p\u003e\n\u003cp\u003eThe pitches should be arranged by category and the new posts should be displayed first.\u003c/p\u003e\n\u003ch3\u003eUser Story\u003c/h3\u003e\n\u003cp\u003eHere are some user stories to help you get started:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eAs a user, I would like to see the pitches other people have posted.\u003c/li\u003e\n\u003cli\u003eAs a user, I would like to vote on the pitch they liked and give it a downvote or upvote.\u003c/li\u003e\n\u003cli\u003eAs a user, I would like to be signed in for me to leave a comment\u003c/li\u003e\n\u003cli\u003eAs a user,\u0026nbsp;I would like to receive a welcoming email once I sign up.\u003c/li\u003e\n\u003cli\u003eAs a user, I would like to view the pitches I have created in my profile page.\u003c/li\u003e\n\u003cli\u003eAs a user, I would like to comment on the different pitches and leave feedback.\u003c/li\u003e\n\u003cli\u003eAs a user, I would like to submit a pitch in any category.\u003c/li\u003e\n\u003cli\u003eAs a user, I would like to view the different categories.\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003eUI Design\u003c/h3\u003e\n\u003cp\u003e\u003cspan\u003eYour application should have a clean, simple, well-organized user interface. Ensure you choose a consistent colour scheme and use appropriate fonts for your application. Also, you\u003c/span\u003e\u003cspan\u003e\u0026nbsp;\u003c/span\u003e\u003cstrong\u003eMUST\u003c/strong\u003e\u003cspan\u003e\u0026nbsp;\u003c/span\u003e\u003cspan\u003ecreate a mockup design for your application before you begin development.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003eYou can use the following resources to design your application:\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003ePen and Paper - For Mockup design.\u003c/li\u003e\n\u003cli\u003e\u003ca class=\"external\" href=\"http://getbootstrap.com/\" target=\"_blank\"\u003e\u003cspan\u003eBootstrap\u003cspan class=\"screenreader-only\"\u003e\u0026nbsp;(Links to an external site.)\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"ui-icon ui-icon-extlink ui-icon-inline\" title=\"Links to an external site.\"\u003e\u003cspan class=\"screenreader-only\"\u003eLinks to an external site.\u003c/span\u003e\u003c/span\u003e\u003c/a\u003e\u003cspan\u003e\u0026nbsp;\u003c/span\u003e- For simple responsive UI elements\u003c/li\u003e\n\u003cli\u003e\u003ca class=\"external\" href=\"https://coolors.co/\" target=\"_blank\"\u003e\u003cspan\u003eCoolors\u003cspan class=\"screenreader-only\"\u003e\u0026nbsp;(Links to an external site.)\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"ui-icon ui-icon-extlink ui-icon-inline\" title=\"Links to an external site.\"\u003e\u003cspan class=\"screenreader-only\"\u003eLinks to an external site.\u003c/span\u003e\u003c/span\u003e\u003c/a\u003e\u003cspan\u003e\u0026nbsp;\u003c/span\u003e- For Color scheme generation.\u003c/li\u003e\n\u003cli\u003e\u003ca class=\"external\" href=\"https://dillinger.io/fonts.google.com\" target=\"_blank\"\u003e\u003cspan\u003eGoogle fonts\u003cspan class=\"screenreader-only\"\u003e\u0026nbsp;(Links to an external site.)\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"ui-icon ui-icon-extlink ui-icon-inline\" title=\"Links to an external site.\"\u003e\u003cspan class=\"screenreader-only\"\u003eLinks to an external site.\u003c/span\u003e\u003c/span\u003e\u003c/a\u003e\u003cspan\u003e\u0026nbsp;\u003c/span\u003e- For beautiful fonts\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003e\u0026nbsp;\u003c/p\u003e\n\u003ch3\u003eProject Objectives\u003c/h3\u003e\n\u003col\u003e\n\u003cli\u003eYour project must have a user model.\u003c/li\u003e\n\u003cli\u003eIn your models, implement\u0026nbsp;at least\u0026nbsp;1 one-to-many relationship.\u003c/li\u003e\n\u003cli\u003eYour project should have a comment model.\u003c/li\u003e\n\u003cli\u003eYour project should have a profile page.\u003c/li\u003e\n\u003cli\u003eYour project should follow the proper folder structure.\u003c/li\u003e\n\u003cli\u003eYour project should have a functioning authentication system.\u003c/li\u003e\n\u003cli\u003eYour project should contain migration files for the different model structure.\u003c/li\u003e\n\u003c/ol\u003e\n\u003ch3\u003eTechnical Requirements\u003c/h3\u003e\n\u003col\u003e\n\u003cli\u003eCreate a specs markdown file that lists down all the projects specifications.\u003c/li\u003e\n\u003cli\u003eAll your models should contain unittests to test the different behaviours. All your test should pass.\u003c/li\u003e\n\u003cli\u003eYour project should be deployed to Heroku.\u003c/li\u003e\n\u003cli\u003eYour project should contain proper commit messages.\u003c/li\u003e\n\u003cli\u003eProject is polished and in portfolio-quality state\u003c/li\u003e\n\u003c/ol\u003e\n\u003ch3\u003eFurther exploration\u003c/h3\u003e\n\u003cp\u003eYou can create a favourite pitch section where you list all the favourite pitches\u003c/p\u003e","points_possible":23.0,"grading_type":"points","submission_types":"online_url","grading_scheme":{"A":0.94,"A-":0.9,"B+":0.87,"B":0.84,"B-":0.8,"C+":0.77,"C":0.74,"C-":0.7,"D+":0.67,"D":0.64,"D-":0.61,"F":0.0}},"course_id":"558","stats_url":"/api/v1/courses/558/mastery_paths/stats","rule":null},"SUBMIT_ASSIGNMENT":{"ALLOWED_EXTENSIONS":[],"ID":"8093","GROUP_ID_FOR_USER":null},"badge_counts":{"submissions":0},"notices":[],"active_context_tab":"assignments"};
+    BRANDABLE_CSS_HANDLEBARS_INDEX = [["new_styles_normal_contrast","new_styles_high_contrast","responsive_layout_normal_contrast","responsive_layout_high_contrast","new_styles_normal_contrast_rtl","new_styles_high_contrast_rtl","responsive_layout_normal_contrast_rtl","responsive_layout_high_contrast_rtl"],{"10":["8300658022",0,0,0,"250b5824c2",4,4,4],"15":["fc26aa5fd4",0,0,0,"f904416063",4,4,4],"19":["df5777ed9c"],"61":["c34731ada0","f405852bb2",0,1,"a4eda69452","3fd9943b9a",4,5],"64":["6d90a3d213",0,0,0,"cace9d4281",4,4,4],"67":["8b57f54e71",0,0,0,"43833dde85",4,4,4],"71":["9bb12d406b","3128a2cc3b",0,1,"9a2e3a11ca","851e44943d",4,5],"06":["4526e0502d",0,0,0,"4ca4dedba8",4,4,4],"f0":["7c947dce20",0,0,0,0,0,0,0],"c8":["fd6747df94","32c26c8fa4",0,1,"80cc70eb8a","c6f0afaa9e",4,5],"1e":["a4ce6b99b5","39d2986ce0","93968ae330","541e45feba","e12dd92511","ba63dd3b58","8594db4d82","e291bb53e9"],"b3":["8ebc71ebc3","cf8efa05c8",0,1,"4efdc93a21","fd6d3a9780",4,5],"4f":["0a2c3dcf2f",0,0,0,"79668e6396",4,4,4],"0c":["c26e82abac",0,0,0,"b71e9cbd6d",4,4,4],"da":["b218c8c3f2","edbd1b5e83",0,1,"312312508c","dfb2d13098",4,5],"1d":["a3bfcb7961",0,0,0,"90682b3bbe",4,4,4],"08":["64bff5a97d"],"e2":["11429f119a"],"9f":["35936a18c3",0,0,0,0,0,0,0],"2b":["abf63f48ef","bf8e135ffe",0,1,"378e0c136b","9833e305e6",4,5],"2c":["6d919206cd",0,0,0,0,0,0,0],"c2":["6f2721ae01"],"9c":["ecafc938e4",0,0,0,"59e7c22304",4,4,4],"c5":["ebf0e1382f","7f587d9a8a",0,1,"afbdabf23d","0d398196a8",4,5],"f2":["51574f9b13"]}]
+;
+  </script>
+
+  <link rel="preload" href="./python_flask week 3 IP_files/variables-7dd4b80918af0e0218ec0229e4bd5873.js" as="script" type="text/javascript"><link rel="preload" href="./python_flask week 3 IP_files/Nairobi-ab431c0929.js" as="script" type="text/javascript"><link rel="preload" href="./python_flask week 3 IP_files/Nairobi-ab431c0929.js" as="script" type="text/javascript"><link rel="preload" href="./python_flask week 3 IP_files/en_GB-31745e04c9.js" as="script" type="text/javascript"><link rel="preload" href="./python_flask week 3 IP_files/en-gb-c-49edf0819b.js" as="script" type="text/javascript"><link rel="preload" href="./python_flask week 3 IP_files/main-e-5d85ce2069.js" as="script" type="text/javascript"><script>
+//<![CDATA[
+
+      ;["https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/559100d725fe95557fad258c66225c2e/variables-7dd4b80918af0e0218ec0229e4bd5873.js", "https://du11hjcvx0uqb.cloudfront.net/dist/timezone/Africa/Nairobi-ab431c0929.js", "https://du11hjcvx0uqb.cloudfront.net/dist/timezone/Africa/Nairobi-ab431c0929.js", "https://du11hjcvx0uqb.cloudfront.net/dist/timezone/en_GB-31745e04c9.js", "https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/moment/locale/en-gb-c-49edf0819b.js", "https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/main-e-5d85ce2069.js"].forEach(function(src) {
+        var s = document.createElement('script')
+        s.src = src
+        s.async = false
+        document.head.appendChild(s)
+      });
+//]]>
+</script><script src="./python_flask week 3 IP_files/variables-7dd4b80918af0e0218ec0229e4bd5873.js"></script><script src="./python_flask week 3 IP_files/Nairobi-ab431c0929.js"></script><script src="./python_flask week 3 IP_files/Nairobi-ab431c0929.js"></script><script src="./python_flask week 3 IP_files/en_GB-31745e04c9.js"></script><script src="./python_flask week 3 IP_files/en-gb-c-49edf0819b.js"></script><script src="./python_flask week 3 IP_files/main-e-5d85ce2069.js"></script><link rel="preload" href="./python_flask week 3 IP_files/0-c-d122efd52f.js" as="script" type="text/javascript"><link rel="preload" href="./python_flask week 3 IP_files/1-c-ec86224602.js" as="script" type="text/javascript"><link rel="preload" href="./python_flask week 3 IP_files/2-c-76bc2d045a.js" as="script" type="text/javascript"><link rel="preload" href="./python_flask week 3 IP_files/3-c-db365dc360.js" as="script" type="text/javascript"><link rel="preload" href="./python_flask week 3 IP_files/4-c-b8cf79bbb5.js" as="script" type="text/javascript"><link rel="preload" href="./python_flask week 3 IP_files/5-c-91ec3d99dd.js" as="script" type="text/javascript"><link rel="preload" href="./python_flask week 3 IP_files/6-c-b7e24ed230.js" as="script" type="text/javascript"><link rel="preload" href="./python_flask week 3 IP_files/7-c-e2b61ba201.js" as="script" type="text/javascript"><link rel="preload" href="./python_flask week 3 IP_files/12-c-8e44d6013e.js" as="script" type="text/javascript"><link rel="preload" href="./python_flask week 3 IP_files/14-c-38a85636e1.js" as="script" type="text/javascript"><link rel="preload" href="./python_flask week 3 IP_files/19-c-0c4e757c70.js" as="script" type="text/javascript"><link rel="preload" href="./python_flask week 3 IP_files/23-c-2ae6d2fb18.js" as="script" type="text/javascript"><link rel="preload" href="./python_flask week 3 IP_files/42-c-07faa3f71a.js" as="script" type="text/javascript"><link rel="preload" href="./python_flask week 3 IP_files/45-c-4a36aaabbd.js" as="script" type="text/javascript"><link rel="preload" href="./python_flask week 3 IP_files/44-c-165ce1ef88.js" as="script" type="text/javascript"><link rel="preload" href="./python_flask week 3 IP_files/71-c-2dec3d56d8.js" as="script" type="text/javascript"><link rel="preload" href="./python_flask week 3 IP_files/103-c-65425a9cfc.js" as="script" type="text/javascript"><link rel="preload" href="./python_flask week 3 IP_files/114-c-043c3a51d7.js" as="script" type="text/javascript"><link rel="preload" href="./python_flask week 3 IP_files/148-c-e02bd3d4f9.js" as="script" type="text/javascript"><link rel="preload" href="./python_flask week 3 IP_files/assignment_show-c-fb85b60d8c.js" as="script" type="text/javascript"><link rel="preload" href="./python_flask week 3 IP_files/8-c-1e27fb0fe8.js" as="script" type="text/javascript"><link rel="preload" href="./python_flask week 3 IP_files/9-c-a923466f4c.js" as="script" type="text/javascript"><link rel="preload" href="./python_flask week 3 IP_files/17-c-9779ced567.js" as="script" type="text/javascript"><link rel="preload" href="./python_flask week 3 IP_files/24-c-11e4de1936.js" as="script" type="text/javascript"><link rel="preload" href="./python_flask week 3 IP_files/33-c-f857537fc0.js" as="script" type="text/javascript"><link rel="preload" href="./python_flask week 3 IP_files/47-c-462e245530.js" as="script" type="text/javascript"><link rel="preload" href="./python_flask week 3 IP_files/80-c-5763891b08.js" as="script" type="text/javascript"><link rel="preload" href="./python_flask week 3 IP_files/110-c-17fca1922e.js" as="script" type="text/javascript"><link rel="preload" href="./python_flask week 3 IP_files/95-c-11daf41af5.js" as="script" type="text/javascript"><link rel="preload" href="./python_flask week 3 IP_files/99-c-eb0888b133.js" as="script" type="text/javascript"><link rel="preload" href="./python_flask week 3 IP_files/135-c-2803a8d485.js" as="script" type="text/javascript"><link rel="preload" href="./python_flask week 3 IP_files/144-c-89ba586609.js" as="script" type="text/javascript"><link rel="preload" href="./python_flask week 3 IP_files/submit_assignment-c-2a87a8eefc.js" as="script" type="text/javascript"><link rel="preload" href="./python_flask week 3 IP_files/10-c-3120ad609e.js" as="script" type="text/javascript"><link rel="preload" href="./python_flask week 3 IP_files/11-c-ad0757b200.js" as="script" type="text/javascript"><link rel="preload" href="./python_flask week 3 IP_files/13-c-ec830eb1c2.js" as="script" type="text/javascript"><link rel="preload" href="./python_flask week 3 IP_files/16-c-cfd5cddc45.js" as="script" type="text/javascript"><link rel="preload" href="./python_flask week 3 IP_files/18-c-110de1a131.js" as="script" type="text/javascript"><link rel="preload" href="./python_flask week 3 IP_files/20-c-032c0de5b7.js" as="script" type="text/javascript"><link rel="preload" href="./python_flask week 3 IP_files/21-c-f464846e7b.js" as="script" type="text/javascript"><link rel="preload" href="./python_flask week 3 IP_files/22-c-759cafcf3a.js" as="script" type="text/javascript"><link rel="preload" href="./python_flask week 3 IP_files/25-c-a2cb91aeb3.js" as="script" type="text/javascript"><link rel="preload" href="./python_flask week 3 IP_files/26-c-1574cbac99.js" as="script" type="text/javascript"><link rel="preload" href="./python_flask week 3 IP_files/28-c-f2acaf4042.js" as="script" type="text/javascript"><link rel="preload" href="./python_flask week 3 IP_files/29-c-4628a66e58.js" as="script" type="text/javascript"><link rel="preload" href="./python_flask week 3 IP_files/27-c-b5fc9ba4b8.js" as="script" type="text/javascript"><link rel="preload" href="./python_flask week 3 IP_files/30-c-1eed538e1d.js" as="script" type="text/javascript"><link rel="preload" href="./python_flask week 3 IP_files/32-c-ce4dbe33f0.js" as="script" type="text/javascript"><link rel="preload" href="./python_flask week 3 IP_files/edit_rubric-c-d893283dc8.js" as="script" type="text/javascript"><script>
+//<![CDATA[
+(window.bundles || (window.bundles = [])).push('assignment_show');
+(window.bundles || (window.bundles = [])).push('submit_assignment');
+(window.bundles || (window.bundles = [])).push('edit_rubric');
+(window.bundles || (window.bundles = [])).push('navigation_header');
+//]]>
+</script>
+  <title>python/flask week 3 IP</title>
+  
+  <script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', "UA-9138420-1", 'auto');
+      ga('set', 'userId', "e7a50b7338f6ceba7cc9e3052d32baf8");
+    ga('set', 'dimension1', "100");
+    ga('set', 'dimension2', "00");
+    ga('set', 'dimension3', "0");
+    ga('set', 'dimension4', "Higher Ed");
+    ga('send', 'pageview');
+    (window.requestIdleCallback || window.setTimeout)(function(){
+      var s=document.createElement('script'), m=document.getElementsByTagName('script')[0]
+      s.async=1; s.src='https://www.google-analytics.com/analytics.js'
+      m.parentNode.insertBefore(s,m)
+    });
+  </script>
+
+
+
+<style type="text/css"></style><script charset="utf-8" src="./python_flask week 3 IP_files/0-c-d122efd52f.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/1-c-ec86224602.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/2-c-76bc2d045a.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/3-c-db365dc360.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/4-c-b8cf79bbb5.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/5-c-91ec3d99dd.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/6-c-b7e24ed230.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/7-c-e2b61ba201.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/12-c-8e44d6013e.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/14-c-38a85636e1.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/19-c-0c4e757c70.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/23-c-2ae6d2fb18.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/42-c-07faa3f71a.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/45-c-4a36aaabbd.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/44-c-165ce1ef88.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/71-c-2dec3d56d8.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/103-c-65425a9cfc.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/114-c-043c3a51d7.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/148-c-e02bd3d4f9.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/assignment_show-c-fb85b60d8c.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/8-c-1e27fb0fe8.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/9-c-a923466f4c.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/17-c-9779ced567.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/24-c-11e4de1936.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/33-c-f857537fc0.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/47-c-462e245530.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/80-c-5763891b08.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/110-c-17fca1922e.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/95-c-11daf41af5.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/99-c-eb0888b133.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/135-c-2803a8d485.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/144-c-89ba586609.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/submit_assignment-c-2a87a8eefc.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/10-c-3120ad609e.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/11-c-ad0757b200.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/13-c-ec830eb1c2.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/16-c-cfd5cddc45.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/18-c-110de1a131.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/20-c-032c0de5b7.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/21-c-f464846e7b.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/22-c-759cafcf3a.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/25-c-a2cb91aeb3.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/26-c-1574cbac99.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/28-c-f2acaf4042.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/29-c-4628a66e58.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/27-c-b5fc9ba4b8.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/30-c-1eed538e1d.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/32-c-ce4dbe33f0.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/edit_rubric-c-d893283dc8.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/4188-c-cad8c16f6b.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/4106-c-057a7379ff.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/inst_fs_service_worker-c-6c8f40fd1f.js"></script><script src="./python_flask week 3 IP_files/index.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/70-c-f70377a08d.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/3631-c-d61c64c8df.js"></script><style type="text/css" data-glamor=""></style><link rel="stylesheet" href="./python_flask week 3 IP_files/googleDocsTreeView-0a2c3dcf2f.css" data-loaded-by-brandablecss="true"><style type="text/css">.mejs-offscreen{clip:rect(1px 1px 1px 1px);clip:rect(1px,1px,1px,1px);clip-path:polygon(0px 0,0 0,0 0,0 0);position:absolute!important;height:1px;width:1px;overflow:hidden}.mejs-container{position:relative;background:#000;font-family:Helvetica,Arial,serif;text-align:left;vertical-align:top;text-indent:0}.mejs-fill-container,.mejs-fill-container .mejs-container{width:100%;height:100%}.mejs-fill-container{overflow:hidden}.mejs-container:focus{outline:0}.me-plugin{position:absolute}.mejs-embed,.mejs-embed body{width:100%;height:100%;margin:0;padding:0;background:#000;overflow:hidden}.mejs-fullscreen{overflow:hidden!important}.mejs-container-fullscreen{position:fixed;left:0;top:0;right:0;bottom:0;overflow:hidden;z-index:1000}.mejs-container-fullscreen .mejs-mediaelement,.mejs-container-fullscreen video{width:100%;height:100%}.mejs-clear{clear:both}.mejs-background{position:absolute;top:0;left:0}.mejs-mediaelement{position:absolute;top:0;left:0;width:100%;height:100%}.mejs-poster{position:absolute;top:0;left:0;background-size:contain;background-position:50% 50%;background-repeat:no-repeat}:root .mejs-poster img{display:none}.mejs-poster img{border:0;padding:0}.mejs-overlay{position:absolute;top:0;left:0}.mejs-overlay-play{cursor:pointer}.mejs-overlay-button{position:absolute;top:50%;left:50%;width:100px;height:100px;margin:-50px 0 0 -50px;background:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/746c3af7a145a09239a36e5ef61cfea0.svg) no-repeat}.no-svg .mejs-overlay-button{background-image:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/716436fb3df0d29e6b37dd62d952676a.png)}.mejs-overlay:hover .mejs-overlay-button{background-position:0 -100px}.mejs-overlay-loading{position:absolute;top:50%;left:50%;width:80px;height:80px;margin:-40px 0 0 -40px;background:#333;background:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(0,0,0,.9);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(50,50,50,.9)),to(rgba(0,0,0,.9)));background:-webkit-linear-gradient(top,rgba(50,50,50,.9),rgba(0,0,0,.9));background:-moz-linear-gradient(top,rgba(50,50,50,.9),rgba(0,0,0,.9));background:-o-linear-gradient(top,rgba(50,50,50,.9),rgba(0,0,0,.9));background:-ms-linear-gradient(top,rgba(50,50,50,.9),rgba(0,0,0,.9));background:linear-gradient(rgba(50,50,50,.9),rgba(0,0,0,.9))}.mejs-overlay-loading span{display:block;width:80px;height:80px;background:transparent url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/76b326f4d44222126fee21076595bef5.gif) 50% 50% no-repeat}.mejs-container .mejs-controls{position:absolute;list-style-type:none;margin:0;padding:0;bottom:0;left:0;background:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(0,0,0,.7);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(50,50,50,.7)),to(rgba(0,0,0,.7)));background:-webkit-linear-gradient(top,rgba(50,50,50,.7),rgba(0,0,0,.7));background:-moz-linear-gradient(top,rgba(50,50,50,.7),rgba(0,0,0,.7));background:-o-linear-gradient(top,rgba(50,50,50,.7),rgba(0,0,0,.7));background:-ms-linear-gradient(top,rgba(50,50,50,.7),rgba(0,0,0,.7));background:linear-gradient(rgba(50,50,50,.7),rgba(0,0,0,.7));height:30px;width:100%}.mejs-container .mejs-controls div{list-style-type:none;background-image:none;display:block;float:left;margin:0;padding:0;width:26px;height:26px;font-size:11px;line-height:11px;font-family:Helvetica,Arial,serif;border:0}.mejs-controls .mejs-button button{cursor:pointer;display:block;font-size:0;line-height:0;text-decoration:none;margin:7px 5px;padding:0;position:absolute;height:16px;width:16px;border:0;background:transparent url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/40f56f5a736da4effeb790cedb8a52f0.svg) no-repeat}.no-svg .mejs-controls .mejs-button button{background-image:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/24a0227fbdd3acfd86ff03fc3fc6c8a4.png)}.mejs-controls .mejs-button button:focus{outline:dotted 1px #999}.mejs-container .mejs-controls .mejs-time{color:#fff;display:block;height:17px;width:auto;padding:10px 3px 0;overflow:hidden;text-align:center;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}.mejs-container .mejs-controls .mejs-time a{color:#fff;font-size:11px;line-height:12px;display:block;float:left;margin:1px 2px 0 0;width:auto}.mejs-controls .mejs-play button{background-position:0 0}.mejs-controls .mejs-pause button{background-position:0 -16px}.mejs-controls .mejs-stop button{background-position:-112px 0}.mejs-controls div.mejs-time-rail{direction:ltr;width:200px;padding-top:5px}.mejs-controls .mejs-time-rail span,.mejs-controls .mejs-time-rail a{display:block;position:absolute;width:180px;height:10px;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;cursor:pointer}.mejs-controls .mejs-time-rail .mejs-time-total{margin:5px;background:#333;background:rgba(50,50,50,.8);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(30,30,30,.8)),to(rgba(60,60,60,.8)));background:-webkit-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));background:-moz-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));background:-o-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));background:-ms-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));background:linear-gradient(rgba(30,30,30,.8),rgba(60,60,60,.8))}.mejs-controls .mejs-time-rail .mejs-time-buffering{width:100%;background-image:-o-linear-gradient(-45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);background-image:-webkit-gradient(linear,0 100%,100% 0,color-stop(0.25,rgba(255,255,255,.15)),color-stop(0.25,transparent),color-stop(0.5,transparent),color-stop(0.5,rgba(255,255,255,.15)),color-stop(0.75,rgba(255,255,255,.15)),color-stop(0.75,transparent),to(transparent));background-image:-webkit-linear-gradient(-45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);background-image:-moz-linear-gradient(-45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);background-image:-ms-linear-gradient(-45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);background-image:linear-gradient(-45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);-webkit-background-size:15px 15px;-moz-background-size:15px 15px;-o-background-size:15px 15px;background-size:15px 15px;-webkit-animation:buffering-stripes 2s linear infinite;-moz-animation:buffering-stripes 2s linear infinite;-ms-animation:buffering-stripes 2s linear infinite;-o-animation:buffering-stripes 2s linear infinite;animation:buffering-stripes 2s linear infinite}@-webkit-keyframes buffering-stripes{from{background-position:0 0}to{background-position:30px 0}}@-moz-keyframes buffering-stripes{from{background-position:0 0}to{background-position:30px 0}}@-ms-keyframes buffering-stripes{from{background-position:0 0}to{background-position:30px 0}}@-o-keyframes buffering-stripes{from{background-position:0 0}to{background-position:30px 0}}@keyframes buffering-stripes{from{background-position:0 0}to{background-position:30px 0}}.mejs-controls .mejs-time-rail .mejs-time-loaded{background:#3caac8;background:rgba(60,170,200,.8);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(44,124,145,.8)),to(rgba(78,183,212,.8)));background:-webkit-linear-gradient(top,rgba(44,124,145,.8),rgba(78,183,212,.8));background:-moz-linear-gradient(top,rgba(44,124,145,.8),rgba(78,183,212,.8));background:-o-linear-gradient(top,rgba(44,124,145,.8),rgba(78,183,212,.8));background:-ms-linear-gradient(top,rgba(44,124,145,.8),rgba(78,183,212,.8));background:linear-gradient(rgba(44,124,145,.8),rgba(78,183,212,.8));width:0}.mejs-controls .mejs-time-rail .mejs-time-current{background:#fff;background:rgba(255,255,255,.8);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(255,255,255,.9)),to(rgba(200,200,200,.8)));background:-webkit-linear-gradient(top,rgba(255,255,255,.9),rgba(200,200,200,.8));background:-moz-linear-gradient(top,rgba(255,255,255,.9),rgba(200,200,200,.8));background:-o-linear-gradient(top,rgba(255,255,255,.9),rgba(200,200,200,.8));background:-ms-linear-gradient(top,rgba(255,255,255,.9),rgba(200,200,200,.8));background:linear-gradient(rgba(255,255,255,.9),rgba(200,200,200,.8));width:0}.mejs-controls .mejs-time-rail .mejs-time-handle{display:none;position:absolute;margin:0;width:10px;background:#fff;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;cursor:pointer;border:solid 2px #333;top:-2px;text-align:center}.mejs-controls .mejs-time-rail .mejs-time-float{position:absolute;display:none;background:#eee;width:36px;height:17px;border:solid 1px #333;top:-26px;margin-left:-18px;text-align:center;color:#111}.mejs-controls .mejs-time-rail .mejs-time-float-current{margin:2px;width:30px;display:block;text-align:center;left:0}.mejs-controls .mejs-time-rail .mejs-time-float-corner{position:absolute;display:block;width:0;height:0;line-height:0;border:solid 5px #eee;border-color:#eee transparent transparent;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;top:15px;left:13px}.mejs-long-video .mejs-controls .mejs-time-rail .mejs-time-float{width:48px}.mejs-long-video .mejs-controls .mejs-time-rail .mejs-time-float-current{width:44px}.mejs-long-video .mejs-controls .mejs-time-rail .mejs-time-float-corner{left:18px}.mejs-controls .mejs-fullscreen-button button{background-position:-32px 0}.mejs-controls .mejs-unfullscreen button{background-position:-32px -16px}.mejs-controls .mejs-volume-button{}.mejs-controls .mejs-mute button{background-position:-16px -16px}.mejs-controls .mejs-unmute button{background-position:-16px 0}.mejs-controls .mejs-volume-button{position:relative}.mejs-controls .mejs-volume-button .mejs-volume-slider{height:115px;width:25px;background:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(50,50,50,.7);-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;top:-115px;left:0;z-index:1;position:absolute;margin:0}.mejs-controls .mejs-volume-button:hover{-webkit-border-radius:0 0 4px 4px;-moz-border-radius:0 0 4px 4px;border-radius:0 0 4px 4px}.mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-total{position:absolute;left:11px;top:8px;width:2px;height:100px;background:#ddd;background:rgba(255,255,255,.5);margin:0}.mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-current{position:absolute;left:11px;top:8px;width:2px;height:100px;background:#ddd;background:rgba(255,255,255,.9);margin:0}.mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-handle{position:absolute;left:4px;top:-3px;width:16px;height:6px;background:#ddd;background:rgba(255,255,255,.9);cursor:N-resize;-webkit-border-radius:1px;-moz-border-radius:1px;border-radius:1px;margin:0}.mejs-controls a.mejs-horizontal-volume-slider{height:26px;width:56px;position:relative;display:block;float:left;vertical-align:middle}.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total{position:absolute;left:0;top:11px;width:50px;height:8px;margin:0;padding:0;font-size:1px;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;background:#333;background:rgba(50,50,50,.8);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(30,30,30,.8)),to(rgba(60,60,60,.8)));background:-webkit-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));background:-moz-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));background:-o-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));background:-ms-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));background:linear-gradient(rgba(30,30,30,.8),rgba(60,60,60,.8))}.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current{position:absolute;left:0;top:11px;width:50px;height:8px;margin:0;padding:0;font-size:1px;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;background:#fff;background:rgba(255,255,255,.8);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(255,255,255,.9)),to(rgba(200,200,200,.8)));background:-webkit-linear-gradient(top,rgba(255,255,255,.9),rgba(200,200,200,.8));background:-moz-linear-gradient(top,rgba(255,255,255,.9),rgba(200,200,200,.8));background:-o-linear-gradient(top,rgba(255,255,255,.9),rgba(200,200,200,.8));background:-ms-linear-gradient(top,rgba(255,255,255,.9),rgba(200,200,200,.8));background:linear-gradient(rgba(255,255,255,.9),rgba(200,200,200,.8))}.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-handle{display:none}.mejs-controls .mejs-captions-button{position:relative}.mejs-controls .mejs-captions-button button{background-position:-48px 0}.mejs-controls .mejs-captions-button .mejs-captions-selector{position:absolute;bottom:26px;right:-51px;width:85px;height:100px;background:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(50,50,50,.7);border:solid 1px transparent;padding:10px 10px 0;overflow:hidden;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0}.mejs-controls .mejs-captions-button .mejs-captions-selector ul{margin:0;padding:0;display:block;list-style-type:none!important;overflow:hidden}.mejs-controls .mejs-captions-button .mejs-captions-selector ul li{margin:0 0 6px;padding:0;list-style-type:none!important;display:block;color:#fff;overflow:hidden}.mejs-controls .mejs-captions-button .mejs-captions-selector ul li input{clear:both;float:left;margin:3px 3px 0 5px}.mejs-controls .mejs-captions-button .mejs-captions-selector ul li label{width:55px;float:left;padding:4px 0 0;line-height:15px;font-family:Helvetica,Arial,serif;font-size:10px}.mejs-controls .mejs-captions-button .mejs-captions-translations{font-size:10px;margin:0 0 5px}.mejs-chapters{position:absolute;top:0;left:0;border-right:solid 1px #fff;width:10000px;z-index:1}.mejs-chapters .mejs-chapter{position:absolute;float:left;background:#222;background:rgba(0,0,0,.7);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(50,50,50,.7)),to(rgba(0,0,0,.7)));background:-webkit-linear-gradient(top,rgba(50,50,50,.7),rgba(0,0,0,.7));background:-moz-linear-gradient(top,rgba(50,50,50,.7),rgba(0,0,0,.7));background:-o-linear-gradient(top,rgba(50,50,50,.7),rgba(0,0,0,.7));background:-ms-linear-gradient(top,rgba(50,50,50,.7),rgba(0,0,0,.7));background:linear-gradient(rgba(50,50,50,.7),rgba(0,0,0,.7));filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr=#323232, endColorstr=#000000);overflow:hidden;border:0}.mejs-chapters .mejs-chapter .mejs-chapter-block{font-size:11px;color:#fff;padding:5px;display:block;border-right:solid 1px #333;border-bottom:solid 1px #333;cursor:pointer}.mejs-chapters .mejs-chapter .mejs-chapter-block-last{border-right:0}.mejs-chapters .mejs-chapter .mejs-chapter-block:hover{background:#666;background:rgba(102,102,102,.7);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(102,102,102,.7)),to(rgba(50,50,50,.6)));background:-webkit-linear-gradient(top,rgba(102,102,102,.7),rgba(50,50,50,.6));background:-moz-linear-gradient(top,rgba(102,102,102,.7),rgba(50,50,50,.6));background:-o-linear-gradient(top,rgba(102,102,102,.7),rgba(50,50,50,.6));background:-ms-linear-gradient(top,rgba(102,102,102,.7),rgba(50,50,50,.6));background:linear-gradient(rgba(102,102,102,.7),rgba(50,50,50,.6));filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr=#666666, endColorstr=#323232)}.mejs-chapters .mejs-chapter .mejs-chapter-block .ch-title{font-size:12px;font-weight:700;display:block;white-space:nowrap;text-overflow:ellipsis;margin:0 0 3px;line-height:12px}.mejs-chapters .mejs-chapter .mejs-chapter-block .ch-timespan{font-size:12px;line-height:12px;margin:3px 0 4px;display:block;white-space:nowrap;text-overflow:ellipsis}.mejs-captions-layer{position:absolute;bottom:0;left:0;text-align:center;line-height:20px;font-size:16px;color:#fff}.mejs-captions-layer a{color:#fff;text-decoration:underline}.mejs-captions-layer[lang=ar]{font-size:20px;font-weight:400}.mejs-captions-position{position:absolute;width:100%;bottom:15px;left:0}.mejs-captions-position-hover{bottom:35px}.mejs-captions-text,.mejs__captions-text *{padding:0;background:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(20,20,20,.5);white-space:pre-wrap;-webkit-box-shadow:5px 0 0 rgba(20,20,20,.5),-5px 0 0 rgba(20,20,20,.5);box-shadow:5px 0 0 rgba(20,20,20,.5),-5px 0 0 rgba(20,20,20,.5)}.me-cannotplay{}.me-cannotplay a{color:#fff;font-weight:700}.me-cannotplay span{padding:15px;display:block}.mejs-controls .mejs-loop-off button{background-position:-64px -16px}.mejs-controls .mejs-loop-on button{background-position:-64px 0}.mejs-controls .mejs-backlight-off button{background-position:-80px -16px}.mejs-controls .mejs-backlight-on button{background-position:-80px 0}.mejs-controls .mejs-picturecontrols-button{background-position:-96px 0}.mejs-contextmenu{position:absolute;width:150px;padding:10px;border-radius:4px;top:0;left:0;background:#fff;border:solid 1px #999;z-index:1001}.mejs-contextmenu .mejs-contextmenu-separator{height:1px;font-size:0;margin:5px 6px;background:#333}.mejs-contextmenu .mejs-contextmenu-item{font-family:Helvetica,Arial,serif;font-size:12px;padding:4px 6px;cursor:pointer;color:#333}.mejs-contextmenu .mejs-contextmenu-item:hover{background:#2C7C91;color:#fff}.mejs-controls .mejs-sourcechooser-button{position:relative}.mejs-controls .mejs-sourcechooser-button button{background-position:-128px 0}.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector{position:absolute;bottom:26px;right:-10px;width:130px;height:100px;background:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(50,50,50,.7);border:solid 1px transparent;padding:10px;overflow:hidden;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0}.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector ul{margin:0;padding:0;display:block;list-style-type:none!important;overflow:hidden}.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector ul li{margin:0 0 6px;padding:0;list-style-type:none!important;display:block;color:#fff;overflow:hidden}.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector ul li input{clear:both;float:left;margin:3px 3px 0 5px}.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector ul li label{width:100px;float:left;padding:4px 0 0;line-height:15px;font-family:Helvetica,Arial,serif;font-size:10px}.mejs-postroll-layer{position:absolute;bottom:0;left:0;width:100%;height:100%;background:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(50,50,50,.7);z-index:1000;overflow:hidden}.mejs-postroll-layer-content{width:100%;height:100%}.mejs-postroll-close{position:absolute;right:0;top:0;background:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(50,50,50,.7);color:#fff;padding:4px;z-index:100;cursor:pointer}div.mejs-speed-button{width:46px!important;position:relative}.mejs-controls .mejs-button.mejs-speed-button button{background:transparent;width:36px;font-size:11px;line-height:normal;color:#fff}.mejs-controls .mejs-speed-button .mejs-speed-selector{position:absolute;top:-100px;left:-10px;width:60px;height:100px;background:url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(50,50,50,.7);border:solid 1px transparent;padding:0;overflow:hidden;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0}.mejs-controls .mejs-speed-button .mejs-speed-selector ul li label.mejs-speed-selected{color:rgba(33,248,248,1)}.mejs-controls .mejs-speed-button .mejs-speed-selector ul{margin:0;padding:0;display:block;list-style-type:none!important;overflow:hidden}.mejs-controls .mejs-speed-button .mejs-speed-selector ul li{margin:0 0 6px;padding:0 10px;list-style-type:none!important;display:block;color:#fff;overflow:hidden}.mejs-controls .mejs-speed-button .mejs-speed-selector ul li input{clear:both;float:left;margin:3px 3px 0 5px}.mejs-controls .mejs-speed-button .mejs-speed-selector ul li label{width:60px;float:left;padding:4px 0 0;line-height:15px;font-family:Helvetica,Arial,serif;font-size:11px;color:#fff;margin-left:5px;cursor:pointer}.mejs-controls .mejs-speed-button .mejs-speed-selector ul li:hover{background-color:#c8c8c8!important;background-color:rgba(255,255,255,.4)!important}.mejs-controls .mejs-button.mejs-jump-forward-button{background:transparent url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/15e1ac8cbacc2efdf1ac2677de48a253.png) no-repeat 3px 3px}.mejs-controls .mejs-button.mejs-jump-forward-button button{background:transparent;font-size:9px;line-height:normal;color:#fff}.mejs-controls .mejs-button.mejs-skip-back-button{background:transparent url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/cd6dc830eb45b3a5a96bbc936ff54846.png) no-repeat 3px 3px}.mejs-controls .mejs-button.mejs-skip-back-button button{background:transparent;font-size:9px;line-height:normal;color:#fff}</style><style type="text/css">/*
+ * Copyright (C) 2014 - present Instructure, Inc.
+ *
+ * This file is part of Canvas.
+ *
+ * Canvas is free software: you can redistribute it and/or modify it under
+ * the terms of the GNU Affero General Public License as published by the Free
+ * Software Foundation, version 3 of the License.
+ *
+ * Canvas is distributed in the hope that it will be useful, but WITHOUT ANY
+ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
+ * A PARTICULAR PURPOSE. See the GNU Affero General Public License for more
+ * details.
+ *
+ * You should have received a copy of the GNU Affero General Public License along
+ * with this program. If not, see <http://www.gnu.org/licenses/>.
+ */
+
+/* customizations to mediaelementplayer css */
+
+/*
+  Because this file is not proccessed by our brandable_css sass pipeline,
+  it cannot use our sass-direction helpers. So we have to handle RTL manually
+  by putting direction-specific styles in [dir="ltr"] or [dir="rtl"] blocks.
+*/
+/* stylelint-disable property-disallowed-list, declaration-property-value-disallowed-list */
+
+/* good menu widths */
+.mejs-sourcechooser-selector {
+  width: 160px;
+}
+.mejs-sourcechooser-selector label {
+  width: 160px !important;
+}
+
+.mejs-captions-selector {
+  width: 105px;
+}
+[dir="ltr"]  .mejs-captions-selector { text-align: left }
+[dir="rtl"]  .mejs-captions-selector { text-align: right }
+
+.mejs-captions-selector label {
+  width: 70px !important;
+}
+
+/* Subtitile upload link */
+.mejs-captions-selector .upload-track {
+  color: white;
+  margin-top: 3px;
+  margin-bottom: 5px;
+}
+[dir="ltr"] .mejs-captions-selector .upload-track {
+  margin-right: 0px;
+  margin-left: 5px;
+  float: left;
+}
+[dir="rtl"] .mejs-captions-selector .upload-track {
+  margin-left: 0px;
+  margin-right: 5px;
+  float: right;
+}
+
+/* "x" button to remove a subtitle */
+.mejs-captions-selector a[data-remove] {
+  position: absolute;
+  top: 0;
+  color: white;
+}
+[dir="ltr"] .mejs-captions-selector a[data-remove] { right: 0 }
+[dir="rtl"] .mejs-captions-selector a[data-remove] { left: 0 }
+
+
+/* style menu items without a radio button */
+.mejs-button [role="menu"] {
+  padding: 0 !important;
+}
+ /* compensate for above 0 padding */
+ .mejs-button [role="menu"] ul li {
+  position: relative;
+  padding: 0 10px !important;
+}
+/* add a hover effect */
+.mejs-button [role="menu"] ul li:hover {
+  background-color: #c8c8c8 !important;
+  background-color: rgba(255, 255, 255, 0.4) !important;
+}
+.mejs-button [role="menu"] ul li input {
+  border: 0;
+  clip: rect(0 0 0 0);
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+}
+.mejs-button [role="menu"] ul li label {
+  cursor: pointer;
+}
+[dir="ltr"] .mejs-button [role="menu"] ul li label { margin-left: 5px }
+[dir="rtl"] .mejs-button [role="menu"] ul li label { margin-right: 5px }
+
+
+.mejs-button [role="menu"] label.mejs-selected {
+  color: #21f8f8 !important;
+}
+
+/* stylelint-enable property-disallowed-list, declaration-property-value-disallowed-list */
+</style><script charset="utf-8" src="./python_flask week 3 IP_files/37-c-676b6bb88c.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/61-c-de1048959f.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/81-c-34a63b677b.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/93-c-193ef8540d.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/3629-c-e89fd349ba.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/4186-c-8ce292696a.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/35-c-e388d9c8f2.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/canvas-rce-async-chunk-c-9846a244b1.js"></script><script charset="utf-8" src="./python_flask week 3 IP_files/4189-c-c526001de8.js"></script><link rel="stylesheet" href="./python_flask week 3 IP_files/PaginatedView-6d919206cd.css" data-loaded-by-brandablecss="true"><link rel="stylesheet" href="./python_flask week 3 IP_files/TreeBrowser-ebf0e1382f.css" data-loaded-by-brandablecss="true"><link rel="stylesheet" href="./python_flask week 3 IP_files/MoveOutcomeDialog-35936a18c3.css" data-loaded-by-brandablecss="true"></head>
+
+<body class="with-left-side course-menu-expanded with-right-side assignments primary-nav-expanded full-width context-course_558 responsive_awareness responsive_misc responsive_student_grades_page webkit chrome no-touch">
+
+<noscript>
+  <div role="alert" class="ic-flash-static ic-flash-error">
+    <div class="ic-flash__icon" aria-hidden="true">
+      <i class="icon-warning"></i>
+    </div>
+    <h1> To access this site, you must enable JavaScript.</h1>
+  </div>
+</noscript>
+
+
+
+
+<ul id="flash_message_holder"></ul>
+<div id="flash_screenreader_holder" role="alert" aria-live="assertive" aria-relevant="additions" class="screenreader-only" aria-atomic="false"></div>
+
+<div id="application" class="ic-app">
+  
+
+
+
+    <header id="mobile-header" class="no-print">
+      <button type="button" class="Button Button--icon-action-rev Button--large mobile-header-hamburger">
+        <i class="icon-solid icon-hamburger"></i>
+        <span id="mobileHeaderInboxUnreadBadge" class="menu-item__badge" style="min-width: 0; top: 12px; height: 12px; right: 6px; display:none;"></span>
+        <span class="screenreader-only">Dashboard</span>
+      </button>
+      <div class="mobile-header-space"></div>
+        <a class="mobile-header-title expandable" href="https://moringaschool.instructure.com/courses/558" role="button" aria-controls="mobileContextNavContainer">
+          <div>SDC51FlaskRemote</div>
+            <div>python/flask week 3 IP</div>
+        </a>
+        <div class="mobile-header-space"></div>
+        <button type="button" class="Button Button--icon-action-rev Button--large mobile-header-arrow" aria-label="Navigation menu">
+          <i class="icon-arrow-open-down" id="mobileHeaderArrowIcon"></i>
+        </button>
+    </header>
+    <nav id="mobileContextNavContainer"></nav>
+  <header id="header" class="ic-app-header no-print ">
+    <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#content" id="skip_navigation_link">Skip to content</a>
+      <div role="region" class="ic-app-header__main-navigation" aria-label="Global navigation">
+        <div class="ic-app-header__logomark-container">
+          <a href="https://moringaschool.instructure.com/" class="ic-app-header__logomark">
+            <span class="screenreader-only">Dashboard</span>
+          </a>
+        </div>
+        <ul id="menu" class="ic-app-header__menu-list">
+            <li class="menu-item ic-app-header__menu-list-item ">
+              <button id="global_nav_profile_link" class="ic-app-header__menu-list-link">
+                <div class="menu-item-icon-container">
+                  <div aria-hidden="true" class="fs-exclude ic-avatar ">
+                    <img src="./python_flask week 3 IP_files/avatar-50.png" alt="francis.githae@student.moringaschool.com">
+                  </div>
+                  <span class="menu-item__badge"></span>
+                </div>
+                <div class="menu-item__text">
+                  Account
+                </div>
+              </button>
+            </li>
+          <li class="ic-app-header__menu-list-item ">
+            <a id="global_nav_dashboard_link" href="https://moringaschool.instructure.com/" class="ic-app-header__menu-list-link">
+              <div class="menu-item-icon-container" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--dashboard" version="1.1" x="0" y="0" viewBox="0 0 280 200" enable-background="new 0 0 280 200" xml:space="preserve"><path d="M273.09,180.75H197.47V164.47h62.62A122.16,122.16,0,1,0,17.85,142a124,124,0,0,0,2,22.51H90.18v16.29H6.89l-1.5-6.22A138.51,138.51,0,0,1,1.57,142C1.57,65.64,63.67,3.53,140,3.53S278.43,65.64,278.43,142a137.67,137.67,0,0,1-3.84,32.57ZM66.49,87.63,50.24,71.38,61.75,59.86,78,76.12Zm147,0L202,76.12l16.25-16.25,11.51,11.51ZM131.85,53.82v-23h16.29v23Zm15.63,142.3a31.71,31.71,0,0,1-28-16.81c-6.4-12.08-15.73-72.29-17.54-84.25a8.15,8.15,0,0,1,13.58-7.2c8.88,8.21,53.48,49.72,59.88,61.81a31.61,31.61,0,0,1-27.9,46.45ZM121.81,116.2c4.17,24.56,9.23,50.21,12,55.49A15.35,15.35,0,1,0,161,157.3C158.18,152,139.79,133.44,121.81,116.2Z"></path></svg>
+
+              </div>
+              <div class="menu-item__text">Dashboard</div>
+            </a>
+          </li>
+            <li class="menu-item ic-app-header__menu-list-item ic-app-header__menu-list-item--active">
+              <button id="global_nav_courses_link" class="ic-app-header__menu-list-link">
+                <div class="menu-item-icon-container" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--courses" version="1.1" x="0" y="0" viewBox="0 0 280 259" enable-background="new 0 0 280 259" xml:space="preserve"><path d="M73.31,198c-11.93,0-22.22,8-24,18.73a26.67,26.67,0,0,0-.3,3.63v.3a22,22,0,0,0,5.44,14.65,22.47,22.47,0,0,0,17.22,8H200V228.19h-134V213.08H200V198Zm21-105.74h90.64V62H94.3ZM79.19,107.34V46.92H200v60.42Zm7.55,30.21V122.45H192.49v15.11ZM71.65,16.71A22.72,22.72,0,0,0,49,39.36V190.88a41.12,41.12,0,0,1,24.32-8h157V16.71ZM33.88,39.36A37.78,37.78,0,0,1,71.65,1.6H245.36V198H215.15v45.32h22.66V258.4H71.65a37.85,37.85,0,0,1-37.76-37.76Z"></path></svg>
+
+                </div>
+                <div class="menu-item__text">
+                  Courses
+                </div>
+              </button>
+            </li>
+          <li class="menu-item ic-app-header__menu-list-item ">
+            <a id="global_nav_calendar_link" href="https://moringaschool.instructure.com/calendar" class="ic-app-header__menu-list-link">
+              <div class="menu-item-icon-container" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--calendar" version="1.1" x="0" y="0" viewBox="0 0 280 280" enable-background="new 0 0 280 280" xml:space="preserve"><path d="M197.07,213.38h16.31V197.07H197.07Zm-16.31,16.31V180.76h48.92v48.92Zm-48.92-16.31h16.31V197.07H131.85Zm-16.31,16.31V180.76h48.92v48.92ZM66.62,213.38H82.93V197.07H66.62ZM50.32,229.68V180.76H99.24v48.92Zm146.75-81.53h16.31V131.85H197.07Zm-16.31,16.31V115.54h48.92v48.92Zm-48.92-16.31h16.31V131.85H131.85Zm-16.31,16.31V115.54h48.92v48.92ZM66.62,148.15H82.93V131.85H66.62ZM50.32,164.46V115.54H99.24v48.92ZM34,262.29H246V82.93H34ZM246,66.62V42.16A8.17,8.17,0,0,0,237.84,34H213.38v8.15a8.15,8.15,0,1,1-16.31,0V34H82.93v8.15a8.15,8.15,0,0,1-16.31,0V34H42.16A8.17,8.17,0,0,0,34,42.16V66.62Zm-8.15-48.92a24.49,24.49,0,0,1,24.46,24.46V278.6H17.71V42.16A24.49,24.49,0,0,1,42.16,17.71H66.62V9.55a8.15,8.15,0,0,1,16.31,0v8.15H197.07V9.55a8.15,8.15,0,1,1,16.31,0v8.15Z"></path></svg>
+
+              </div>
+              <div class="menu-item__text">
+                Calendar
+              </div>
+            </a>
+          </li>
+          <li class="menu-item ic-app-header__menu-list-item ">
+            <a id="global_nav_conversations_link" href="https://moringaschool.instructure.com/conversations" class="ic-app-header__menu-list-link">
+              <div class="menu-item-icon-container">
+                <span aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--inbox" version="1.1" x="0" y="0" viewBox="0 0 280 280" enable-background="new 0 0 280 280" xml:space="preserve"><path d="M91.72,120.75h96.56V104.65H91.72Zm0,48.28h80.47V152.94H91.72Zm0-96.56h80.47V56.37H91.72Zm160.94,34.88H228.52V10.78h-177v96.56H27.34A24.17,24.17,0,0,0,3.2,131.48V244.14a24.17,24.17,0,0,0,24.14,24.14H252.66a24.17,24.17,0,0,0,24.14-24.14V131.48A24.17,24.17,0,0,0,252.66,107.34Zm0,16.09a8.06,8.06,0,0,1,8,8v51.77l-32.19,19.31V123.44ZM67.58,203.91v-177H212.42v177ZM27.34,123.44H51.48v79.13L19.29,183.26V131.48A8.06,8.06,0,0,1,27.34,123.44ZM252.66,252.19H27.34a8.06,8.06,0,0,1-8-8V202l30,18H230.75l30-18v42.12A8.06,8.06,0,0,1,252.66,252.19Z"></path></svg>
+</span>
+                <span class="menu-item__badge"></span>
+              </div>
+              <div class="menu-item__text">
+                Inbox
+              </div>
+            </a>
+          </li>
+            <li class="menu-item ic-app-header__menu-list-item">
+              <button id="global_nav_history_link" class="ic-app-header__menu-list-link">
+                <div class="menu-item-icon-container" aria-hidden="true">
+                  <svg viewBox="0 0 1920 1920" class="ic-icon-svg menu-item__icon svg-icon-history" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <path d="M960 112.941c-467.125 0-847.059 379.934-847.059 847.059 0 467.125 379.934 847.059 847.059 847.059 467.125 0 847.059-379.934 847.059-847.059 0-467.125-379.934-847.059-847.059-847.059M960 1920C430.645 1920 0 1489.355 0 960S430.645 0 960 0s960 430.645 960 960-430.645 960-960 960m417.905-575.955L903.552 988.28V395.34h112.941v536.47l429.177 321.77-67.765 90.465z" stroke="none" stroke-width="1" fill-rule="evenodd"></path>
+</svg>
+                </div>
+                <div class="menu-item__text">
+                  History
+                </div>
+              </button>
+            </li>
+            
+
+
+          <li class="ic-app-header__menu-list-item">
+           <a id="global_nav_help_link" role="button" class="ic-app-header__menu-list-link" data-track-category="help system" data-track-label="help button" href="http://help.instructure.com/">
+              <div class="menu-item-icon-container" role="presentation">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg menu-item__icon svg-icon-cog" version="1.1" x="0" y="0" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve" fill="currentColor"><path d="M100,127.88A27.88,27.88,0,1,1,127.92,100,27.92,27.92,0,0,1,100,127.88M100,61a39,39,0,1,0,39,39,39.08,39.08,0,0,0-39-39m73.42,39a70.26,70.26,0,0,0-1.15-12.57l20.76-18-19.7-33.66-26.19,8.73a74.2,74.2,0,0,0-22.11-12.68L119.68,5.2H80.4L75,31.83A72.9,72.9,0,0,0,52.89,44.51L26.71,35.79,7,69.45l20.74,18a69.95,69.95,0,0,0,0,25.13L7,130.55l19.7,33.66,26.19-8.74A74.23,74.23,0,0,0,75,168.16l5.4,26.64h39.28l5.4-26.63a72.88,72.88,0,0,0,22.11-12.69l26.19,8.74,19.7-33.66-20.76-18A70.26,70.26,0,0,0,173.46,100Zm5.31,32.92-10.45,17.86-23.72-7.92-2.42,2.2a61.7,61.7,0,0,1-23.57,13.51l-3.17,1-4.88,24.1h-21l-4.88-24.11-3.17-1A61.7,61.7,0,0,1,57.91,145l-2.42-2.2-23.72,7.92L21.31,132.91l18.74-16.24-.74-3.26a59.25,59.25,0,0,1,0-26.83l.74-3.26L21.31,67.09,31.76,49.23l23.72,7.91,2.42-2.2A61.87,61.87,0,0,1,81.47,41.42l3.17-1,4.88-24.1h21l4.88,24.11,3.17,1A61.73,61.73,0,0,1,142.18,55l2.42,2.2,23.72-7.92,10.45,17.86L160,83.33l.74,3.26a59.25,59.25,0,0,1,0,26.83l-.74,3.26Z"></path></svg>
+
+                <span class="menu-item__badge"></span>
+              </div>
+              <div class="menu-item__text">
+                Help Desk
+              </div>
+</a>          </li>
+        </ul>
+      </div>
+      <div class="ic-app-header__secondary-navigation">
+        <ul class="ic-app-header__menu-list">
+          <li class="menu-item ic-app-header__menu-list-item">
+            <button id="primaryNavToggle" class="ic-app-header__menu-list-link ic-app-header__menu-list-link--nav-toggle" aria-label="Minimise global navigation" title="Minimise global navigation">
+              <div class="menu-item-icon-container" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--navtoggle" version="1.1" x="0" y="0" width="40" height="32" viewBox="0 0 40 32" xml:space="preserve">
+  <path d="M39.5,30.28V2.48H37.18v27.8Zm-4.93-13.9L22.17,4,20.53,5.61l9.61,9.61H.5v2.31H30.14l-9.61,9.61,1.64,1.64Z"></path>
+</svg>
+
+              </div>
+            </button>
+          </li>
+        </ul>
+      </div>
+    <div id="global_nav_tray_container"></div>
+    <div id="global_nav_tour"></div>
+  </header>
+
+
+  <div id="instructure_ajax_error_box">
+    <div style="text-align: right; background-color: #fff;"><a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="close_instructure_ajax_error_box_link">Close</a></div>
+    <iframe id="instructure_ajax_error_result" src="./python_flask week 3 IP_files/saved_resource.html" style="border: 0;" title="Error"></iframe>
+  </div>
+
+  <div id="wrapper" class="ic-Layout-wrapper">
+      <div class="ic-app-nav-toggle-and-crumbs no-print">
+          <button type="button" id="courseMenuToggle" class="Button Button--link ic-app-course-nav-toggle" aria-live="polite" aria-label="Hide courses navigation menu">
+            <i class="icon-hamburger" aria-hidden="true"></i>
+          </button>
+
+        <div class="ic-app-crumbs">
+            <nav id="breadcrumbs" role="navigation" aria-label="breadcrumbs"><ul><li class="home"><a href="https://moringaschool.instructure.com/"><span class="ellipsible"><i class="icon-home" title="My dashboard">
+  <span class="screenreader-only">My dashboard</span>
+</i>
+</span></a></li><li><a href="https://moringaschool.instructure.com/courses/558"><span class="ellipsible">SDC51FlaskRemote</span></a></li><li><a href="https://moringaschool.instructure.com/courses/558/assignments"><span class="ellipsible">Assignments</span></a></li><li><a href="https://moringaschool.instructure.com/courses/558/assignments/8093"><span class="ellipsible">python/flask week 3 IP</span></a></li></ul></nav>
+        </div>
+
+
+        <div class="right-of-crumbs">
+            <div class="TutorialToggleHolder"></div>
+        </div>
+
+      </div>
+    <div id="main" class="ic-Layout-columns">
+        <div class="ic-Layout-watermark"></div>
+        <div id="left-side" class="ic-app-course-menu ic-sticky-on list-view" style="display: block">
+            <div id="sticky-container" class="ic-sticky-frame">
+                <span id="section-tabs-header-subtitle" class="ellipsis">SD51</span>
+              <nav role="navigation" aria-label="Courses navigation menu"><ul id="section-tabs"><li class="section"><a href="https://moringaschool.instructure.com/courses/558" class="home" tabindex="0">Home</a></li><li class="section"><a href="https://moringaschool.instructure.com/courses/558/modules" class="modules" tabindex="0">Modules</a></li><li class="section"><a href="https://moringaschool.instructure.com/courses/558/grades" class="grades" tabindex="0">Grades</a></li><li class="section"><a href="https://moringaschool.instructure.com/courses/558/assignments" aria-current="page" class="assignments active" tabindex="0">Assignments</a></li><li class="section"><a href="https://moringaschool.instructure.com/courses/558/discussion_topics" class="discussions" tabindex="0">Discussions</a></li><li class="section"><a href="https://moringaschool.instructure.com/courses/558/files" class="files" tabindex="0">Files</a></li><li class="section"><a href="https://moringaschool.instructure.com/courses/558/quizzes" class="quizzes" tabindex="0">Quizzes</a></li><li class="section"><a href="https://moringaschool.instructure.com/courses/558/lti_collaborations" class="collaborations" tabindex="0">Collaborations</a></li><li class="section"><a href="https://moringaschool.instructure.com/courses/558/external_tools/162" class="context_external_tool_162" tabindex="0">Google Drive</a></li><li class="section"><a href="https://moringaschool.instructure.com/courses/558/external_tools/164" class="context_external_tool_164" tabindex="0">Daily Health Check </a></li></ul></nav>
+            </div>
+        </div>
+      <div id="not_right_side" class="ic-app-main-content">
+        <div id="content-wrapper" class="ic-Layout-contentWrapper">
+          
+          <div id="content" class="ic-Layout-contentMain" role="main">
+            
+<style>
+  #right-side-wrapper {
+    height: 100%;
+  }
+</style>
+
+
+
+<div id="assignment_show" class="assignment content_underline_links">
+    <!--Student View-->
+    <div class="assignment-title">
+      <div class="title-content">
+        <h1 class="title">
+          python/flask week 3 IP
+        </h1>
+      </div>
+      <div class="assignment-buttons">
+        
+
+        <button type="button" class="Button Button--primary submit_assignment_link ">New Attempt</button>
+      </div>
+    </div>
+    
+<ul class="student-assignment-overview">
+  <li>
+    <span class="title">Due</span>
+    <span class="value">
+          <span class="date_text">
+                <span class="display_date">7 Feb</span> by 
+                <span class="display_time">12:00</span>
+          </span>
+        </span>
+  </li>
+  <li>
+    <span class="title">Points</span>
+    <span class="value">23</span>
+  </li>
+    <li>
+      <span class="title">Submitting</span>
+      <span class="value">a website url</span>
+    </li>
+  
+  <li>
+    <span class="title">Available</span>
+    <span class="value">
+        3 Feb at 0:00 - 7 Feb at 12:00
+        <span style="font-size: 0.8em;">5 days</span>
+    </span>
+  </li>
+
+  <div class="clear"></div>
+</ul>
+
+  <div class="clear"></div>
+
+
+  <div class="clear"></div>
+
+
+
+  <div class="description user_content "><h3>Goal</h3>
+<p>The purpose of this independent project is to demonstrate your understanding of the content you&nbsp;covered throughout the week.&nbsp;</p>
+<h3>Overall Project Description</h3>
+<p>In life, you only have 60 seconds to impress someone. 1 minute can make or break you. How do we make sure that you use your 1 minute to actually say something meaningful?</p>
+<p>Your task this week is to create an application that allows users to use that one minute wisely. The users will submit their one minute pitches and other users will vote on them and leave comments to give their feedback on them.</p>
+<p>The pitches are organized by category. You can have different categories like pickup lines, interview pitch, product pitch, promotion pitch.(You don't&nbsp;have to use these categories, you can come up with your own creative categories)&nbsp;</p>
+<p>The pitches should be arranged by category and the new posts should be displayed first.</p>
+<h3>User Story</h3>
+<p>Here are some user stories to help you get started:</p>
+<ul>
+<li>As a user, I would like to see the pitches other people have posted.</li>
+<li>As a user, I would like to vote on the pitch they liked and give it a downvote or upvote.</li>
+<li>As a user, I would like to be signed in for me to leave a comment</li>
+<li>As a user,&nbsp;I would like to receive a welcoming email once I sign up.</li>
+<li>As a user, I would like to view the pitches I have created in my profile page.</li>
+<li>As a user, I would like to comment on the different pitches and leave feedback.</li>
+<li>As a user, I would like to submit a pitch in any category.</li>
+<li>As a user, I would like to view the different categories.</li>
+</ul>
+<h3>UI Design</h3>
+<p><span>Your application should have a clean, simple, well-organized user interface. Ensure you choose a consistent colour scheme and use appropriate fonts for your application. Also, you</span><span>&nbsp;</span><strong>MUST</strong><span>&nbsp;</span><span>create a mockup design for your application before you begin development.</span></p>
+<p>You can use the following resources to design your application:</p>
+<ol>
+<li>Pen and Paper - For Mockup design.</li>
+<li><a class="external" href="http://getbootstrap.com/" target="_blank"><span>Bootstrap<span class="screenreader-only">&nbsp;(Links to an external site.)</span></span><span class="ui-icon ui-icon-extlink ui-icon-inline" title="Links to an external site."><span class="screenreader-only">Links to an external site.</span></span></a><span>&nbsp;</span>- For simple responsive UI elements</li>
+<li><a class="external" href="https://coolors.co/" target="_blank"><span>Coolors<span class="screenreader-only">&nbsp;(Links to an external site.)</span></span><span class="ui-icon ui-icon-extlink ui-icon-inline" title="Links to an external site."><span class="screenreader-only">Links to an external site.</span></span></a><span>&nbsp;</span>- For Color scheme generation.</li>
+<li><a class="external" href="https://dillinger.io/fonts.google.com" target="_blank"><span>Google fonts<span class="screenreader-only">&nbsp;(Links to an external site.)</span></span><span class="ui-icon ui-icon-extlink ui-icon-inline" title="Links to an external site."><span class="screenreader-only">Links to an external site.</span></span></a><span>&nbsp;</span>- For beautiful fonts</li>
+</ol>
+<p>&nbsp;</p>
+<h3>Project Objectives</h3>
+<ol>
+<li>Your project must have a user model.</li>
+<li>In your models, implement&nbsp;at least&nbsp;1 one-to-many relationship.</li>
+<li>Your project should have a comment model.</li>
+<li>Your project should have a profile page.</li>
+<li>Your project should follow the proper folder structure.</li>
+<li>Your project should have a functioning authentication system.</li>
+<li>Your project should contain migration files for the different model structure.</li>
+</ol>
+<h3>Technical Requirements</h3>
+<ol>
+<li>Create a specs markdown file that lists down all the projects specifications.</li>
+<li>All your models should contain unittests to test the different behaviours. All your test should pass.</li>
+<li>Your project should be deployed to Heroku.</li>
+<li>Your project should contain proper commit messages.</li>
+<li>Project is polished and in portfolio-quality state</li>
+</ol>
+<h3>Further exploration</h3>
+<p>You can create a favourite pitch section where you list all the favourite pitches</p></div>
+
+
+  <div style="display: none;">
+    <span class="timestamp">1644224400</span>
+    <span class="due_date_string">02/07/2022</span>
+    <span class="due_time_string">12:00pm</span>
+  </div>
+</div>
+
+
+  
+<div style="display: none;" id="submit_assignment" data-context_code="course_558" data-asset_string="assignment_8093">
+  <div class="content" id="submit_assignment_tabs">
+    <ul>
+        <li><a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#submit_online_url_form" class="submit_online_url_option">Website URL</a></li>
+        <li><a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#submit_from_external_tool_form_162" class="external-tool" data-id="162" data-name="Google Apps">Google Drive</a></li>
+        <li><a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#submit_from_external_tool_form_148" class="external-tool" data-id="148" data-name="Google Assignments (LTI 1.3)">Google Drive (LTI 1.3)</a></li>
+    </ul>
+
+
+      <form id="submit_online_url_form" class="submit_assignment_form" action="https://moringaschool.instructure.com/courses/558/assignments/8093/submissions" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="Ly82ZBgePPrj/zi2Nagg7o6Y4iEQA9SvOwJaCiH6K7tIfnJSd0llqpmweYNGwVPZwK6raXZLpuZyNmlaFL1K8w==">
+        <input value="online_url" type="hidden" name="submission[submission_type]" id="submission_submission_type">
+        <table class="formtable" style="width: 100%;">
+          <tbody><tr>
+            <td colspan="2">
+              Copy and paste the link to the web site you'd like to submit for this assignment.
+                
+              </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <label for="submission_url">Website URL:</label>
+              &nbsp;&nbsp;
+              <input style="min-width: 250px;" type="text" name="submission[url]" id="submission_url">
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" style="text-align: center;">
+              <div style="text-align: left;">
+                <textarea class="submission_comment_textarea" placeholder="Comments..." title="Additional comments" name="submission[comment]" id="submission_comment"></textarea>
+              </div>
+            </td>
+          </tr>
+          
+
+          <tr>
+            <td colspan="2" class="button-container">
+              <button type="button" class="cancel_button btn">Cancel</button>
+              <button type="submit" class="btn btn-primary">Submit assignment</button>
+            </td>
+          </tr>
+        </tbody></table>
+</form>
+
+    <style>
+    #google_docs_tree li.folder {
+      cursor: pointer;
+    }
+    #google_docs_tree li.file {
+      cursor: pointer;
+      -moz-border-radius: 3px;
+      width: 80%;
+      padding-right: 20px;
+    }
+    #google_docs_tree li.file:hover {
+      background-color: #eee;
+    }
+    ul.instTree li span.active {
+      background: none;
+    }
+    #google_docs_tree li.file.leaf.active {
+      background-color: #ddd;
+    }
+    #google_docs_tree li.file .filename {
+      float: left;
+      max-width: 98%;
+    }
+    #google_docs_tree li.file .popout {
+      float: right;
+    }
+    </style>
+
+
+      <div id="submit_from_external_tool_form_162" style="padding: 5px 5px 0 5px;"></div>
+      <div id="submit_from_external_tool_form_148" style="padding: 5px 5px 0 5px;"></div>
+  </div>
+</div>
+
+
+
+
+
+  <div id="rubrics" class="mathjax_ignore" style="margin-bottom: 10px;">
+      
+<div class="rubric_container rubric  for_grading" id="rubric_2359" style="">
+  <div class="screenreader-only"><h2>Rubric</h2></div>
+  <div class="rubric_title">
+    <div style="display: none;" class="links displaying pull-right">
+      <a href="https://moringaschool.instructure.com/courses/558/rubrics/2359?rubric_association_id=4876" class="copy_edit edit_rubric_link no-print no-hover" style="display: none;" title="Edit rubric" aria-label="Edit rubric" role="button"><i class="icon-edit standalone-icon"></i></a>
+      <a href="https://moringaschool.instructure.com/search/rubrics?q=" class="find_rubric_link no-print no-hover" style="display: none;" title="Find another rubric" aria-label="Find another rubric" role="button"><i class="icon-search standalone-icon"></i></a>
+        <a href="https://moringaschool.instructure.com/courses/558/rubric_associations/4876" class="delete_rubric_link no-print no-hover" style="display: none;" title="Delete rubric" aria-label="Delete rubric" role="button"><i class="icon-trash standalone-icon"></i></a>
+      <div style="display: none;">
+        <div class="use_for_grading">true</div>
+        <div class="free_form_criterion_comments">&nbsp;</div>
+        <div class="hide_score_total">&nbsp;</div>
+        <div class="hide_outcome_results">&nbsp;</div>
+        <div class="hide_points">&nbsp;</div>
+        <div class="rubric_association_id">4876</div>
+          <div class="user_id">&nbsp;</div>
+        <div class="assessment_type"></div>
+        <a href="https://moringaschool.instructure.com/courses/558/rubric_associations/4876/assessments/%7B%7B%20assessment_id%20%7D%7D" rel="nofollow" class="edit_assessment_link">&nbsp;</a>
+        <a href="https://moringaschool.instructure.com/courses/558/rubrics/%7B%7B%20rubric_id%20%7D%7D" class="edit_rubric_url">&nbsp;</a>
+          <a href="https://moringaschool.instructure.com/courses/558/rubric_associations/%7B%7B%20association_id%20%7D%7D" class="delete_rubric_url">&nbsp;</a>
+      </div>
+    </div>
+    <div style="float: right; font-size: 0.8em; display: none;" class="links displaying locked">
+      <span style="">Can't change a rubric once you've started using it.</span>
+        <a href="https://moringaschool.instructure.com/courses/558/rubric_associations/%7B%7B%20association_id%20%7D%7D" class="delete_rubric_url" style="display: none;">&nbsp;</a>
+    </div>
+
+    <div class="editing" style="float: right;">
+      <a href="https://moringaschool.instructure.com/search/rubrics?q=" class="find_rubric_link icon-search" style="display: none;" title="Find existing rubric">Find a rubric</a>
+    </div>
+    <div class="editing" style="text-align: left">
+      <label for="rubric-title">Title:</label>
+      <input id="rubric-title" type="text" class="no-margin-bottom" name="title" value="Independent Project" style="width: 200px;" maxlength="255" aria-label="Title:">
+      <a href="https://moringaschool.instructure.com/search/rubrics?q=" style="display: none;"><img alt="" src="./python_flask week 3 IP_files/find-6164443e2a.png"> Find rubric</a>
+    </div>
+    <div class="displaying">
+      <span class="title" tabindex="-1">Independent Project</span>
+    </div>
+    <div class="has-assessments-warning" style="display: none;">
+      You've already rated students with this rubric. Any major changes could affect their assessment results.
+    </div>
+  </div>
+<table class="rubric_table">
+<caption>
+  <div class="screenreader-only">
+    <span class="title">Independent Project</span>
+  </div>
+</caption>
+<thead>
+  <tr>
+    <th scope="col">Criteria</th>
+    <th scope="col">Ratings</th>
+    <th scope="col" class="toggle_for_hide_points ">
+      Pts
+    </th>
+  </tr>
+</thead>
+<tbody>
+      
+<tr id="criterion__9395" class="criterion   " style="">
+  <td class="criterion_description hover-container pad-box-micro">
+    <div class="container">
+      <div class="links editing">
+          <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="edit_criterion_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit criterion description</span></a>
+        <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="delete_criterion_link"><i class="icon-trash standalone-icon"></i><span class="screenreader-only">Delete criterion row</span></a>
+      </div>
+      <div class="description_content">
+        <span class="outcome_sr_content" aria-hidden="true">
+          <i class="learning_outcome_flag icon-outcomes" aria-hidden="true"></i>
+          <span class="screenreader-only">This criterion is linked to a learning outcome</span>
+        </span>
+        <span class="description description_title">Project functions as expected</span>
+        <span class="learning_outcome_id" style="display: none;"></span>
+        <span class="criterion_id" style="display: none;">_9395</span>
+          <div class="long_description small_description"></div>
+        <div class="hide_when_learning_outcome ">
+          <div class="criterion_use_range_div editing toggle_for_hide_points ">
+            <label>Range
+              <input type="checkbox" class="criterion_use_range"></label>
+          </div>
+        </div>
+        <div class="threshold toggle_for_hide_points ">
+          threshold:
+          <span class="mastery_points"></span> pts
+        </div>
+      </div>
+
+    </div>
+  </td>
+  <td style="padding: 0;">
+      <table class="ratings" style=""><tbody><tr>
+          <td id="rating_blank" class="rating edge_rating
+                
+                ">
+            <div class="container" style="height: 140px;">
+              <div class="rating-main">
+                  <div class="editing links">
+                    <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="edit_rating_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit rating</span></a>
+                    <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="delete_rating_link"><i class="icon-trash standalone-icon"></i><span class="screenreader-only">Delete rating</span></a>
+                  </div>
+                  <div class="clear"></div>
+                <span class="nobr toggle_for_hide_points ">
+                  <span class="points">4</span>
+                  <span class="range_rating" style="display: none;">to &gt;<span class="min_points">3.0</span></span> Pts
+                </span>
+                <div class="description rating_description_value">Project has all the user stories implemented and working properly.</div>
+                <div class="rating_long_description small_description"></div>
+                <span class="rating_id" style="display: none;">blank</span>
+              </div>
+                <div class="editing links add_rating_link">
+                  <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="add_rating_link_after" aria-label="Add rating"><i class="icon-add icon-Solid"></i></a>
+                </div>
+            </div>
+          </td>
+          <td id="rating_11_9662" class="rating 
+                
+                ">
+            <div class="container" style="height: 140px;">
+              <div class="rating-main">
+                  <div class="editing links">
+                    <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="edit_rating_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit rating</span></a>
+                    <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="delete_rating_link"><i class="icon-trash standalone-icon"></i><span class="screenreader-only">Delete rating</span></a>
+                  </div>
+                  <div class="clear"></div>
+                <span class="nobr toggle_for_hide_points ">
+                  <span class="points">3</span>
+                  <span class="range_rating" style="display: none;">to &gt;<span class="min_points">1.0</span></span> Pts
+                </span>
+                <div class="description rating_description_value">Project has only half of the user stories working</div>
+                <div class="rating_long_description small_description"></div>
+                <span class="rating_id" style="display: none;">11_9662</span>
+              </div>
+                <div class="editing links add_rating_link">
+                  <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="add_rating_link_after" aria-label="Add rating"><i class="icon-add icon-Solid"></i></a>
+                </div>
+            </div>
+          </td>
+          <td id="rating_11_520" class="rating 
+                
+                ">
+            <div class="container" style="height: 140px;">
+              <div class="rating-main">
+                  <div class="editing links">
+                    <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="edit_rating_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit rating</span></a>
+                    <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="delete_rating_link"><i class="icon-trash standalone-icon"></i><span class="screenreader-only">Delete rating</span></a>
+                  </div>
+                  <div class="clear"></div>
+                <span class="nobr toggle_for_hide_points ">
+                  <span class="points">1</span>
+                  <span class="range_rating" style="display: none;">to &gt;<span class="min_points">0.0</span></span> Pts
+                </span>
+                <div class="description rating_description_value">Project has less than half of the user stories working.</div>
+                <div class="rating_long_description small_description"></div>
+                <span class="rating_id" style="display: none;">11_520</span>
+              </div>
+                <div class="editing links add_rating_link">
+                  <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="add_rating_link_after" aria-label="Add rating"><i class="icon-add icon-Solid"></i></a>
+                </div>
+            </div>
+          </td>
+          <td id="rating_blank_2" class="rating edge_rating
+                infinitesimal
+                ">
+            <div class="container" style="height: 140px;">
+              <div class="rating-main">
+                  <div class="editing links">
+                    <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="edit_rating_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit rating</span></a>
+                    <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="delete_rating_link"><i class="icon-trash standalone-icon"></i><span class="screenreader-only">Delete rating</span></a>
+                  </div>
+                  <div class="clear"></div>
+                <span class="nobr toggle_for_hide_points ">
+                  <span class="points">0</span>
+                  <span class="range_rating" style="display: none;">to &gt;<span class="min_points">0</span></span> Pts
+                </span>
+                <div class="description rating_description_value">Project has no user stories implemented</div>
+                <div class="rating_long_description small_description"></div>
+                <span class="rating_id" style="display: none;">blank_2</span>
+              </div>
+            </div>
+          </td>
+      </tr></tbody></table>
+      <div style="display: none; font-size: 0.8em; margin: 5px;" class="custom_ratings">
+        This area will be used by the assessor to leave comments related to this criterion.
+      </div>
+  </td>
+  <td class="nobr points_form toggle_for_hide_points ">
+    <div class="editing" style="white-space: normal">
+      <span style="white-space: nowrap; font-size: 0.8em">
+          
+            <input type="text" aria-label="Points" value="4" class="criterion_points span1 no-margin-bottom">
+           pts
+      </span><br>
+    </div>
+    <div class="displaying">
+      <span style="white-space: nowrap;">
+        <span class="criterion_rating_points_holder" style="display: none;">
+          <span class="criterion_rating_points">&nbsp;</span> /
+        </span>
+        <span class="display_criterion_points">4</span> pts<br>
+      </span>
+    </div>
+    <div class="ignoring">
+      <span> -- </span>
+    </div>
+    <div class="criterion_comments">
+        <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="no-hover criterion_comments_link" title="Additional comments">
+          <img alt="Additional comments" src="./python_flask week 3 IP_files/rubric_comment-ddae8546ab.png">
+        </a>
+        <div class="custom_rating" style="display: none;"></div>
+    </div>
+  </td>
+</tr>
+
+      
+<tr id="criterion__3763" class="criterion   " style="">
+  <td class="criterion_description hover-container pad-box-micro">
+    <div class="container">
+      <div class="links editing">
+          <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="edit_criterion_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit criterion description</span></a>
+        <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="delete_criterion_link"><i class="icon-trash standalone-icon"></i><span class="screenreader-only">Delete criterion row</span></a>
+      </div>
+      <div class="description_content">
+        <span class="outcome_sr_content" aria-hidden="true">
+          <i class="learning_outcome_flag icon-outcomes" aria-hidden="true"></i>
+          <span class="screenreader-only">This criterion is linked to a learning outcome</span>
+        </span>
+        <span class="description description_title">Project meets all the objectives</span>
+        <span class="learning_outcome_id" style="display: none;"></span>
+        <span class="criterion_id" style="display: none;">_3763</span>
+          <div class="long_description small_description"></div>
+        <div class="hide_when_learning_outcome ">
+          <div class="criterion_use_range_div editing toggle_for_hide_points ">
+            <label>Range
+              <input type="checkbox" class="criterion_use_range"></label>
+          </div>
+        </div>
+        <div class="threshold toggle_for_hide_points ">
+          threshold:
+          <span class="mastery_points"></span> pts
+        </div>
+      </div>
+
+    </div>
+  </td>
+  <td style="padding: 0;">
+      <table class="ratings" style=""><tbody><tr>
+          <td id="rating__6812" class="rating edge_rating
+                
+                ">
+            <div class="container" style="height: 99px;">
+              <div class="rating-main">
+                  <div class="editing links">
+                    <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="edit_rating_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit rating</span></a>
+                    <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="delete_rating_link"><i class="icon-trash standalone-icon"></i><span class="screenreader-only">Delete rating</span></a>
+                  </div>
+                  <div class="clear"></div>
+                <span class="nobr toggle_for_hide_points ">
+                  <span class="points">4</span>
+                  <span class="range_rating" style="display: none;">to &gt;<span class="min_points">3.0</span></span> Pts
+                </span>
+                <div class="description rating_description_value">Project meets all the Objectives</div>
+                <div class="rating_long_description small_description"></div>
+                <span class="rating_id" style="display: none;">_6812</span>
+              </div>
+                <div class="editing links add_rating_link">
+                  <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="add_rating_link_after" aria-label="Add rating"><i class="icon-add icon-Solid"></i></a>
+                </div>
+            </div>
+          </td>
+          <td id="rating_11_138" class="rating 
+                
+                ">
+            <div class="container" style="height: 99px;">
+              <div class="rating-main">
+                  <div class="editing links">
+                    <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="edit_rating_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit rating</span></a>
+                    <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="delete_rating_link"><i class="icon-trash standalone-icon"></i><span class="screenreader-only">Delete rating</span></a>
+                  </div>
+                  <div class="clear"></div>
+                <span class="nobr toggle_for_hide_points ">
+                  <span class="points">3</span>
+                  <span class="range_rating" style="display: none;">to &gt;<span class="min_points">2.0</span></span> Pts
+                </span>
+                <div class="description rating_description_value">Project meets more than half of the objectives</div>
+                <div class="rating_long_description small_description"></div>
+                <span class="rating_id" style="display: none;">11_138</span>
+              </div>
+                <div class="editing links add_rating_link">
+                  <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="add_rating_link_after" aria-label="Add rating"><i class="icon-add icon-Solid"></i></a>
+                </div>
+            </div>
+          </td>
+          <td id="rating_11_1865" class="rating 
+                
+                ">
+            <div class="container" style="height: 99px;">
+              <div class="rating-main">
+                  <div class="editing links">
+                    <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="edit_rating_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit rating</span></a>
+                    <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="delete_rating_link"><i class="icon-trash standalone-icon"></i><span class="screenreader-only">Delete rating</span></a>
+                  </div>
+                  <div class="clear"></div>
+                <span class="nobr toggle_for_hide_points ">
+                  <span class="points">2</span>
+                  <span class="range_rating" style="display: none;">to &gt;<span class="min_points">0.0</span></span> Pts
+                </span>
+                <div class="description rating_description_value">Project meets less than half of the objectives</div>
+                <div class="rating_long_description small_description"></div>
+                <span class="rating_id" style="display: none;">11_1865</span>
+              </div>
+                <div class="editing links add_rating_link">
+                  <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="add_rating_link_after" aria-label="Add rating"><i class="icon-add icon-Solid"></i></a>
+                </div>
+            </div>
+          </td>
+          <td id="rating__6885" class="rating edge_rating
+                infinitesimal
+                ">
+            <div class="container" style="height: 99px;">
+              <div class="rating-main">
+                  <div class="editing links">
+                    <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="edit_rating_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit rating</span></a>
+                    <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="delete_rating_link"><i class="icon-trash standalone-icon"></i><span class="screenreader-only">Delete rating</span></a>
+                  </div>
+                  <div class="clear"></div>
+                <span class="nobr toggle_for_hide_points ">
+                  <span class="points">0</span>
+                  <span class="range_rating" style="display: none;">to &gt;<span class="min_points">0</span></span> Pts
+                </span>
+                <div class="description rating_description_value">Project does not have any of the objectives met</div>
+                <div class="rating_long_description small_description"></div>
+                <span class="rating_id" style="display: none;">_6885</span>
+              </div>
+            </div>
+          </td>
+      </tr></tbody></table>
+      <div style="display: none; font-size: 0.8em; margin: 5px;" class="custom_ratings">
+        This area will be used by the assessor to leave comments related to this criterion.
+      </div>
+  </td>
+  <td class="nobr points_form toggle_for_hide_points ">
+    <div class="editing" style="white-space: normal">
+      <span style="white-space: nowrap; font-size: 0.8em">
+          
+            <input type="text" aria-label="Points" value="4" class="criterion_points span1 no-margin-bottom">
+           pts
+      </span><br>
+    </div>
+    <div class="displaying">
+      <span style="white-space: nowrap;">
+        <span class="criterion_rating_points_holder" style="display: none;">
+          <span class="criterion_rating_points">&nbsp;</span> /
+        </span>
+        <span class="display_criterion_points">4</span> pts<br>
+      </span>
+    </div>
+    <div class="ignoring">
+      <span> -- </span>
+    </div>
+    <div class="criterion_comments">
+        <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="no-hover criterion_comments_link" title="Additional comments">
+          <img alt="Additional comments" src="./python_flask week 3 IP_files/rubric_comment-ddae8546ab.png">
+        </a>
+        <div class="custom_rating" style="display: none;"></div>
+    </div>
+  </td>
+</tr>
+
+      
+<tr id="criterion__5919" class="criterion   " style="">
+  <td class="criterion_description hover-container pad-box-micro">
+    <div class="container">
+      <div class="links editing">
+          <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="edit_criterion_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit criterion description</span></a>
+        <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="delete_criterion_link"><i class="icon-trash standalone-icon"></i><span class="screenreader-only">Delete criterion row</span></a>
+      </div>
+      <div class="description_content">
+        <span class="outcome_sr_content" aria-hidden="true">
+          <i class="learning_outcome_flag icon-outcomes" aria-hidden="true"></i>
+          <span class="screenreader-only">This criterion is linked to a learning outcome</span>
+        </span>
+        <span class="description description_title">Commits are made regularly with clear messages associated with them</span>
+        <span class="learning_outcome_id" style="display: none;"></span>
+        <span class="criterion_id" style="display: none;">_5919</span>
+          <div class="long_description small_description"></div>
+        <div class="hide_when_learning_outcome ">
+          <div class="criterion_use_range_div editing toggle_for_hide_points ">
+            <label>Range
+              <input type="checkbox" class="criterion_use_range"></label>
+          </div>
+        </div>
+        <div class="threshold toggle_for_hide_points ">
+          threshold:
+          <span class="mastery_points"></span> pts
+        </div>
+      </div>
+
+    </div>
+  </td>
+  <td style="padding: 0;">
+      <table class="ratings" style=""><tbody><tr>
+          <td id="rating__1664" class="rating edge_rating
+                
+                ">
+            <div class="container" style="height: 99px;">
+              <div class="rating-main">
+                  <div class="editing links">
+                    <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="edit_rating_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit rating</span></a>
+                    <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="delete_rating_link"><i class="icon-trash standalone-icon"></i><span class="screenreader-only">Delete rating</span></a>
+                  </div>
+                  <div class="clear"></div>
+                <span class="nobr toggle_for_hide_points ">
+                  <span class="points">3</span>
+                  <span class="range_rating" style="display: none;">to &gt;<span class="min_points">2.0</span></span> Pts
+                </span>
+                <div class="description rating_description_value">20 + commits in the project with well detailed commit messages</div>
+                <div class="rating_long_description small_description"></div>
+                <span class="rating_id" style="display: none;">_1664</span>
+              </div>
+                <div class="editing links add_rating_link">
+                  <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="add_rating_link_after" aria-label="Add rating"><i class="icon-add icon-Solid"></i></a>
+                </div>
+            </div>
+          </td>
+          <td id="rating_11_5790" class="rating 
+                
+                ">
+            <div class="container" style="height: 99px;">
+              <div class="rating-main">
+                  <div class="editing links">
+                    <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="edit_rating_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit rating</span></a>
+                    <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="delete_rating_link"><i class="icon-trash standalone-icon"></i><span class="screenreader-only">Delete rating</span></a>
+                  </div>
+                  <div class="clear"></div>
+                <span class="nobr toggle_for_hide_points ">
+                  <span class="points">2</span>
+                  <span class="range_rating" style="display: none;">to &gt;<span class="min_points">1.0</span></span> Pts
+                </span>
+                <div class="description rating_description_value">Between 10 and 20 Github commits with detailed commit messages</div>
+                <div class="rating_long_description small_description"></div>
+                <span class="rating_id" style="display: none;">11_5790</span>
+              </div>
+                <div class="editing links add_rating_link">
+                  <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="add_rating_link_after" aria-label="Add rating"><i class="icon-add icon-Solid"></i></a>
+                </div>
+            </div>
+          </td>
+          <td id="rating__3151" class="rating edge_rating
+                
+                ">
+            <div class="container" style="height: 99px;">
+              <div class="rating-main">
+                  <div class="editing links">
+                    <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="edit_rating_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit rating</span></a>
+                    <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="delete_rating_link"><i class="icon-trash standalone-icon"></i><span class="screenreader-only">Delete rating</span></a>
+                  </div>
+                  <div class="clear"></div>
+                <span class="nobr toggle_for_hide_points ">
+                  <span class="points">1</span>
+                  <span class="range_rating" style="display: none;">to &gt;<span class="min_points">0</span></span> Pts
+                </span>
+                <div class="description rating_description_value">Less than 10 Github commits present in the project</div>
+                <div class="rating_long_description small_description"></div>
+                <span class="rating_id" style="display: none;">_3151</span>
+              </div>
+            </div>
+          </td>
+      </tr></tbody></table>
+      <div style="display: none; font-size: 0.8em; margin: 5px;" class="custom_ratings">
+        This area will be used by the assessor to leave comments related to this criterion.
+      </div>
+  </td>
+  <td class="nobr points_form toggle_for_hide_points ">
+    <div class="editing" style="white-space: normal">
+      <span style="white-space: nowrap; font-size: 0.8em">
+          
+            <input type="text" aria-label="Points" value="3" class="criterion_points span1 no-margin-bottom">
+           pts
+      </span><br>
+    </div>
+    <div class="displaying">
+      <span style="white-space: nowrap;">
+        <span class="criterion_rating_points_holder" style="display: none;">
+          <span class="criterion_rating_points">&nbsp;</span> /
+        </span>
+        <span class="display_criterion_points">3</span> pts<br>
+      </span>
+    </div>
+    <div class="ignoring">
+      <span> -- </span>
+    </div>
+    <div class="criterion_comments">
+        <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="no-hover criterion_comments_link" title="Additional comments">
+          <img alt="Additional comments" src="./python_flask week 3 IP_files/rubric_comment-ddae8546ab.png">
+        </a>
+        <div class="custom_rating" style="display: none;"></div>
+    </div>
+  </td>
+</tr>
+
+      
+<tr id="criterion_11_1289" class="criterion   " style="">
+  <td class="criterion_description hover-container pad-box-micro">
+    <div class="container">
+      <div class="links editing">
+          <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="edit_criterion_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit criterion description</span></a>
+        <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="delete_criterion_link"><i class="icon-trash standalone-icon"></i><span class="screenreader-only">Delete criterion row</span></a>
+      </div>
+      <div class="description_content">
+        <span class="outcome_sr_content" aria-hidden="true">
+          <i class="learning_outcome_flag icon-outcomes" aria-hidden="true"></i>
+          <span class="screenreader-only">This criterion is linked to a learning outcome</span>
+        </span>
+        <span class="description description_title">Unittests</span>
+        <span class="learning_outcome_id" style="display: none;"></span>
+        <span class="criterion_id" style="display: none;">11_1289</span>
+          <div class="long_description small_description"></div>
+        <div class="hide_when_learning_outcome ">
+          <div class="criterion_use_range_div editing toggle_for_hide_points ">
+            <label>Range
+              <input type="checkbox" class="criterion_use_range"></label>
+          </div>
+        </div>
+        <div class="threshold toggle_for_hide_points ">
+          threshold:
+          <span class="mastery_points"></span> pts
+        </div>
+      </div>
+
+    </div>
+  </td>
+  <td style="padding: 0;">
+      <table class="ratings" style=""><tbody><tr>
+          <td id="rating_11_3541" class="rating edge_rating
+                
+                ">
+            <div class="container" style="height: 119px;">
+              <div class="rating-main">
+                  <div class="editing links">
+                    <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="edit_rating_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit rating</span></a>
+                    <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="delete_rating_link"><i class="icon-trash standalone-icon"></i><span class="screenreader-only">Delete rating</span></a>
+                  </div>
+                  <div class="clear"></div>
+                <span class="nobr toggle_for_hide_points ">
+                  <span class="points">4</span>
+                  <span class="range_rating" style="display: none;">to &gt;<span class="min_points">2.0</span></span> Pts
+                </span>
+                <div class="description rating_description_value">All models contain unittests to test the different behaviours and the test are all passing.</div>
+                <div class="rating_long_description small_description"></div>
+                <span class="rating_id" style="display: none;">11_3541</span>
+              </div>
+                <div class="editing links add_rating_link">
+                  <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="add_rating_link_after" aria-label="Add rating"><i class="icon-add icon-Solid"></i></a>
+                </div>
+            </div>
+          </td>
+          <td id="rating_11_4028" class="rating 
+                
+                ">
+            <div class="container" style="height: 119px;">
+              <div class="rating-main">
+                  <div class="editing links">
+                    <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="edit_rating_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit rating</span></a>
+                    <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="delete_rating_link"><i class="icon-trash standalone-icon"></i><span class="screenreader-only">Delete rating</span></a>
+                  </div>
+                  <div class="clear"></div>
+                <span class="nobr toggle_for_hide_points ">
+                  <span class="points">2</span>
+                  <span class="range_rating" style="display: none;">to &gt;<span class="min_points">0.0</span></span> Pts
+                </span>
+                <div class="description rating_description_value">Models have unittests to test the behaviours but tests are not passing</div>
+                <div class="rating_long_description small_description"></div>
+                <span class="rating_id" style="display: none;">11_4028</span>
+              </div>
+                <div class="editing links add_rating_link">
+                  <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="add_rating_link_after" aria-label="Add rating"><i class="icon-add icon-Solid"></i></a>
+                </div>
+            </div>
+          </td>
+          <td id="rating_11_1581" class="rating edge_rating
+                infinitesimal
+                ">
+            <div class="container" style="height: 119px;">
+              <div class="rating-main">
+                  <div class="editing links">
+                    <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="edit_rating_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit rating</span></a>
+                    <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="delete_rating_link"><i class="icon-trash standalone-icon"></i><span class="screenreader-only">Delete rating</span></a>
+                  </div>
+                  <div class="clear"></div>
+                <span class="nobr toggle_for_hide_points ">
+                  <span class="points">0</span>
+                  <span class="range_rating" style="display: none;">to &gt;<span class="min_points">0</span></span> Pts
+                </span>
+                <div class="description rating_description_value">All models have missing unittests to test the different behaviours.</div>
+                <div class="rating_long_description small_description"></div>
+                <span class="rating_id" style="display: none;">11_1581</span>
+              </div>
+            </div>
+          </td>
+      </tr></tbody></table>
+      <div style="display: none; font-size: 0.8em; margin: 5px;" class="custom_ratings">
+        This area will be used by the assessor to leave comments related to this criterion.
+      </div>
+  </td>
+  <td class="nobr points_form toggle_for_hide_points ">
+    <div class="editing" style="white-space: normal">
+      <span style="white-space: nowrap; font-size: 0.8em">
+          
+            <input type="text" aria-label="Points" value="4" class="criterion_points span1 no-margin-bottom">
+           pts
+      </span><br>
+    </div>
+    <div class="displaying">
+      <span style="white-space: nowrap;">
+        <span class="criterion_rating_points_holder" style="display: none;">
+          <span class="criterion_rating_points">&nbsp;</span> /
+        </span>
+        <span class="display_criterion_points">4</span> pts<br>
+      </span>
+    </div>
+    <div class="ignoring">
+      <span> -- </span>
+    </div>
+    <div class="criterion_comments">
+        <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="no-hover criterion_comments_link" title="Additional comments">
+          <img alt="Additional comments" src="./python_flask week 3 IP_files/rubric_comment-ddae8546ab.png">
+        </a>
+        <div class="custom_rating" style="display: none;"></div>
+    </div>
+  </td>
+</tr>
+
+      
+<tr id="criterion_11_3247" class="criterion   " style="">
+  <td class="criterion_description hover-container pad-box-micro">
+    <div class="container">
+      <div class="links editing">
+          <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="edit_criterion_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit criterion description</span></a>
+        <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="delete_criterion_link"><i class="icon-trash standalone-icon"></i><span class="screenreader-only">Delete criterion row</span></a>
+      </div>
+      <div class="description_content">
+        <span class="outcome_sr_content" aria-hidden="true">
+          <i class="learning_outcome_flag icon-outcomes" aria-hidden="true"></i>
+          <span class="screenreader-only">This criterion is linked to a learning outcome</span>
+        </span>
+        <span class="description description_title">Live link</span>
+        <span class="learning_outcome_id" style="display: none;"></span>
+        <span class="criterion_id" style="display: none;">11_3247</span>
+          <div class="long_description small_description"></div>
+        <div class="hide_when_learning_outcome ">
+          <div class="criterion_use_range_div editing toggle_for_hide_points ">
+            <label>Range
+              <input type="checkbox" class="criterion_use_range"></label>
+          </div>
+        </div>
+        <div class="threshold toggle_for_hide_points ">
+          threshold:
+          <span class="mastery_points"></span> pts
+        </div>
+      </div>
+
+    </div>
+  </td>
+  <td style="padding: 0;">
+      <table class="ratings" style=""><tbody><tr>
+          <td id="rating_11_9369" class="rating edge_rating
+                
+                ">
+            <div class="container" style="height: 99px;">
+              <div class="rating-main">
+                  <div class="editing links">
+                    <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="edit_rating_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit rating</span></a>
+                    <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="delete_rating_link"><i class="icon-trash standalone-icon"></i><span class="screenreader-only">Delete rating</span></a>
+                  </div>
+                  <div class="clear"></div>
+                <span class="nobr toggle_for_hide_points ">
+                  <span class="points">2</span>
+                  <span class="range_rating" style="display: none;">to &gt;<span class="min_points">1.0</span></span> Pts
+                </span>
+                <div class="description rating_description_value">Project has a description and a link to the deployed site. The deployed site works as expected.</div>
+                <div class="rating_long_description small_description"></div>
+                <span class="rating_id" style="display: none;">11_9369</span>
+              </div>
+                <div class="editing links add_rating_link">
+                  <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="add_rating_link_after" aria-label="Add rating"><i class="icon-add icon-Solid"></i></a>
+                </div>
+            </div>
+          </td>
+          <td id="rating_11_7566" class="rating 
+                
+                ">
+            <div class="container" style="height: 99px;">
+              <div class="rating-main">
+                  <div class="editing links">
+                    <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="edit_rating_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit rating</span></a>
+                    <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="delete_rating_link"><i class="icon-trash standalone-icon"></i><span class="screenreader-only">Delete rating</span></a>
+                  </div>
+                  <div class="clear"></div>
+                <span class="nobr toggle_for_hide_points ">
+                  <span class="points">1</span>
+                  <span class="range_rating" style="display: none;">to &gt;<span class="min_points">0.0</span></span> Pts
+                </span>
+                <div class="description rating_description_value">Project  has a link to the deployed site but the link is not working.</div>
+                <div class="rating_long_description small_description"></div>
+                <span class="rating_id" style="display: none;">11_7566</span>
+              </div>
+                <div class="editing links add_rating_link">
+                  <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="add_rating_link_after" aria-label="Add rating"><i class="icon-add icon-Solid"></i></a>
+                </div>
+            </div>
+          </td>
+          <td id="rating_11_35" class="rating edge_rating
+                infinitesimal
+                ">
+            <div class="container" style="height: 99px;">
+              <div class="rating-main">
+                  <div class="editing links">
+                    <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="edit_rating_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit rating</span></a>
+                    <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="delete_rating_link"><i class="icon-trash standalone-icon"></i><span class="screenreader-only">Delete rating</span></a>
+                  </div>
+                  <div class="clear"></div>
+                <span class="nobr toggle_for_hide_points ">
+                  <span class="points">0</span>
+                  <span class="range_rating" style="display: none;">to &gt;<span class="min_points">0</span></span> Pts
+                </span>
+                <div class="description rating_description_value">Project is not deployed to heroku</div>
+                <div class="rating_long_description small_description"></div>
+                <span class="rating_id" style="display: none;">11_35</span>
+              </div>
+            </div>
+          </td>
+      </tr></tbody></table>
+      <div style="display: none; font-size: 0.8em; margin: 5px;" class="custom_ratings">
+        This area will be used by the assessor to leave comments related to this criterion.
+      </div>
+  </td>
+  <td class="nobr points_form toggle_for_hide_points ">
+    <div class="editing" style="white-space: normal">
+      <span style="white-space: nowrap; font-size: 0.8em">
+          
+            <input type="text" aria-label="Points" value="2" class="criterion_points span1 no-margin-bottom">
+           pts
+      </span><br>
+    </div>
+    <div class="displaying">
+      <span style="white-space: nowrap;">
+        <span class="criterion_rating_points_holder" style="display: none;">
+          <span class="criterion_rating_points">&nbsp;</span> /
+        </span>
+        <span class="display_criterion_points">2</span> pts<br>
+      </span>
+    </div>
+    <div class="ignoring">
+      <span> -- </span>
+    </div>
+    <div class="criterion_comments">
+        <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="no-hover criterion_comments_link" title="Additional comments">
+          <img alt="Additional comments" src="./python_flask week 3 IP_files/rubric_comment-ddae8546ab.png">
+        </a>
+        <div class="custom_rating" style="display: none;"></div>
+    </div>
+  </td>
+</tr>
+
+      
+<tr id="criterion_11_2313" class="criterion   " style="">
+  <td class="criterion_description hover-container pad-box-micro">
+    <div class="container">
+      <div class="links editing">
+          <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="edit_criterion_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit criterion description</span></a>
+        <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="delete_criterion_link"><i class="icon-trash standalone-icon"></i><span class="screenreader-only">Delete criterion row</span></a>
+      </div>
+      <div class="description_content">
+        <span class="outcome_sr_content" aria-hidden="true">
+          <i class="learning_outcome_flag icon-outcomes" aria-hidden="true"></i>
+          <span class="screenreader-only">This criterion is linked to a learning outcome</span>
+        </span>
+        <span class="description description_title">Project has a well-documented README document with the project specification.</span>
+        <span class="learning_outcome_id" style="display: none;"></span>
+        <span class="criterion_id" style="display: none;">11_2313</span>
+          <div class="long_description small_description"></div>
+        <div class="hide_when_learning_outcome ">
+          <div class="criterion_use_range_div editing toggle_for_hide_points ">
+            <label>Range
+              <input type="checkbox" class="criterion_use_range"></label>
+          </div>
+        </div>
+        <div class="threshold toggle_for_hide_points ">
+          threshold:
+          <span class="mastery_points"></span> pts
+        </div>
+      </div>
+
+    </div>
+  </td>
+  <td style="padding: 0;">
+      <table class="ratings" style=""><tbody><tr>
+          <td id="rating_11_320" class="rating edge_rating
+                
+                ">
+            <div class="container" style="height: 99px;">
+              <div class="rating-main">
+                  <div class="editing links">
+                    <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="edit_rating_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit rating</span></a>
+                    <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="delete_rating_link"><i class="icon-trash standalone-icon"></i><span class="screenreader-only">Delete rating</span></a>
+                  </div>
+                  <div class="clear"></div>
+                <span class="nobr toggle_for_hide_points ">
+                  <span class="points">3</span>
+                  <span class="range_rating" style="display: none;">to &gt;<span class="min_points">2.0</span></span> Pts
+                </span>
+                <div class="description rating_description_value">Project has a well documented README file on Github with all the project specification.</div>
+                <div class="rating_long_description small_description"></div>
+                <span class="rating_id" style="display: none;">11_320</span>
+              </div>
+                <div class="editing links add_rating_link">
+                  <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="add_rating_link_after" aria-label="Add rating"><i class="icon-add icon-Solid"></i></a>
+                </div>
+            </div>
+          </td>
+          <td id="rating_11_7856" class="rating 
+                
+                ">
+            <div class="container" style="height: 99px;">
+              <div class="rating-main">
+                  <div class="editing links">
+                    <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="edit_rating_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit rating</span></a>
+                    <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="delete_rating_link"><i class="icon-trash standalone-icon"></i><span class="screenreader-only">Delete rating</span></a>
+                  </div>
+                  <div class="clear"></div>
+                <span class="nobr toggle_for_hide_points ">
+                  <span class="points">2</span>
+                  <span class="range_rating" style="display: none;">to &gt;<span class="min_points">0.0</span></span> Pts
+                </span>
+                <div class="description rating_description_value">Project has the default README that is generated by GitHub on creating new project.</div>
+                <div class="rating_long_description small_description"></div>
+                <span class="rating_id" style="display: none;">11_7856</span>
+              </div>
+                <div class="editing links add_rating_link">
+                  <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="add_rating_link_after" aria-label="Add rating"><i class="icon-add icon-Solid"></i></a>
+                </div>
+            </div>
+          </td>
+          <td id="rating_11_4681" class="rating edge_rating
+                infinitesimal
+                ">
+            <div class="container" style="height: 99px;">
+              <div class="rating-main">
+                  <div class="editing links">
+                    <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="edit_rating_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit rating</span></a>
+                    <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="delete_rating_link"><i class="icon-trash standalone-icon"></i><span class="screenreader-only">Delete rating</span></a>
+                  </div>
+                  <div class="clear"></div>
+                <span class="nobr toggle_for_hide_points ">
+                  <span class="points">0</span>
+                  <span class="range_rating" style="display: none;">to &gt;<span class="min_points">0</span></span> Pts
+                </span>
+                <div class="description rating_description_value">No marks</div>
+                <div class="rating_long_description small_description"></div>
+                <span class="rating_id" style="display: none;">11_4681</span>
+              </div>
+            </div>
+          </td>
+      </tr></tbody></table>
+      <div style="display: none; font-size: 0.8em; margin: 5px;" class="custom_ratings">
+        This area will be used by the assessor to leave comments related to this criterion.
+      </div>
+  </td>
+  <td class="nobr points_form toggle_for_hide_points ">
+    <div class="editing" style="white-space: normal">
+      <span style="white-space: nowrap; font-size: 0.8em">
+          
+            <input type="text" aria-label="Points" value="3" class="criterion_points span1 no-margin-bottom">
+           pts
+      </span><br>
+    </div>
+    <div class="displaying">
+      <span style="white-space: nowrap;">
+        <span class="criterion_rating_points_holder" style="display: none;">
+          <span class="criterion_rating_points">&nbsp;</span> /
+        </span>
+        <span class="display_criterion_points">3</span> pts<br>
+      </span>
+    </div>
+    <div class="ignoring">
+      <span> -- </span>
+    </div>
+    <div class="criterion_comments">
+        <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="no-hover criterion_comments_link" title="Additional comments">
+          <img alt="Additional comments" src="./python_flask week 3 IP_files/rubric_comment-ddae8546ab.png">
+        </a>
+        <div class="custom_rating" style="display: none;"></div>
+    </div>
+  </td>
+</tr>
+
+      
+<tr id="criterion_11_3451" class="criterion   " style="">
+  <td class="criterion_description hover-container pad-box-micro">
+    <div class="container">
+      <div class="links editing">
+          <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="edit_criterion_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit criterion description</span></a>
+        <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="delete_criterion_link"><i class="icon-trash standalone-icon"></i><span class="screenreader-only">Delete criterion row</span></a>
+      </div>
+      <div class="description_content">
+        <span class="outcome_sr_content" aria-hidden="true">
+          <i class="learning_outcome_flag icon-outcomes" aria-hidden="true"></i>
+          <span class="screenreader-only">This criterion is linked to a learning outcome</span>
+        </span>
+        <span class="description description_title">Project is in a polished, portfolio-quality state.
+Suggestions for what this can mean: Intuitive, easy to follow layout. Simple yet polished styling. Form field labels where appropriate. Form fields that are validated correctly, and get cleared after submitting. Detailed, well put together readme. No typos. And much more.</span>
+        <span class="learning_outcome_id" style="display: none;"></span>
+        <span class="criterion_id" style="display: none;">11_3451</span>
+          <div class="long_description small_description"></div>
+        <div class="hide_when_learning_outcome ">
+          <div class="criterion_use_range_div editing toggle_for_hide_points ">
+            <label>Range
+              <input type="checkbox" class="criterion_use_range"></label>
+          </div>
+        </div>
+        <div class="threshold toggle_for_hide_points ">
+          threshold:
+          <span class="mastery_points"></span> pts
+        </div>
+      </div>
+
+    </div>
+  </td>
+  <td style="padding: 0;">
+      <table class="ratings" style=""><tbody><tr>
+          <td id="rating_11_2463" class="rating edge_rating
+                
+                ">
+            <div class="container" style="height: 191px;">
+              <div class="rating-main">
+                  <div class="editing links">
+                    <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="edit_rating_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit rating</span></a>
+                    <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="delete_rating_link"><i class="icon-trash standalone-icon"></i><span class="screenreader-only">Delete rating</span></a>
+                  </div>
+                  <div class="clear"></div>
+                <span class="nobr toggle_for_hide_points ">
+                  <span class="points">3</span>
+                  <span class="range_rating" style="display: none;">to &gt;<span class="min_points">2.0</span></span> Pts
+                </span>
+                <div class="description rating_description_value">Went above and beyond in the visual aspect</div>
+                <div class="rating_long_description small_description">Suggestions for what this can mean: Intuitive, easy to follow layout. Simple yet polished styling. Form field labels where appropriate. Form fields that are validated correctly, and get cleared after submitting. Detailed, well put together readme. No typos. And much more.</div>
+                <span class="rating_id" style="display: none;">11_2463</span>
+              </div>
+                <div class="editing links add_rating_link">
+                  <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="add_rating_link_after" aria-label="Add rating"><i class="icon-add icon-Solid"></i></a>
+                </div>
+            </div>
+          </td>
+          <td id="rating_11_5114" class="rating 
+                
+                ">
+            <div class="container" style="height: 191px;">
+              <div class="rating-main">
+                  <div class="editing links">
+                    <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="edit_rating_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit rating</span></a>
+                    <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="delete_rating_link"><i class="icon-trash standalone-icon"></i><span class="screenreader-only">Delete rating</span></a>
+                  </div>
+                  <div class="clear"></div>
+                <span class="nobr toggle_for_hide_points ">
+                  <span class="points">2</span>
+                  <span class="range_rating" style="display: none;">to &gt;<span class="min_points">1.0</span></span> Pts
+                </span>
+                <div class="description rating_description_value">Average visual appeal</div>
+                <div class="rating_long_description small_description">The project is good enough to be viewed but it is not portfolio ready</div>
+                <span class="rating_id" style="display: none;">11_5114</span>
+              </div>
+                <div class="editing links add_rating_link">
+                  <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="add_rating_link_after" aria-label="Add rating"><i class="icon-add icon-Solid"></i></a>
+                </div>
+            </div>
+          </td>
+          <td id="rating_11_6035" class="rating edge_rating
+                
+                ">
+            <div class="container" style="height: 191px;">
+              <div class="rating-main">
+                  <div class="editing links">
+                    <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="edit_rating_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit rating</span></a>
+                    <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="delete_rating_link"><i class="icon-trash standalone-icon"></i><span class="screenreader-only">Delete rating</span></a>
+                  </div>
+                  <div class="clear"></div>
+                <span class="nobr toggle_for_hide_points ">
+                  <span class="points">1</span>
+                  <span class="range_rating" style="display: none;">to &gt;<span class="min_points">0</span></span> Pts
+                </span>
+                <div class="description rating_description_value">No effort to make it visually pleasant</div>
+                <div class="rating_long_description small_description"></div>
+                <span class="rating_id" style="display: none;">11_6035</span>
+              </div>
+            </div>
+          </td>
+      </tr></tbody></table>
+      <div style="display: none; font-size: 0.8em; margin: 5px;" class="custom_ratings">
+        This area will be used by the assessor to leave comments related to this criterion.
+      </div>
+  </td>
+  <td class="nobr points_form toggle_for_hide_points ">
+    <div class="editing" style="white-space: normal">
+      <span style="white-space: nowrap; font-size: 0.8em">
+          
+            <input type="text" aria-label="Points" value="3" class="criterion_points span1 no-margin-bottom">
+           pts
+      </span><br>
+    </div>
+    <div class="displaying">
+      <span style="white-space: nowrap;">
+        <span class="criterion_rating_points_holder" style="display: none;">
+          <span class="criterion_rating_points">&nbsp;</span> /
+        </span>
+        <span class="display_criterion_points">3</span> pts<br>
+      </span>
+    </div>
+    <div class="ignoring">
+      <span> -- </span>
+    </div>
+    <div class="criterion_comments">
+        <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="no-hover criterion_comments_link" title="Additional comments">
+          <img alt="Additional comments" src="./python_flask week 3 IP_files/rubric_comment-ddae8546ab.png">
+        </a>
+        <div class="custom_rating" style="display: none;"></div>
+    </div>
+  </td>
+</tr>
+
+  
+<tr id="criterion_blank" class="criterion blank  " style="display: none;">
+  <td class="criterion_description hover-container pad-box-micro">
+    <div class="container">
+      <div class="links editing">
+          <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="edit_criterion_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit criterion description</span></a>
+        <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="delete_criterion_link"><i class="icon-trash standalone-icon"></i><span class="screenreader-only">Delete criterion row</span></a>
+      </div>
+      <div class="description_content">
+        <span class="outcome_sr_content" aria-hidden="true">
+          <i class="learning_outcome_flag icon-outcomes" aria-hidden="true"></i>
+          <span class="screenreader-only">This criterion is linked to a learning outcome</span>
+        </span>
+        <span class="description description_title">Description of criterion</span>
+        <span class="learning_outcome_id" style="display: none;"></span>
+        <span class="criterion_id" style="display: none;"></span>
+          <div class="long_description small_description"></div>
+        <div class="hide_when_learning_outcome ">
+          <div class="criterion_use_range_div editing toggle_for_hide_points ">
+            <label>Range
+              <input type="checkbox" class="criterion_use_range"></label>
+          </div>
+        </div>
+        <div class="threshold toggle_for_hide_points ">
+          threshold:
+          <span class="mastery_points">5</span> pts
+        </div>
+      </div>
+
+    </div>
+  </td>
+  <td style="padding: 0;">
+      <table class="ratings" style=""><tbody><tr>
+          <td id="rating_blank" class="rating edge_rating
+                
+                ">
+            <div class="container">
+              <div class="rating-main">
+                  <div class="editing links">
+                    <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="edit_rating_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit rating</span></a>
+                    <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="delete_rating_link"><i class="icon-trash standalone-icon"></i><span class="screenreader-only">Delete rating</span></a>
+                  </div>
+                  <div class="clear"></div>
+                <span class="nobr toggle_for_hide_points ">
+                  <span class="points">5</span>
+                  <span class="range_rating" style="display: none;">to &gt;<span class="min_points">0</span></span> Pts
+                </span>
+                <div class="description rating_description_value">Full marks</div>
+                <div class="rating_long_description small_description"></div>
+                <span class="rating_id" style="display: none;">blank</span>
+              </div>
+                <div class="editing links add_rating_link">
+                  <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="add_rating_link_after" aria-label="Add rating"><i class="icon-add icon-Solid"></i></a>
+                </div>
+            </div>
+          </td>
+          <td id="rating_blank_2" class="rating edge_rating
+                infinitesimal
+                ">
+            <div class="container">
+              <div class="rating-main">
+                  <div class="editing links">
+                    <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="edit_rating_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit rating</span></a>
+                    <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="delete_rating_link"><i class="icon-trash standalone-icon"></i><span class="screenreader-only">Delete rating</span></a>
+                  </div>
+                  <div class="clear"></div>
+                <span class="nobr toggle_for_hide_points ">
+                  <span class="points">0</span>
+                  <span class="range_rating" style="display: none;">to &gt;<span class="min_points">0</span></span> Pts
+                </span>
+                <div class="description rating_description_value">No marks</div>
+                <div class="rating_long_description small_description"></div>
+                <span class="rating_id" style="display: none;">blank_2</span>
+              </div>
+            </div>
+          </td>
+      </tr></tbody></table>
+      <div style="display: none; font-size: 0.8em; margin: 5px;" class="custom_ratings">
+        This area will be used by the assessor to leave comments related to this criterion.
+      </div>
+  </td>
+  <td class="nobr points_form toggle_for_hide_points ">
+    <div class="editing" style="white-space: normal">
+      <span style="white-space: nowrap; font-size: 0.8em">
+          
+            <input type="text" aria-label="Points" value="5" class="criterion_points span1 no-margin-bottom">
+           pts
+      </span><br>
+    </div>
+    <div class="displaying">
+      <span style="white-space: nowrap;">
+        <span class="criterion_rating_points_holder" style="display: none;">
+          <span class="criterion_rating_points">&nbsp;</span> /
+        </span>
+        <span class="display_criterion_points">5</span> pts<br>
+      </span>
+    </div>
+    <div class="ignoring">
+      <span> -- </span>
+    </div>
+    <div class="criterion_comments">
+        <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="no-hover criterion_comments_link" title="Additional comments">
+          <img alt="Additional comments" src="./python_flask week 3 IP_files/rubric_comment-ddae8546ab.png">
+        </a>
+        <div class="custom_rating" style="display: none;"></div>
+    </div>
+  </td>
+</tr>
+
+  <tr class="summary">
+    <td colspan="4">
+      <div class="total_points_holder toggle_for_hide_points " style="float: right; ">
+        <span>Total points:
+            <span class="rubric_total">
+              23
+            </span>
+ <span class="assessing">out of 23</span>        </span>
+      </div>
+      <div class="editing pull-left">
+        <span id="add_criterion_holder" class="criterion_link"></span>
+      </div>
+      <div class="clear"></div>
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
+<table style="display: none;">
+  <tbody><tr id="edit_rubric">
+    <td colspan="4">
+      <form id="edit_rubric_form" class="edit-rubric-form no-margin-bottom">
+        <div class="rubric_custom_ratings" style="">
+          <input type="checkbox" id="rubric_custom_rating" class="rubric_custom_rating">
+          <label for="rubric_custom_rating">I'll write free-form comments when assessing students</label>
+        </div>
+          <div class="hide_points" style="">
+            <input type="checkbox" id="hide_points" class="hide_points_checkbox">
+            <label for="hide_points">Remove points from rubric</label>
+          </div>
+          <div class="hide_outcome_results" style="">
+            <input type="checkbox" id="hide_outcome_results" class="hide_outcome_results_checkbox">
+            <label for="hide_outcome_results">Don't post outcomes results to learning mastery gradebook</label>
+          </div>
+          <div class="rubric_grading" style="">
+            <input type="checkbox" id="grading_rubric" class="grading_rubric_checkbox" checked="">
+            <label for="grading_rubric">Use this rubric for assignment grading</label>
+          </div>
+        <div class="totalling_rubric" style="">
+          <input type="checkbox" id="totalling_rubric" class="totalling_rubric_checkbox">
+          <label for="totalling_rubric">Hide score total for assessment results</label>
+        </div>
+        <div class="ic-Action-header ic-Action-header--half-margin">
+          <div class="ic-Action-header__Primary">
+            <button type="button" class="Button cancel_button">Cancel</button>
+            <button type="submit" class="Button Button--primary save_button">Create rubric</button>
+          </div>
+        </div>
+      </form>
+    </td>
+  </tr>
+</tbody></table>
+
+    <div style="display: none;" id="rubric_parameters">
+      <input type="hidden" name="rubric_association[association_type]" value="Assignment">
+      <input type="hidden" name="rubric_association[association_id]" value="8093">
+      <input type="hidden" name="rubric_association[purpose]" value="grading">
+    </div>
+    
+<div id="rubric_long_description_dialog" style="display: none;">
+  <div class="editing">
+    <form id="edit_criterion_form" class="no-margin-bottom">
+      <div>
+        <label class="rating_form_label">Description
+          <textarea class="description" rows="1" name="description"></textarea>
+        </label>
+      </div>
+      <div>
+        <label class="rating_form_label">Long description
+          <textarea class="long_description" rows="4" name="long_description"></textarea>
+        </label>
+      </div>
+      <div class="button-container">
+        <button type="button" class="btn btn button-secondary cancel_button">Cancel</button>
+        <button type="button" class="btn save_button btn-primary">Update criterion</button>
+      </div>
+    </form>
+  </div>
+  <div class="displaying">
+    <div class="long_description">
+    </div>
+  </div>
+</div>
+<div id="rubric_criterion_comments_dialog" style="display: none;">
+  <div class="criterion_description" style="border-bottom: 1px solid #ccc; padding: 5px 0; font-size: 1.2em; font-weight: bold; margin-bottom: 5px;" tabindex="-1"></div>
+  <div class="editing">
+    <label for="criterion_comments_textarea">
+      Additional comments:
+    </label>
+    <textarea id="criterion_comments_textarea" class="criterion_comments" name="criterion_comments" style="width: 370px;"></textarea>
+    <div class="button-container">
+      <button type="button" class="btn btn button-secondary cancel_button">Cancel</button>
+      <button type="button" class="btn save_button">Update comments</button>
+    </div>
+  </div>
+  <div class="displaying">
+    Additional comments:
+    <div class="criterion_comments" style="margin-top: 10px;">
+    </div>
+  </div>
+</div>
+<div id="rubric_rating_dialog" style="display: none;">
+  <div class="description" style="border-bottom: 1px solid #ccc; padding: 5px 0; font-size: 1.2em; font-weight: bold; margin-bottom: 5px;">
+    <span id="edit_rating_form_criterion_description"></span>
+  </div>
+  <div class="editing">
+    <form id="edit_rating_form" class="no-margin-bottom">
+      <div class="toggle_for_hide_points">
+        <div><label id="rating_form_score_label" class="rating_form_label">Rating Score</label></div>
+        <span id="rating_form_max_score_label" hidden="">Rating max score</span>
+        <input id="points" aria-labelledby="rating_form_score_label" type="text" size="2" name="points" class="no-margin-bottom span1">
+        <span class="range_rating">to &gt;
+          <input aria-label="Rating min score" type="text" size="2" name="min_points" class="no-margin-bottom span1 min_points" placeholder="min">
+        </span>Pts
+      </div>
+      <div>
+        <label for="rating_form_title" class="rating_form_label">Rating Title</label>
+        <input id="rating_form_title" type="text" class="rating_description" style="width: 90%;" name="description">
+      </div>
+      <div>
+        <label for="rating_form_description" class="rating_form_label">Rating Description</label>
+        <textarea id="rating_form_description" rows="4" style="width: 90%;" class="rating_long_description" name="rating_long_description" form="edit_rating_form"></textarea>
+      </div>
+      <div class="button-container">
+        <button type="button" class="btn button-secondary cancel_button">Cancel</button>
+        <button type="button" class="btn btn-primary save_button ok_button">Update Rating</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+  </div>
+  
+<div class="rubric_container rubric  " id="default_rubric" style="display: none;">
+  <div class="screenreader-only"><h2>Rubric</h2></div>
+  <div class="rubric_title">
+    <div style="display: none;" class="links displaying pull-right">
+      <a href="https://moringaschool.instructure.com/courses/558/rubrics/%7B%7B%20id%20%7D%7D" class=" edit_rubric_link no-print no-hover" style="" title="Edit rubric" aria-label="Edit rubric" role="button"><i class="icon-edit standalone-icon"></i></a>
+      <a href="https://moringaschool.instructure.com/search/rubrics?q=" class="find_rubric_link no-print no-hover" style="" title="Find another rubric" aria-label="Find another rubric" role="button"><i class="icon-search standalone-icon"></i></a>
+        <a href="https://moringaschool.instructure.com/courses/558/rubric_associations/%7B%7B%20rubric_association_id%20%7D%7D" class="delete_rubric_link no-print no-hover" style="" title="Delete rubric" aria-label="Delete rubric" role="button"><i class="icon-trash standalone-icon"></i></a>
+      <div style="display: none;">
+        <div class="use_for_grading">&nbsp;</div>
+        <div class="free_form_criterion_comments">&nbsp;</div>
+        <div class="hide_score_total">&nbsp;</div>
+        <div class="hide_outcome_results">&nbsp;</div>
+        <div class="hide_points">&nbsp;</div>
+        <div class="rubric_association_id">&nbsp;</div>
+          <div class="user_id">&nbsp;</div>
+        <div class="assessment_type"></div>
+        <a href="https://moringaschool.instructure.com/courses/558/rubric_associations/%7B%7B%20rubric_association_id%20%7D%7D/assessments/%7B%7B%20assessment_id%20%7D%7D" rel="nofollow" class="edit_assessment_link">&nbsp;</a>
+        <a href="https://moringaschool.instructure.com/courses/558/rubrics/%7B%7B%20rubric_id%20%7D%7D" class="edit_rubric_url">&nbsp;</a>
+          <a href="https://moringaschool.instructure.com/courses/558/rubric_associations/%7B%7B%20association_id%20%7D%7D" class="delete_rubric_url">&nbsp;</a>
+      </div>
+    </div>
+    <div style="float: right; font-size: 0.8em; display: none;" class="links displaying locked">
+      <span style="">Can't change a rubric once you've started using it.</span>
+        <a href="https://moringaschool.instructure.com/courses/558/rubric_associations/%7B%7B%20association_id%20%7D%7D" class="delete_rubric_url" style="display: none;">&nbsp;</a>
+    </div>
+
+    <div class="editing" style="float: right;">
+      <a href="https://moringaschool.instructure.com/search/rubrics?q=" class="find_rubric_link icon-search" style="" title="Find existing rubric">Find a rubric</a>
+    </div>
+    <div class="editing" style="text-align: left">
+      <label for="rubric-title">Title:</label>
+      <input id="rubric-title" type="text" class="no-margin-bottom" name="title" value="Some rubric" style="width: 200px;" maxlength="255" aria-label="Title:">
+      <a href="https://moringaschool.instructure.com/search/rubrics?q=" style="display: none;"><img alt="" src="./python_flask week 3 IP_files/find-6164443e2a.png"> Find rubric</a>
+    </div>
+    <div class="displaying">
+      <span class="title" tabindex="-1">Title</span>
+    </div>
+    <div class="has-assessments-warning" style="display: none;">
+      You've already rated students with this rubric. Any major changes could affect their assessment results.
+    </div>
+  </div>
+<table class="rubric_table">
+<caption>
+  <div class="screenreader-only">
+    <span class="title">Title</span>
+  </div>
+</caption>
+<thead>
+  <tr>
+    <th scope="col">Criteria</th>
+    <th scope="col">Ratings</th>
+    <th scope="col" class="toggle_for_hide_points ">
+      Pts
+    </th>
+  </tr>
+</thead>
+<tbody>
+  
+<tr id="criterion_blank" class="criterion blank" style="display: none;">
+  <td class="criterion_description hover-container pad-box-micro">
+    <div class="container">
+      <div class="links editing">
+          <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="edit_criterion_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit criterion description</span></a>
+        <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="delete_criterion_link"><i class="icon-trash standalone-icon"></i><span class="screenreader-only">Delete criterion row</span></a>
+      </div>
+      <div class="description_content">
+        <span class="outcome_sr_content" aria-hidden="true">
+          <i class="learning_outcome_flag icon-outcomes" aria-hidden="true"></i>
+          <span class="screenreader-only">This criterion is linked to a learning outcome</span>
+        </span>
+        <span class="description description_title">Description of criterion</span>
+        <span class="learning_outcome_id" style="display: none;"></span>
+        <span class="criterion_id" style="display: none;"></span>
+          <div class="long_description small_description"></div>
+        <div class="hide_when_learning_outcome ">
+          <div class="criterion_use_range_div editing toggle_for_hide_points ">
+            <label>Range
+              <input type="checkbox" class="criterion_use_range"></label>
+          </div>
+        </div>
+        <div class="threshold toggle_for_hide_points ">
+          threshold:
+          <span class="mastery_points">5</span> pts
+        </div>
+      </div>
+
+    </div>
+  </td>
+  <td style="padding: 0;">
+      <table class="ratings" style=""><tbody><tr>
+          <td id="rating_blank" class="rating edge_rating
+                
+                ">
+            <div class="container">
+              <div class="rating-main">
+                  <div class="editing links">
+                    <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="edit_rating_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit rating</span></a>
+                    <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="delete_rating_link"><i class="icon-trash standalone-icon"></i><span class="screenreader-only">Delete rating</span></a>
+                  </div>
+                  <div class="clear"></div>
+                <span class="nobr toggle_for_hide_points ">
+                  <span class="points">5</span>
+                  <span class="range_rating" style="display: none;">to &gt;<span class="min_points">0</span></span> Pts
+                </span>
+                <div class="description rating_description_value">Full marks</div>
+                <div class="rating_long_description small_description"></div>
+                <span class="rating_id" style="display: none;">blank</span>
+              </div>
+                <div class="editing links add_rating_link">
+                  <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="add_rating_link_after" aria-label="Add rating"><i class="icon-add icon-Solid"></i></a>
+                </div>
+            </div>
+          </td>
+          <td id="rating_blank_2" class="rating edge_rating
+                infinitesimal
+                ">
+            <div class="container">
+              <div class="rating-main">
+                  <div class="editing links">
+                    <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="edit_rating_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit rating</span></a>
+                    <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="delete_rating_link"><i class="icon-trash standalone-icon"></i><span class="screenreader-only">Delete rating</span></a>
+                  </div>
+                  <div class="clear"></div>
+                <span class="nobr toggle_for_hide_points ">
+                  <span class="points">0</span>
+                  <span class="range_rating" style="display: none;">to &gt;<span class="min_points">0</span></span> Pts
+                </span>
+                <div class="description rating_description_value">No marks</div>
+                <div class="rating_long_description small_description"></div>
+                <span class="rating_id" style="display: none;">blank_2</span>
+              </div>
+            </div>
+          </td>
+      </tr></tbody></table>
+      <div style="display: none; font-size: 0.8em; margin: 5px;" class="custom_ratings">
+        This area will be used by the assessor to leave comments related to this criterion.
+      </div>
+  </td>
+  <td class="nobr points_form toggle_for_hide_points ">
+    <div class="editing" style="white-space: normal">
+      <span style="white-space: nowrap; font-size: 0.8em">
+          
+            <input type="text" aria-label="Points" value="5" class="criterion_points span1 no-margin-bottom">
+           pts
+      </span><br>
+    </div>
+    <div class="displaying">
+      <span style="white-space: nowrap;">
+        <span class="criterion_rating_points_holder" style="display: none;">
+          <span class="criterion_rating_points">&nbsp;</span> /
+        </span>
+        <span class="display_criterion_points">5</span> pts<br>
+      </span>
+    </div>
+    <div class="ignoring">
+      <span> -- </span>
+    </div>
+    <div class="criterion_comments">
+        <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="no-hover criterion_comments_link" title="Additional comments">
+          <img alt="Additional comments" src="./python_flask week 3 IP_files/rubric_comment-ddae8546ab.png">
+        </a>
+        <div class="custom_rating" style="display: none;"></div>
+    </div>
+  </td>
+</tr>
+
+  <tr id="criterion_1" class="criterion" style="display: table-row;">
+  <td class="criterion_description hover-container pad-box-micro">
+    <div class="container">
+      <div class="links editing">
+          <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="edit_criterion_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit criterion description</span></a>
+        <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="delete_criterion_link"><i class="icon-trash standalone-icon"></i><span class="screenreader-only">Delete criterion row</span></a>
+      </div>
+      <div class="description_content">
+        <span class="outcome_sr_content" aria-hidden="true">
+          <i class="learning_outcome_flag icon-outcomes" aria-hidden="true"></i>
+          <span class="screenreader-only">This criterion is linked to a learning outcome</span>
+        </span>
+        <span class="description description_title">Description of criterion</span>
+        <span class="learning_outcome_id" style="display: none;"></span>
+        <span class="criterion_id" style="display: none;"></span>
+          <div class="long_description small_description"></div>
+        <div class="hide_when_learning_outcome ">
+          <div class="criterion_use_range_div editing toggle_for_hide_points ">
+            <label>Range
+              <input type="checkbox" class="criterion_use_range"></label>
+          </div>
+        </div>
+        <div class="threshold toggle_for_hide_points ">
+          threshold:
+          <span class="mastery_points">5</span> pts
+        </div>
+      </div>
+
+    </div>
+  </td>
+  <td style="padding: 0;">
+      <table class="ratings" style=""><tbody><tr>
+          <td id="rating_blank" class="rating edge_rating
+                
+                ">
+            <div class="container">
+              <div class="rating-main">
+                  <div class="editing links">
+                    <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="edit_rating_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit rating</span></a>
+                    <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="delete_rating_link"><i class="icon-trash standalone-icon"></i><span class="screenreader-only">Delete rating</span></a>
+                  </div>
+                  <div class="clear"></div>
+                <span class="nobr toggle_for_hide_points ">
+                  <span class="points">5</span>
+                  <span class="range_rating" style="display: none;">to &gt;<span class="min_points">0</span></span> Pts
+                </span>
+                <div class="description rating_description_value">Full marks</div>
+                <div class="rating_long_description small_description"></div>
+                <span class="rating_id" style="display: none;">blank</span>
+              </div>
+                <div class="editing links add_rating_link">
+                  <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="add_rating_link_after" aria-label="Add rating"><i class="icon-add icon-Solid"></i></a>
+                </div>
+            </div>
+          </td>
+          <td id="rating_blank_2" class="rating edge_rating
+                infinitesimal
+                ">
+            <div class="container">
+              <div class="rating-main">
+                  <div class="editing links">
+                    <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="edit_rating_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit rating</span></a>
+                    <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="delete_rating_link"><i class="icon-trash standalone-icon"></i><span class="screenreader-only">Delete rating</span></a>
+                  </div>
+                  <div class="clear"></div>
+                <span class="nobr toggle_for_hide_points ">
+                  <span class="points">0</span>
+                  <span class="range_rating" style="display: none;">to &gt;<span class="min_points">0</span></span> Pts
+                </span>
+                <div class="description rating_description_value">No marks</div>
+                <div class="rating_long_description small_description"></div>
+                <span class="rating_id" style="display: none;">blank_2</span>
+              </div>
+            </div>
+          </td>
+      </tr></tbody></table>
+      <div style="display: none; font-size: 0.8em; margin: 5px;" class="custom_ratings">
+        This area will be used by the assessor to leave comments related to this criterion.
+      </div>
+  </td>
+  <td class="nobr points_form toggle_for_hide_points ">
+    <div class="editing" style="white-space: normal">
+      <span style="white-space: nowrap; font-size: 0.8em">
+          
+            <input type="text" aria-label="Points" value="5" class="criterion_points span1 no-margin-bottom">
+           pts
+      </span><br>
+    </div>
+    <div class="displaying">
+      <span style="white-space: nowrap;">
+        <span class="criterion_rating_points_holder" style="display: none;">
+          <span class="criterion_rating_points">&nbsp;</span> /
+        </span>
+        <span class="display_criterion_points">5</span> pts<br>
+      </span>
+    </div>
+    <div class="ignoring">
+      <span> -- </span>
+    </div>
+    <div class="criterion_comments">
+        <a href="https://moringaschool.instructure.com/courses/558/assignments/8093?module_item_id=50353#" class="no-hover criterion_comments_link" title="Additional comments">
+          <img alt="Additional comments" src="./python_flask week 3 IP_files/rubric_comment-ddae8546ab.png">
+        </a>
+        <div class="custom_rating" style="display: none;"></div>
+    </div>
+  </td>
+</tr><tr class="summary">
+    <td colspan="4">
+      <div class="total_points_holder toggle_for_hide_points " style="float: right; ">
+        <span>Total points:
+            <span class="rubric_total">
+              5
+            </span>
+ <span class="assessing">out of 5</span>        </span>
+      </div>
+      <div class="editing pull-left">
+        <span id="add_criterion_holder" class="criterion_link"></span>
+      </div>
+      <div class="clear"></div>
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
+<table style="display: none;">
+  <tbody><tr id="edit_rubric">
+    <td colspan="4">
+      <form id="edit_rubric_form" class="edit-rubric-form no-margin-bottom">
+        <div class="rubric_custom_ratings" style="">
+          <input type="checkbox" id="rubric_custom_rating" class="rubric_custom_rating">
+          <label for="rubric_custom_rating">I'll write free-form comments when assessing students</label>
+        </div>
+          <div class="hide_points" style="">
+            <input type="checkbox" id="hide_points" class="hide_points_checkbox">
+            <label for="hide_points">Remove points from rubric</label>
+          </div>
+          <div class="hide_outcome_results" style="">
+            <input type="checkbox" id="hide_outcome_results" class="hide_outcome_results_checkbox">
+            <label for="hide_outcome_results">Don't post outcomes results to learning mastery gradebook</label>
+          </div>
+          <div class="rubric_grading" style="">
+            <input type="checkbox" id="grading_rubric" class="grading_rubric_checkbox">
+            <label for="grading_rubric">Use this rubric for assignment grading</label>
+          </div>
+        <div class="totalling_rubric" style="">
+          <input type="checkbox" id="totalling_rubric" class="totalling_rubric_checkbox">
+          <label for="totalling_rubric">Hide score total for assessment results</label>
+        </div>
+        <div class="ic-Action-header ic-Action-header--half-margin">
+          <div class="ic-Action-header__Primary">
+            <button type="button" class="Button cancel_button">Cancel</button>
+            <button type="submit" class="Button Button--primary save_button">Create rubric</button>
+          </div>
+        </div>
+      </form>
+    </td>
+  </tr>
+</tbody></table>
+
+
+  <div id="assignment_external_tools"><div></div></div>
+
+  
+  <div id="sequence_footer" data-course-id="558" data-asset-id="8093" data-asset-type="Assignment"><div class="module-sequence-padding"></div>
+<div class="module-sequence-footer" role="navigation" aria-label="Module Navigation">
+  <div class="module-sequence-footer-content">
+    
+      <span class="module-sequence-footer-button--previous" data-tooltip="right" data-html-tooltip-title="&lt;i class=&#39;icon-document&#39;&gt;&lt;/i&gt; Thursday: Answering General Interview Questions">
+          <a href="https://moringaschool.instructure.com/courses/558/modules/items/50352" role="button" class="Button" aria-describedby="msf0-previous-desc" aria-label="Previous Module Item">
+            <i class="icon-mini-arrow-left"></i>Previous
+            <span id="msf0-previous-desc" class="hidden" hidden="">Previous: Thursday: Answering General Interview Questions</span>
+          </a>
+      </span>
+    
+
+    
+      <span class="module-sequence-footer-button--next" data-tooltip="left" data-html-tooltip-title="&lt;i class=&#39;icon-document&#39;&gt;&lt;/i&gt; Friday: Feedback WK10">
+        <a href="https://moringaschool.instructure.com/courses/558/modules/items/50355" role="button" class="Button" aria-describedby="msf0-next-desc" aria-label="Next Module Item">
+          Next<i class="icon-mini-arrow-right"></i>
+          <span id="msf0-next-desc" class="hidden" hidden="">Next: Friday: Feedback WK10</span>
+        </a>
+      </span>
+    
+  </div>
+</div>
+</div>
+
+
+
+          </div>
+        </div>
+        <div id="right-side-wrapper" class="ic-app-main-content__secondary">
+          <aside id="right-side" role="complementary">
+            
+<div id="sidebar_content">
+
+    
+<div class="details">
+  <h2>Submission</h2>
+    <div class="header">
+        <i class="icon-check" aria-hidden="true"></i>
+        Submitted!
+    </div>
+  <div class="content">
+    <span class="">
+        4 Feb at 12:29
+    </span>
+
+    <div>
+      <a href="https://moringaschool.instructure.com/courses/558/assignments/8093/submissions/5112">
+        Submission details
+      </a>
+    </div>
+
+      <div>
+        <a href="https://github.com/githaefrancis/pitch-pitcher" target="_new" id="view-original-link">
+          View the original page
+        </a>
+      </div>
+
+    <div class="module">
+
+    </div>
+
+
+    <div class="comments module">
+        <h3>Comments: </h3>
+
+        No comments
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+          </aside>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+    <div style="display:none;"><!-- Everything inside of this should always stay hidden -->
+        <div id="page_view_id">66a47235-12c1-4391-9ea1-34dd5d6fd11c</div>
+    </div>
+  <div id="aria_alerts" class="hide-text affix" role="alert" aria-live="assertive"></div>
+  <div id="StudentTray__Container"></div>
+    <div class="NewUserTutorialTray__Container"></div>
+  
+
+  <script>
+    Object.assign(
+      ENV,
+      {}
+    )
+  </script>
+
+<link rel="preload" href="./python_flask week 3 IP_files/inst_fs_service_worker-c-6c8f40fd1f.js" as="script" type="text/javascript"><script>
+//<![CDATA[
+(window.bundles || (window.bundles = [])).push('inst_fs_service_worker');
+//]]>
+</script>
+  <script>
+//<![CDATA[
+
+      ;["https://instructure-uploads-eu.s3.eu-west-1.amazonaws.com/account_118060000000000001/attachments/70562/index.js"].forEach(function(src) {
+        var s = document.createElement('script')
+        s.src = src
+        s.async = false
+        document.head.appendChild(s)
+      });
+//]]>
+</script>
+
+</div> <!-- #application -->
+
+
+<div id="nav-tray-portal" style="position: relative; z-index: 99;"></div><div class="tinymce-a11y-checker-container"></div></body></html>

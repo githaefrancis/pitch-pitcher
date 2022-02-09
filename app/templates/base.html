@@ -21,6 +21,9 @@
   {% endblock %}
   <div class="main">
   {%block content%}
+  {% for message in get_flashed_messages() %}
+    <div class="flash bg-secondary">{{ message }}</div>
+  {% endfor %}
 
 
   {% endblock %}
