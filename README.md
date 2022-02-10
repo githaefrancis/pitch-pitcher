@@ -13,9 +13,19 @@ Francis Githae
 Python 3.8.10
 Flask
 Bootstrap
-## Dependencies
+Fontawesome
+JQuery
 
-
+# Features
+- Register for a account
+- Login 
+- Post a pitch
+- View pitch
+- Downvote a pitch
+- Upvote a pitch
+- Filter pitches by category
+- Update profile picture
+- View pitches you have posted.
 
 
 ## Setup and Installation
